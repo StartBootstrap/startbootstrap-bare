@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Bare - Start Bootstrap Template
+    include includes/head.pug
+  body
+    include includes/nav.pug
+    // Page Content
+    .container
+      .row
+        .col-lg-12.text-center
+          h1 A Bootstrap Starter Template
+          p.lead Complete with pre-defined file paths that you won't have to change!
+          ul.list-unstyled
+            li Bootstrap v3.3.6
+            li jQuery v2.2.4
+      // /.row
+    // /.container
+    include includes/scripts.pug
