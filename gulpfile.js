@@ -7,7 +7,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('less', function() {
-    return gulp.src('src/less/sb-bare.less') // Gets all files ending with .scss in app/scss
+    return gulp.src('src/less/sb-bare.less') // Gets all files ending with .less in app/less
         .pipe(less())
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.reload({
@@ -15,15 +15,15 @@ gulp.task('less', function() {
         }))
 });
 
-// Grab the Bootstrap CSS and JS files from bower_components and put them in src
+// Grab the Bootstrap CSS and JS files from node_modules and put them in src
 gulp.task('bootstrap', function() {
-    return gulp.src(['bower_components/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
+    return gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('src'))
 })
 
 // Grab jQuery and put it in src
 gulp.task('jquery', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/jquery/dist/jquery.min.js'])
+    return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('src/js'))
 })
 
