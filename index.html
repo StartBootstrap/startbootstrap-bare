@@ -26,14 +26,18 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="container">
             <a class="navbar-brand" href="#">Start Bootstrap</a>
-            <button class="navbar-toggler hidden-md-up float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <!-- Clearfix with a utility class added to allow for better navbar responsiveness. -->
-            <div class="clearfix hidden-md-up"></div>
-            <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
-                <ul class="nav navbar-nav float-md-right">
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
@@ -51,18 +55,18 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-xs-center">
+            <div class="col-lg-12 text-center">
                 <h1>A Bootstrap 4 Starter Template</h1>
                 <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
                 <ul class="list-unstyled">
-                    <li>Bootstrap 4.0.0-alpha.5</li>
+                    <li>Bootstrap 4.0.0-alpha.6</li>
                     <li>jQuery 3.0.0</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- jQuery Version 4.x.x -->
+    <!-- jQuery Version 3.x.x -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
