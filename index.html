@@ -16,9 +16,12 @@
 
     <!-- Custom CSS -->
     <style>
+    /* Set top padding of the page to match the height of the navbar */
+    
     body {
         padding-top: 70px;
     }
+    /* Ugly hacks to fix the container within navbar functionality - should be fixed in Bootstrap 4 beta */
     
     .navbar-toggler {
         z-index: 1;
@@ -26,8 +29,7 @@
     
     @media (max-width: 576px) {
         nav > .container {
-            margin-left: 0;
-            margin-right: 0;
+            width: 100%;
         }
     }
     </style>
