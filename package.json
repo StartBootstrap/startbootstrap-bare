@@ -1,0 +1,16 @@
+{
+    "name": "startbootstrap-bare",
+    "title": "Bare",
+    "description": "An unstlyed starter template for Bootstrap 4 with predefined file paths for easy development.",
+    "version": "4.0.0-alpha",
+    "homepage": "http://startbootstrap.com/template-overviews/bare",
+    "author": "Start Bootstrap",
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-bare.git"
+    }
+}
