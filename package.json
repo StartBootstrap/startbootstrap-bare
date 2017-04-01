@@ -1,16 +1,37 @@
 {
-    "name": "startbootstrap-bare",
     "title": "Bare",
-    "description": "An unstlyed starter template for Bootstrap 4 with predefined file paths for easy development.",
+    "name": "startbootstrap-bare",
     "version": "4.0.0-alpha",
+    "description": "A basic HTML starter template for Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
     "homepage": "http://startbootstrap.com/template-overviews/bare",
-    "author": "Start Bootstrap",
-    "license": {
-        "type": "MIT",
-        "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-bare/issues",
+        "email": "feedback@startbootstrap.com"
     },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/BlackrockDigital/startbootstrap-bare.git"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "jquery": "^3.2.1",
+        "tether": "^1.4.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1"
     }
 }
