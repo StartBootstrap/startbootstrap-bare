@@ -1,55 +1,59 @@
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-Medium.eot?") format("eot"), url("../assets/fonts//CircularStd-Medium.woff2") format("woff2"), url("../assets/fonts//CircularStd-Medium.woff") format("woff"), url("../assets/fonts//CircularStd-Medium.ttf") format("truetype"), url("../assets/fonts//CircularStd-Medium.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-Medium.eot?") format("eot"), url("../assets/fonts//CircularStd-Medium.otf") format("opentype"), url("../assets/fonts//CircularStd-Medium.ttf") format("truetype"), url("../assets/fonts//CircularStd-Medium.woff2") format("woff2"), url("../assets/fonts//CircularStd-Medium.woff") format("woff"), url("../assets/fonts//CircularStd-Medium.svg#Samplino") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-MediumItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-MediumItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-MediumItalic.woff") format("woff"), url("../assets/fonts//CircularStd-MediumItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-MediumItalic.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-MediumItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-MediumItalic.otf") format("opentype"), url("../assets/fonts//CircularStd-MediumItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-MediumItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-MediumItalic.woff") format("woff"), url("../assets/fonts//CircularStd-MediumItalic.svg#Samplino") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-Book.eot?") format("eot"), url("../assets/fonts//CircularStd-Book.woff2") format("woff2"), url("../assets/fonts//CircularStd-Book.woff") format("woff"), url("../assets/fonts//CircularStd-Book.ttf") format("truetype"), url("../assets/fonts//CircularStd-Book.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-Book.eot?") format("eot"), url("../assets/fonts//CircularStd-Book.otf") format("opentype"), url("../assets/fonts//CircularStd-Book.ttf") format("truetype"), url("../assets/fonts//CircularStd-Book.woff2") format("woff2"), url("../assets/fonts//CircularStd-Book.woff") format("woff"), url("../assets/fonts//CircularStd-Book.svg#Samplino") format("svg");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-BookItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BookItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BookItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BookItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BookItalic.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-BookItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BookItalic.otf") format("opentype"), url("../assets/fonts//CircularStd-BookItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BookItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BookItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BookItalic.svg#Samplino") format("svg");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-Bold.eot?") format("eot"), url("../assets/fonts//CircularStd-Bold.woff2") format("woff2"), url("../assets/fonts//CircularStd-Bold.woff") format("woff"), url("../assets/fonts//CircularStd-Bold.ttf") format("truetype"), url("../assets/fonts//CircularStd-Bold.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-Bold.eot?") format("eot"), url("../assets/fonts//CircularStd-Bold.otf") format("opentype"), url("../assets/fonts//CircularStd-Bold.ttf") format("truetype"), url("../assets/fonts//CircularStd-Bold.woff2") format("woff2"), url("../assets/fonts//CircularStd-Bold.woff") format("woff"), url("../assets/fonts//CircularStd-Bold.svg#Samplino") format("svg");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-BoldItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BoldItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BoldItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BoldItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BoldItalic.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-BoldItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BoldItalic.otf") format("opentype"), url("../assets/fonts//CircularStd-BoldItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BoldItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BoldItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BoldItalic.svg#Samplino") format("svg");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-Black.eot?") format("eot"), url("../assets/fonts//CircularStd-Black.woff2") format("woff2"), url("../assets/fonts//CircularStd-Black.woff") format("woff"), url("../assets/fonts//CircularStd-Black.ttf") format("truetype"), url("../assets/fonts//CircularStd-Black.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-Black.eot?") format("eot"), url("../assets/fonts//CircularStd-Black.otf") format("opentype"), url("../assets/fonts//CircularStd-Black.ttf") format("truetype"), url("../assets/fonts//CircularStd-Black.woff2") format("woff2"), url("../assets/fonts//CircularStd-Black.woff") format("woff"), url("../assets/fonts//CircularStd-Black.svg#Samplino") format("svg");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
-  src: url("../assets/fonts//CircularStd-BlackItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BlackItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BlackItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BlackItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BlackItalic.svg#Samplino") format("svg");
+  src: url("../assets/fonts//CircularStd-BlackItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BlackItalic.otf") format("opentype"), url("../assets/fonts//CircularStd-BlackItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BlackItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BlackItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BlackItalic.svg#Samplino") format("svg");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Oxigen Mono";
-  src: url("../assets/fonts//OxygenMono-Regular.eot?") format("eot"), url("../assets/fonts//OxygenMono-Regular.woff2") format("woff2"), url("../assets/fonts//OxygenMono-Regular.woff") format("woff"), url("../assets/fonts//OxygenMono-Regular.ttf") format("truetype"), url("../assets/fonts//OxygenMono-Regular.svg#Samplino") format("svg");
+  src: url("../assets/fonts//OxygenMono-Regular.eot?") format("eot"), url("../assets/fonts//OxygenMono-Regular.otf") format("opentype"), url("../assets/fonts//OxygenMono-Regular.ttf") format("truetype"), url("../assets/fonts//OxygenMono-Regular.woff2") format("woff2"), url("../assets/fonts//OxygenMono-Regular.woff") format("woff"), url("../assets/fonts//OxygenMono-Regular.svg#Samplino") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+p {
+  font-family: 'Circular Std';
+  font-weight: 700; }
 
 /*# sourceMappingURL=maps/main.css.map */
