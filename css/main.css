@@ -25,13 +25,13 @@
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts//CircularStd-Bold.eot?") format("eot"), url("../assets/fonts//CircularStd-Bold.otf") format("opentype"), url("../assets/fonts//CircularStd-Bold.ttf") format("truetype"), url("../assets/fonts//CircularStd-Bold.woff2") format("woff2"), url("../assets/fonts//CircularStd-Bold.woff") format("woff"), url("../assets/fonts//CircularStd-Bold.svg#Samplino") format("svg");
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Circular Std";
   src: url("../assets/fonts//CircularStd-BoldItalic.eot?") format("eot"), url("../assets/fonts//CircularStd-BoldItalic.otf") format("opentype"), url("../assets/fonts//CircularStd-BoldItalic.ttf") format("truetype"), url("../assets/fonts//CircularStd-BoldItalic.woff2") format("woff2"), url("../assets/fonts//CircularStd-BoldItalic.woff") format("woff"), url("../assets/fonts//CircularStd-BoldItalic.svg#Samplino") format("svg");
-  font-weight: 700;
+  font-weight: bold;
   font-style: italic; }
 
 @font-face {
