@@ -1,0 +1,1 @@
+{"version":3,"file":"../../partials/typography.css","sources":["partials/typography.scss"],"sourcesContent":["p {\n    font-size: 11px;\n    color: black;\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KAAK,GACf"}
