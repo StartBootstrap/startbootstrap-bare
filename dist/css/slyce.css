@@ -6146,7 +6146,10 @@ a {
   .half-split .col:first-child .col__content {
     padding-right: 65px; }
   .half-split .col:last-child .col__content {
+    padding-top: 80px;
     padding-left: 65px; }
+  .half-split .studio-logo {
+    margin-bottom: 200px; }
 
 .btn {
   padding: 7px;
