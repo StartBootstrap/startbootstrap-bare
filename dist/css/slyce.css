@@ -6170,13 +6170,16 @@ a {
 .btn--loading {
   color: transparent; }
 
-.form-control {
+input.form-control {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #d4dbe0;
-  padding: 6px 0 8px 0;
+  padding: 6px 0;
   font-weight: 300;
-  font-size: 20px; }
+  font-size: 20px;
+  transition: padding .3s; }
+  input.form-control:focus {
+    padding: 6px 10px; }
 
 label {
   margin: 0;

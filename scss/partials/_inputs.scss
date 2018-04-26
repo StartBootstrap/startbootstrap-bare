@@ -1,12 +1,17 @@
 @import '../_colors';
 
-.form-control{
+input.form-control{
     border: none;
     border-radius: 0;
     border-bottom: 1px solid $gray_6;
-    padding: 6px 0 8px 0;
+    padding: 6px 0;
     font-weight: 300;
     font-size: 20px;
+    transition: padding .3s;
+
+    &:focus {
+        padding: 6px 10px ;
+    }
 }
 
 label{
