@@ -6208,7 +6208,7 @@ label {
 .hero {
   width: 50%;
   height: 100%;
-  background-color: #287cf3;
+  background-color: #1b55a6;
   position: absolute;
   left: 0;
   top: 0; }
@@ -6217,12 +6217,12 @@ label {
     position: absolute;
     top: 0;
     right: 1000px;
-    background-color: #287cf3;
+    background-color: #1b55a6;
     height: 100%;
     width: 100%;
     display: block;
-    background: #287cf3;
-    background: linear-gradient(90deg, #287cf3 0%, #287cf3 80%, rgba(40, 124, 243, 0) 100%); }
+    background: #1b55a6;
+    background: linear-gradient(90deg, #1b55a6 0%, #1b55a6 85%, rgba(27, 85, 166, 0) 100%); }
   .hero .hero__image {
     position: absolute;
     top: 0;
