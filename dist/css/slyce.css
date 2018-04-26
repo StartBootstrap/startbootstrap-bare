@@ -6167,8 +6167,40 @@ a {
     border-color: #287cf3 !important;
     opacity: .8; }
 
-.btn--loading {
-  color: transparent; }
+.btn--loading,
+.btn--loading.btn-outline-primary {
+  color: transparent !important;
+  align-items: center;
+  display: flex;
+  transition: color 0s; }
+  .btn--loading:hover, .btn--loading:active, .btn--loading:focus,
+  .btn--loading.btn-outline-primary:hover,
+  .btn--loading.btn-outline-primary:active,
+  .btn--loading.btn-outline-primary:focus {
+    color: transparent !important; }
+  .btn--loading:after,
+  .btn--loading.btn-outline-primary:after {
+    content: "";
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    border: 2px solid silver;
+    animation: circ-anim 0.5s linear infinite, scale-in 0.1s linear;
+    border-color: #287cf3;
+    border-bottom-color: transparent; }
+
+@keyframes scale-in {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
 
 input.form-control {
   border: none;
