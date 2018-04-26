@@ -6212,22 +6212,26 @@ label {
   position: absolute;
   left: 0;
   top: 0; }
-  .hero:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 1000px;
-    background-color: #1b55a6;
-    height: 100%;
-    width: 100%;
-    display: block;
-    background: #1b55a6;
-    background: linear-gradient(90deg, #1b55a6 0%, #1b55a6 85%, rgba(27, 85, 166, 0) 100%); }
-  .hero .hero__image {
+  .hero .hero__container {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
+    height: 100%;
+    width: auto; }
+    .hero .hero__container:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10px;
+      background-color: #1b55a6;
+      height: 100%;
+      width: 25%;
+      max-width: 250px;
+      display: block;
+      background: #1b55a6;
+      background: linear-gradient(90deg, #1b55a6 0%, #1b55a6 10%, rgba(27, 85, 166, 0) 100%); }
+  .hero .hero__image {
     height: 100%; }
 
 .duotoned--slyceblue {
