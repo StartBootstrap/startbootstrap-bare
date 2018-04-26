@@ -6141,9 +6141,11 @@ a {
 
 .half-split {
   min-height: 100vh; }
-  .half-split .col:first-child .col--content {
+  .half-split .col__content {
+    padding: 40px; }
+  .half-split .col:first-child .col__content {
     padding-right: 65px; }
-  .half-split .col:last-child .col--content {
+  .half-split .col:last-child .col__content {
     padding-left: 65px; }
 
 .btn {
