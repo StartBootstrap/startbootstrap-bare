@@ -7,4 +7,27 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 1000px;
+        background-color: $primary;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: rgb(40,124,243);
+        background: linear-gradient(90deg, rgba(40,124,243,1) 0%, rgba(40,124,243,1) 80%, rgba(40,124,243,0) 100%);
+    }
+
+    .hero__image{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        opacity: 0.5;
+
+    }
 }
