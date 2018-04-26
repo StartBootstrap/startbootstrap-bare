@@ -52,5 +52,5 @@ gulp.task('sass:watch', function () {
 gulp.task('dev', ['browserSync', 'sass:watch'], function() {
   gulp.watch('./css/*.css', browserSync.reload);
   gulp.watch('./scss/**/*.css', browserSync.reload);
-  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./**/*.html', browserSync.reload);
 });
