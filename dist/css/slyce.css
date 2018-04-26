@@ -6179,7 +6179,8 @@ input.form-control {
   font-size: 20px;
   transition: padding .3s; }
   input.form-control:focus {
-    padding: 6px 10px; }
+    padding: 6px 10px;
+    box-shadow: none; }
 
 label {
   margin: 0;
