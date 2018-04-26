@@ -1,26 +1,26 @@
 
-.half-split {
+.st-half-split {
     min-height: 100vh;
 
-    .col__content{
+    .st-col__content{
         padding: 40px;
     }
 
     .col:first-child{
-        .col__content{
+        .st-col__content{
             padding-right: 65px;
         }
     }
 
     .col:last-child{
-        .col__content{
+        .st-col__content{
             padding-top: 80px;
             padding-bottom: 80px;
             padding-left: 65px;
         }
     }
 
-    .studio-logo{
+    .st-studio-logo{
         margin-bottom: 200px;
     }
 }

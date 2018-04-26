@@ -1,6 +1,6 @@
 @import '../colors';
 
-.hero{
+.st-hero{
     width: 50%;
     height: 100%;
     background-color: $primary-alt;
@@ -8,7 +8,7 @@
     left: 0;
     top: 0;
 
-    .hero__container{
+    .st-hero__container{
         position: absolute;
         top: 0;
         bottom: 0;
@@ -29,7 +29,7 @@
             background: linear-gradient(90deg, rgba(27,85,166,1) 0%, rgba(27,85,166,1) 10%, rgba(27,85,166,0) 100%);
         }
     }
-    .hero__image{
+    .st-hero__image{
         height: 100%;
     }
 
