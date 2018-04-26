@@ -25,7 +25,7 @@ gulp.task('vendor', function() {
 })
 
 // Default task
-gulp.task('default', ['vendor', 'sass']);
+gulp.task('default', ['vendor', 'sass', 'assets']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -41,16 +41,24 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./dist/css'));
 });
+
+gulp.task('assets', function() {
+    return gulp.src('./assets/**/*')
+        .pipe(gulp.dest('./dist/assets'));
+})
+
+gulp.task('assets:watch', function(){
+    gulp.watch('./assets/**/*', ['assets']);
+})
  
 gulp.task('sass:watch', function () {
   gulp.watch('./scss/**/*.scss', ['sass']);
 });
 
 // Dev task
-gulp.task('dev', ['browserSync', 'sass:watch'], function() {
-  gulp.watch('./css/*.css', browserSync.reload);
-  gulp.watch('./scss/**/*.css', browserSync.reload);
+gulp.task('dev', ['browserSync', 'sass:watch', 'assets:watch'], function() {
+  gulp.watch('./dist/**/*', browserSync.reload);
   gulp.watch('./**/*.html', browserSync.reload);
 });
