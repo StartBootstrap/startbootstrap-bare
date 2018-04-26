@@ -1,26 +1,26 @@
 
-.st-half-split {
+.slyce-half-split {
     min-height: 100vh;
 
-    .st-col__content{
+    .slyce-col__content{
         padding: 40px;
     }
 
     .col:first-child{
-        .st-col__content{
+        .slyce-col__content{
             padding-right: 65px;
         }
     }
 
     .col:last-child{
-        .st-col__content{
+        .slyce-col__content{
             padding-top: 80px;
             padding-bottom: 80px;
             padding-left: 65px;
         }
     }
 
-    .st-studio-logo{
+    .slyce-studio-logo{
         margin-bottom: 200px;
     }
 }

@@ -6136,20 +6136,20 @@ a {
   a:active {
     color: #1b55a6; }
 
-.st-text--bigger {
+.slyce-text--bigger {
   font-size: 16px; }
 
-.st-half-split {
+.slyce-half-split {
   min-height: 100vh; }
-  .st-half-split .st-col__content {
+  .slyce-half-split .slyce-col__content {
     padding: 40px; }
-  .st-half-split .col:first-child .st-col__content {
+  .slyce-half-split .col:first-child .slyce-col__content {
     padding-right: 65px; }
-  .st-half-split .col:last-child .st-col__content {
+  .slyce-half-split .col:last-child .slyce-col__content {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 65px; }
-  .st-half-split .st-studio-logo {
+  .slyce-half-split .slyce-studio-logo {
     margin-bottom: 200px; }
 
 .btn {
@@ -6167,19 +6167,19 @@ a {
     border-color: #287cf3 !important;
     opacity: .8; }
 
-.st-btn--loading,
-.st-btn--loading.btn-outline-primary {
+.slyce-btn--loading,
+.slyce-btn--loading.btn-outline-primary {
   color: transparent !important;
   align-items: center;
   display: flex;
   transition: color 0s; }
-  .st-btn--loading:hover, .st-btn--loading:active, .st-btn--loading:focus,
-  .st-btn--loading.btn-outline-primary:hover,
-  .st-btn--loading.btn-outline-primary:active,
-  .st-btn--loading.btn-outline-primary:focus {
+  .slyce-btn--loading:hover, .slyce-btn--loading:active, .slyce-btn--loading:focus,
+  .slyce-btn--loading.btn-outline-primary:hover,
+  .slyce-btn--loading.btn-outline-primary:active,
+  .slyce-btn--loading.btn-outline-primary:focus {
     color: transparent !important; }
-  .st-btn--loading:after,
-  .st-btn--loading.btn-outline-primary:after {
+  .slyce-btn--loading:after,
+  .slyce-btn--loading.btn-outline-primary:after {
     content: "";
     display: block;
     width: 1.2em;
@@ -6235,21 +6235,21 @@ label {
 :-moz-placeholder {
   color: #d4dbe0 !important; }
 
-.st-hero {
+.slyce-hero {
   width: 50%;
   height: 100%;
   background-color: #1b55a6;
   position: absolute;
   left: 0;
   top: 0; }
-  .st-hero .st-hero__container {
+  .slyce-hero .slyce-hero__container {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     height: 100%;
     width: auto; }
-    .st-hero .st-hero__container:after {
+    .slyce-hero .slyce-hero__container:after {
       content: "";
       position: absolute;
       top: 0;
@@ -6261,10 +6261,10 @@ label {
       display: block;
       background: #1b55a6;
       background: linear-gradient(90deg, #1b55a6 0%, #1b55a6 10%, rgba(27, 85, 166, 0) 100%); }
-  .st-hero .st-hero__image {
+  .slyce-hero .slyce-hero__image {
     height: 100%; }
 
-.st-duotoned--slyceblue {
+.slyce-duotoned--slyceblue {
   filter: url("#duotone_slyceblue"); }
 
 section {
