@@ -13,12 +13,12 @@ $fontsPath: "../assets/fonts/";
     }
 }
 
-@include fontface('Circular Std', 'CircularStd-Medium', 300);
-@include fontface('Circular Std', 'CircularStd-MediumItalic', 300);
-@include fontface('Circular Std', 'CircularStd-Book', 400);
-@include fontface('Circular Std', 'CircularStd-BookItalic', 400, italic);
+@include fontface('Circular Std', 'CircularStd-Medium', 400);
+@include fontface('Circular Std', 'CircularStd-MediumItalic', 400, italic);
+@include fontface('Circular Std', 'CircularStd-Book', 300);
+@include fontface('Circular Std', 'CircularStd-BookItalic', 300, italic);
 @include fontface('Circular Std', 'CircularStd-Bold', bold);
 @include fontface('Circular Std', 'CircularStd-BoldItalic', bold, italic);
-@include fontface('Circular Std', 'CircularStd-Black', 700);
-@include fontface('Circular Std', 'CircularStd-BlackItalic', 700, italic);
+@include fontface('Circular Std', 'CircularStd-Black', 900);
+@include fontface('Circular Std', 'CircularStd-BlackItalic', 900, italic);
 @include fontface('Oxigen Mono', 'OxygenMono-Regular');

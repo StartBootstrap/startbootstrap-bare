@@ -1,8 +1,13 @@
 @import './_colors';
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
 @import './_fonts';
 @import './_typography';
 @import './layouts/_half-split';
 @import './partials/_buttons';
+@import './partials/_inputs';
 @import './partials/_hero';
 
 section{

@@ -1,0 +1,26 @@
+@import '../_colors';
+
+.btn {
+    padding: 7px;
+    min-width: 120px;
+    border-radius: 8px;
+    font-size: 14px;
+    
+    &.btn-outline-primary{
+        &:hover{
+            background-color: transparent;
+            color: $primary_alt;
+            border-color: $primary_alt;
+        }
+        &:active{
+            background-color: transparent !important;
+            color: $primary !important;
+            border-color: $primary !important;
+            opacity: .8;
+        }
+    }
+}
+
+.btn--loading{
+    color: transparent;
+}

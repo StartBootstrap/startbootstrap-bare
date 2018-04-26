@@ -1,5 +1,10 @@
 @import './_colors';
 
+*{
+    font-family: 'Circular Std', sans-serif;
+    font-weight: normal;
+}
+
 code {
     font: normal normal 12px 'Oxygen Mono', monospace;
 }
@@ -15,7 +20,6 @@ h2{
     line-height: 40px;
     letter-spacing: 0.43px;
 }
-
 
 h3{
     font:  bold normal 20px 'Circular Std', sans-serif;
@@ -52,4 +56,8 @@ a{
     &:active{
         color: $link_active;
     }
+}
+
+.text--bigger{
+    font-size: 16px;
 }
