@@ -53,6 +53,6 @@
   font-style: normal; }
 
 .duotoned--slyceblue {
-  filter: url("../../assets/duotone-filters/duotone_slyceblue.svg#duotone_slyceblue"); }
+  filter: url("#duotone_slyceblue"); }
 
 /*# sourceMappingURL=maps/main.css.map */
