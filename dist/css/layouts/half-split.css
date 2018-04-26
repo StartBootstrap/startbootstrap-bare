@@ -1,8 +1,0 @@
-.half-split {
-  min-height: 100vh; }
-  .half-split .col:first-child .col--content {
-    padding-right: 65px; }
-  .half-split .col:last-child .col--content {
-    padding-left: 65px; }
-
-/*# sourceMappingURL=../maps/layouts/half-split.css.map */
