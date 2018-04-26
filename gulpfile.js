@@ -70,5 +70,5 @@ gulp.task('sass:watch', function () {
 // Dev task
 gulp.task('dev', ['browserSync', 'sass:watch', 'assets:watch', 'javascript:watch'], function() {
   gulp.watch('./dist/**/*', browserSync.reload);
-  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./**/*.html', browserSync.reload);
 });

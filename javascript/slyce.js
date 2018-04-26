@@ -22,6 +22,7 @@
             document.querySelector('.duotoned').style.opacity = '0.5';
         }
         document.querySelector('body').appendChild(div);
+        div.style.display = 'none';
     }
 
 
