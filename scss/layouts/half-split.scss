@@ -1,0 +1,16 @@
+
+.half-split {
+    min-height: 100vh;
+
+    .col:first-child{
+        .col--content{
+            padding-right: 65px;
+        }
+    }
+
+    .col:last-child{
+        .col--content{
+            padding-left: 65px;
+        }
+    }
+}

@@ -1,12 +1,13 @@
 @import './colors';
 @import './fonts';
+@import './layouts/half-split';
 @import './partials/buttons';
 @import './partials/hero';
 
 section{
     position: relative;
+    width: 100%;
 }
 
-.login{
-    height: 100%;
+.col--content{
 }
