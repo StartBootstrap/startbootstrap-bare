@@ -1,18 +1,16 @@
 @import '../_colors';
-
 .btn {
     padding: 7px;
     min-width: 120px;
     border-radius: 8px;
     font-size: 14px;
-    
-    &.btn-outline-primary{
-        &:hover{
+    &.btn-outline-primary {
+        &:hover {
             background-color: transparent;
             color: $primary_alt;
             border-color: $primary_alt;
         }
-        &:active{
+        &:active {
             background-color: transparent !important;
             color: $primary !important;
             border-color: $primary !important;
@@ -21,6 +19,47 @@
     }
 }
 
-.btn--loading{
-    color: transparent;
+.slyce-btn--loading,
+.slyce-btn--loading.btn-outline-primary {
+    color: transparent !important;
+    align-items: center;
+    display: flex;
+    transition: color 0s;
+
+    &:hover,
+    &:active,
+    &:focus{
+        color: transparent !important;
+    }
+
+    &:after{
+        content: "";
+        $size: 1.2em;
+        $speed: .5s;
+        display: block;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        border: 2px solid silver;
+        animation: circ-anim $speed linear infinite, scale-in .1s linear;
+        border-color: $primary;
+        border-bottom-color: transparent;
+    }
+}
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes circ-anim {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
