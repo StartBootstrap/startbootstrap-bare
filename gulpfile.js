@@ -25,7 +25,7 @@ gulp.task('vendor', function() {
 })
 
 // Default task
-gulp.task('default', ['vendor', 'sass', 'assets', 'javascript']);
+gulp.task('default', ['vendor', 'sass', 'assets', 'javascript', 'components', 'layouts']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -62,13 +62,31 @@ gulp.task('javascript:watch', function(){
     gulp.watch('./javascript/**/*', ['javascript']);
 })
 
+gulp.task('components', function() {
+    return gulp.src('./components/**/*')
+        .pipe(gulp.dest('./dist/components'));
+})
+
+gulp.task('components:watch', function(){
+    gulp.watch('./components/**/*', ['components']);
+})
+
+gulp.task('layouts', function() {
+    return gulp.src('./layouts/**/*')
+        .pipe(gulp.dest('./dist/layouts'));
+})
+
+gulp.task('layouts:watch', function(){
+    gulp.watch('./layouts/**/*', ['layouts']);
+})
+
  
 gulp.task('sass:watch', function () {
   gulp.watch('./scss/**/*.scss', ['sass']);
 });
 
 // Dev task
-gulp.task('dev', ['browserSync', 'sass:watch', 'assets:watch', 'javascript:watch'], function() {
+gulp.task('dev', ['browserSync', 'sass:watch', 'assets:watch', 'javascript:watch', 'components:watch', 'layouts:watch'], function() {
   gulp.watch('./dist/**/*', browserSync.reload);
   gulp.watch('./**/*.html', browserSync.reload);
 });

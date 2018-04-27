@@ -1,7 +1,6 @@
 @import './_colors';
 
 // Bootstrap and its default variables
-@import "node_modules/bootstrap/scss/bootstrap";
 
 @import './_fonts';
 @import './_typography';
@@ -10,6 +9,8 @@
 @import './partials/_inputs';
 @import './partials/_hero';
 @import 'partials/_duotone';
+@import 'partials/_table';
+
 
 section{
     position: relative;
