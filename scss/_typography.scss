@@ -1,63 +1,64 @@
 @import './_colors';
 
-*{
-    font-family: 'Circular Std', sans-serif;
-    font-weight: normal;
+* {
+  font-family: 'Circular Std', sans-serif;
+  font-weight: normal;
 }
 
 code {
-    font: normal normal 12px 'Oxygen Mono', monospace;
+  font: normal normal 12px 'Oxygen Mono', monospace;
 }
 
-h1{
-    font:  bold normal 40px 'Circular Std', sans-serif;
-    line-height: 48px;
-    letter-spacing: 0.56px;
+h1 {
+  font: bold normal 40px 'Circular Std', sans-serif;
+  line-height: 48px;
+  letter-spacing: 0.56px;
 }
 
-h2{
-    font:  bold normal 32px 'Circular Std', sans-serif;
-    line-height: 40px;
-    letter-spacing: 0.43px;
+h2 {
+  font: bold normal 32px 'Circular Std', sans-serif;
+  line-height: 40px;
+  letter-spacing: 0.43px;
 }
 
-h3{
-    font:  bold normal 20px 'Circular Std', sans-serif;
-    line-height: 24px;
-    letter-spacing: 0.34px;
+h3 {
+  font: bold normal 20px 'Circular Std', sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.34px;
 }
 
-h4{
-    font:  normal normal 16px 'Circular Std', sans-serif;
-    line-height: 24px;
-    letter-spacing: 0.23px;
+h4 {
+  font: normal normal 16px 'Circular Std', sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.23px;
 }
 
-p{
-    font:  normal normal 24px 'Circular Std', sans-serif;
-    line-height: 24px;
-    letter-spacing: 0.24px;
-    
-    &.p--small {
-        font:  normal normal 12px 'Circular Std', sans-serif;
-        line-height: 16px;
-    }
+p {
+  font: normal normal 24px 'Circular Std', sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+
+  &.p--small {
+    font: normal normal 12px 'Circular Std', sans-serif;
+    line-height: 16px;
+  }
 }
 
-a{
-    font-family: 'Circular Std', sans-serif;
-    color: $link;
+a {
+  font-family: 'Circular Std', sans-serif;
+  color: $link;
 
-    &:hover{
-        color: $link_hover;
-        text-decoration: underline;
-    }
+  &:hover {
+    color: $link_hover;
+    text-decoration: underline;
+  }
 
-    &:active{
-        color: $link_active;
-    }
+  &:active {
+    color: $link_active;
+  }
 }
 
-.text--bigger{
-    font-size: 16px;
+.text--bigger {
+  font-size: 16px;
 }
+
