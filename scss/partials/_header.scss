@@ -1,0 +1,14 @@
+.bg-light{
+  background-color:(white !important);
+  box-shadow: 0 1px 0 0 #E5EBED, 0 1px 4px 0 #E5EBED, 0 1px 4px 0 rgba(38,180,233,0.07);
+}
+
+.navbar{
+  padding: 0.2rem 8rem;
+  li:not(:last-child) {
+    padding: 0rem 1rem;
+  }
+  li:nth-last-child(0){
+    padding-right: 0rem;
+  }
+}
