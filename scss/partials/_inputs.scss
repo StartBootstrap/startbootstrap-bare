@@ -7,10 +7,11 @@ input.form-control{
     padding: 6px 0;
     font-weight: 300;
     font-size: 20px;
-    transition: padding .3s;
+    transition: padding .3s, border-color .3s;
 
     &:focus {
         padding: 6px 10px ;
+        border-color: $primary;
         box-shadow: none;
     }
 }
@@ -24,15 +25,15 @@ label{
     margin-bottom: 5px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
     color: $gray_6 !important;
   }
-  ::-moz-placeholder { /* Firefox 19+ */
+  ::-moz-placeholder {
     color: $gray_6 !important;
   }
-  :-ms-input-placeholder { /* IE 10+ */
+  :-ms-input-placeholder {
     color: $gray_6 !important;
   }
-  :-moz-placeholder { /* Firefox 18- */
+  :-moz-placeholder {
     color: $gray_6 !important;
   }
