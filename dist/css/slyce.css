@@ -264,6 +264,43 @@ label {
   .navbar li:nth-last-child(0) {
     padding-right: 0rem; }
 
+.bg-light {
+  background-color: white !important;
+  box-shadow: 0 1px 0 0 #E5EBED, 0 1px 4px 0 #E5EBED, 0 1px 4px 0 rgba(38, 180, 233, 0.07); }
+
+.navbar {
+  padding: 0.2rem 8rem; }
+  .navbar li:not(:last-child) {
+    padding: 0rem 1rem; }
+  .navbar li:nth-last-child(0) {
+    padding-right: 0rem; }
+
+footer {
+  padding: 0.2rem 0rem 0.2rem 8rem;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+  background-color: white;
+  display: flex;
+  color: #287CF3;
+  font-family: "Circular Std";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.44px;
+  line-height: 14px;
+  flex-wrap: wrap; }
+  footer div {
+    padding: 12px; }
+  footer .slyce-copyright {
+    color: #546175;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px; }
+
 section {
   position: relative;
   width: 100%; }
