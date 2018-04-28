@@ -1,39 +1,83 @@
 @import '../_colors';
 
-input.form-control{
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid $gray_6;
-    padding: 6px 0;
-    font-weight: 300;
-    font-size: 20px;
-    transition: padding .3s, border-color .3s;
+input.form-control.underlined {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $gray_6;
+  padding: 6px 0;
+  font-weight: 300;
+  font-size: 20px;
+  transition: padding .3s, border-color .3s;
 
-    &:focus {
-        padding: 6px 10px ;
-        border-color: $primary;
-        box-shadow: none;
-    }
+  &:focus {
+    padding: 6px 10px;
+    border-color: $primary;
+    box-shadow: none;
+  }
 }
 
-label{
-    margin: 0;
-    color: $primary;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.44px;
-    margin-bottom: 5px;
+label {
+  margin: 0;
+  color: $primary;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.44px;
+  margin-bottom: 5px;
 }
 
 ::-webkit-input-placeholder {
-    color: $gray_6 !important;
+  color: $gray_6 !important;
+}
+
+::-moz-placeholder {
+  color: $gray_6 !important;
+}
+
+:-ms-input-placeholder {
+  color: $gray_6 !important;
+}
+
+:-moz-placeholder {
+  color: $gray_6 !important;
+}
+
+input.form-control{
+  border-radius: 8px;
+}
+
+.slyce-account-controls {
+  height: 5rem;
+  border-top: solid 1px #E5EBED;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .input-group {
+    width: 30%;
+    input.form-control::-webkit-input-placeholder {
+      color: #7F8FA4;
+      font-family: "Circular Std";
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: 0.44px;
+      line-height: 14px;
+      text-align:center;
+    }
+    input.form-control::placeholder{
+      color: #7F8FA4;
+      font-family: "Circular Std";
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: 0.44px;
+      line-height: 14px;
+      text-align:center;
+    }
   }
-  ::-moz-placeholder {
-    color: $gray_6 !important;
+
+  .btn {
+    div {
+      display: flex;
+      align-items: center;
+      padding: 0rem 1rem;
+    }
   }
-  :-ms-input-placeholder {
-    color: $gray_6 !important;
-  }
-  :-moz-placeholder {
-    color: $gray_6 !important;
-  }
+}
