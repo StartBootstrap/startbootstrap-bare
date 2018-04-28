@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_dropCarrot_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S1---Styleguide" transform="translate(-544.000000, -2176.000000)" fill="#546175">
+            <g id="04---Icons" transform="translate(260.000000, 2094.000000)">
+                <g id="Icons" transform="translate(0.000000, 75.000000)">
+                    <g id="ic_dropCarrot_small" transform="translate(284.000000, 5.000000)">
+                        <path d="M1.64933228,2 C0.818300795,2 0.557127291,2.52336131 1.07770985,3.18383585 L3.06613194,5.70659071 C3.58146507,6.3604052 4.41173575,6.36706525 4.9323183,5.70659071 L6.92074039,3.18383585 C7.43607353,2.53002137 7.18317721,2 6.34911795,2 L1.64933228,2 Z" id="Chevron"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
