@@ -5,10 +5,22 @@
 
 .navbar{
   padding: 0.2rem 8rem;
-  li:not(:last-child) {
+  li:not(:last-child){
     padding: 0rem 1rem;
   }
-  li:nth-last-child(0){
-    padding-right: 0rem;
+  li:last-child{
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  li.nav-profile{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    a{
+      background-color: #132843;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      content:""
+    }
   }
 }
