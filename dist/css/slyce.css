@@ -96,6 +96,9 @@ a {
   a:active {
     color: #1b55a6; }
 
+.text--bigger {
+  font-size: 16px; }
+
 .slyce-text--bigger {
   font-size: 16px; }
 
@@ -115,7 +118,11 @@ a {
 .single-col {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  padding: 3rem 9rem; }
+=======
   padding: 2.5rem 12rem; }
+>>>>>>> 556e11195d1805658c2f06927d001bd4a77eb4cb
 
 .btn {
   padding: 7px;
@@ -334,6 +341,25 @@ footer {
     font-weight: 300;
     letter-spacing: 0.44px;
     line-height: 14px; }
+
+.jumbotron {
+  width: 100% !important;
+  padding: 0rem;
+  background-color: white;
+  text-align: left; }
+  .jumbotron .display-4 {
+    color: #001734;
+    font-family: "Circular Std";
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.56px;
+    line-height: 48px; }
+  .jumbotron .lead {
+    color: #546175;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; }
 
 section {
   position: relative;
