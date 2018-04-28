@@ -35,6 +35,9 @@
               <entry file="file://$PROJECT_DIR$/index.html">
                 <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
                   <state relative-caret-position="330">
                     <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
 =======
@@ -108,8 +111,13 @@
         <entry file="file://$PROJECT_DIR$/scss/_colors.scss">
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="238">
+              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+=======
             <state relative-caret-position="103">
               <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
               <folding />
             </state>
           </provider>
@@ -155,6 +163,10 @@
       <file leaf-file-name="slyce.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/slyce.scss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="195">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+=======
             <state relative-caret-position="165">
               <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
 =======
@@ -164,6 +176,7 @@
             <state relative-caret-position="180">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
               <folding />
             </state>
           </provider>
@@ -182,6 +195,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>import</find>
+      <find>Gome</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,11 +216,17 @@
         <option value="$PROJECT_DIR$/scss/colors.scss" />
         <option value="$PROJECT_DIR$/scss/partials/_duotone.scss" />
         <option value="$PROJECT_DIR$/javascript/main.js" />
-        <option value="$PROJECT_DIR$/scss/slyce.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scss/partials/_header.scss" />
-        <option value="$PROJECT_DIR$/components/slyce-header.html" />
         <option value="$PROJECT_DIR$/dist/components/slyce-header.html" />
+        <option value="$PROJECT_DIR$/scss/_typography.scss" />
+        <option value="$PROJECT_DIR$/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/scss/partials/_header.scss" />
+        <option value="$PROJECT_DIR$/scss/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/components/slyce-header.html" />
+        <option value="$PROJECT_DIR$/components/slyce-footer.html" />
+        <option value="$PROJECT_DIR$/scss/slyce.scss" />
+        <option value="$PROJECT_DIR$/scss/layouts/_single-col.scss" />
+        <option value="$PROJECT_DIR$/layouts/accounts.html" />
       </list>
     </option>
   </component>
@@ -225,10 +245,17 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
+    <option name="x" value="1317" />
+    <option name="y" value="-1845" />
+    <option name="width" value="1808" />
+    <option name="height" value="756" />
+=======
     <option name="x" value="1122" />
     <option name="y" value="-1792" />
     <option name="width" value="1680" />
     <option name="height" value="575" />
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -273,9 +300,12 @@
               <item name="studio.theme" type="b2602c69:ProjectViewProjectNode" />
               <item name="studio.theme" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
 =======
               <item name="dist" type="462c0819:PsiDirectoryNode" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
             </path>
           </expand>
           <select />
@@ -290,13 +320,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="gulp&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/gulpfile.js&#10;main&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/javascript/main.js" />
+    <property name="SearchEverywhereHistoryKey" value="footer&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/scss/partials/_footer.scss&#10;header&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/scss/partials/_header.scss&#10;gulp&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/gulpfile.js&#10;main&#9;FILE&#9;file:///Users/khoitran/Desktop/slyceWorkspace/studio.theme/javascript/main.js" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scss/layouts" />
+      <recent name="$PROJECT_DIR$/layouts" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/scss" />
       <recent name="$PROJECT_DIR$/scss/partials" />
-      <recent name="$PROJECT_DIR$/assets/duotone-filters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist/assets/images" />
@@ -336,7 +369,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="24310000" />
+=======
     <option name="totallyTimeSpent" value="18982000" />
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
   </component>
   <component name="ToolWindowManager">
     <frame x="1122" y="-1792" width="1680" height="575" extended-state="0" />
@@ -448,6 +485,8 @@
     <entry file="file://$PROJECT_DIR$/dist/css/colors.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/css/fonts.css" />
+<<<<<<< HEAD
+=======
 =======
     <entry file="file://$PROJECT_DIR$/scss/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -500,6 +539,7 @@
     <entry file="file://$PROJECT_DIR$/dist/css/colors.css" />
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/css/fonts.css" />
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
     <entry file="file://$PROJECT_DIR$/scss/partials/_buttons.scss">
 =======
     <entry file="file://$PROJECT_DIR$/components/slyce-table.html">
@@ -616,6 +656,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/components/slyce-header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -636,8 +684,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/slyce.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+=======
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
@@ -695,10 +754,31 @@
         <state relative-caret-position="705">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/components/slyce-footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/scss/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -712,10 +792,17 @@
         <state relative-caret-position="630">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/components/slyce-table.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -730,6 +817,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
         </state>
       </provider>
@@ -762,6 +850,12 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/components/slyce-table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="51" />
+=======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -782,10 +876,17 @@
         <state relative-caret-position="75">
           <caret line="62" column="2" lean-forward="false" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/scss/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -798,10 +899,32 @@
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/scss/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/layouts/_half-split.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/slyce.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/dist/components/slyce-header.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,7 +936,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> 9b0fe19381913d0e10278d38b4719c9a4054a1d8
+>>>>>>> bcbb37da78a85291bfe15caab0eaba46fd38c739
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/layouts/_single-col.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/accounts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
         </state>
       </provider>
     </entry>
