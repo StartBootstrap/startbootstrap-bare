@@ -6,7 +6,7 @@ input.form-control.underlined {
   border-bottom: 1px solid $gray_6;
   padding: 6px 0;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1vh;
   transition: padding .3s, border-color .3s;
 
   &:focus {
@@ -46,17 +46,20 @@ input.form-control{
 }
 
 .slyce-account-controls {
-  height: 5rem;
-  border-top: solid 1px #E5EBED;;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-top: solid 1px #E5EBED;
+  font-size:1.5vh;
+  max-font-size: 5rem;
+  .btn{
+    font-size: 1.5vh;
+    height: 4vh;
+  }
   .input-group {
-    width: 30%;
+    height:3vh;
+
     input.form-control::-webkit-input-placeholder {
       color: #7F8FA4;
       font-family: "Circular Std";
-      font-size: 12px;
+      font-size: 1.5vh;
       font-weight: 300;
       letter-spacing: 0.44px;
       line-height: 14px;
@@ -65,19 +68,11 @@ input.form-control{
     input.form-control::placeholder{
       color: #7F8FA4;
       font-family: "Circular Std";
-      font-size: 12px;
+      font-size:1vh;
       font-weight: 300;
       letter-spacing: 0.44px;
       line-height: 14px;
       text-align:center;
-    }
-  }
-
-  .btn {
-    div {
-      display: flex;
-      align-items: center;
-      padding: 0rem 1rem;
     }
   }
 }

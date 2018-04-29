@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<nav class="navbar  navbar-expand navbar-light bg-light py-1 px-5">
+<nav class="navbar  navbar-expand navbar-light bg-light py-0 px-4">
     <a class="navbar-brand" href="#"><img src="../assets/images/slyce_studio_logo.png" height="32" width="auto"/></a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +23,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active py-0 px-3">
+            <li class="d-flex align-items-center nav-item active py-0 px-1">
                 <a class="nav-link" href="#">Studio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item py-0 px-3">
+            <li class="d-flex align-items-center nav-item py-0 px-1">
                 <a class="nav-link" href="#">Analytics</a>
             </li>
-            <li class="nav-item py-0 px-3">
+            <li class="d-flex align-items-center nav-item py-0 px-1">
                 <a class="nav-link" href="#">Learn</a>
             </li>
-            <li class="align-items-center justify-content-end d-flex nav-item pl-3">
+            <li class="align-items-center justify-content-end d-flex nav-item pl-1">
                 <div>
                     <a class="profile-icon nav-link bg-dark rounded-circle" href="#">
                     </a>
@@ -41,22 +41,22 @@
         </ul>
     </div>
 </nav>
-<div class="single-col">
-    <div class="jumbotron">
-        <h1 class="display-4">Title</h1>
-        <p class="lead">
+<div class="single-col px-5 py-2">
+    <div>
+        <h1 class="m-0">Title</h1>
+        <p class="py-1 text-muted">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius augue vel ipsum hendrerit accumsan.
             In vel dolor vitae orci pharetra tempor quis eu eros.
         </p>
     </div>
-    <div class="slyce-account-controls">
+    <div class="py-2 d-flex align-items-center justify-content-between slyce-account-controls">
         <div>Accounts (32)</div>
-        <div class="input-group">
+        <div class="input-group w-25">
             <input type="text" class="form-control" placeholder="Search accounts" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div>
-            <button type="submit" class="btn btn-primary">
-                <div>
+            <button type="submit" class="btn btn-primary px-2">
+                <div class="px-1 d-flex align-items-center">
                     <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
                         <title>ic_add</title>
@@ -75,14 +75,14 @@
                             </g>
                         </g>
                     </svg>
-                    <div>
+                    <div class="px-1">
                         New account
                     </div>
                 </div>
             </button>
         </div>
     </div>
-    <table class="table">
+    <table class="table table-hover rounded-top">
         <thead class="thead-light rounded-top">
         <tr>
             <th scope="col">Name</th>
@@ -90,195 +90,150 @@
             <th scope="col">Status</th>
             <th scope="col">Operations</th>
             <th scope="col">Date Created</th>
+            <th scope="col">   </th>
         </tr>
         </thead>
         <tbody>
-        <tr style="">
-            <td style="">
-                <div>
+        <tr class="border-bottom border-top">
+            <td class="align-middle">
+                <div class="h-100 d-flex align-items-center">
                     <div class="table-company-logo">
                     </div>
-                    <div class="table-company-name">
+                    <div class="ml-2 text-primary table-company-name">
                         Abercrombie
                     </div>
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     Enterprise
                 </div>
             </td>
-            <td>
-                <div class="td-flex-direction-column">
-                    <div>
-                        Production
-                    </div>
-                    <div>
-                        May 1, 2018
-                    </div>
+            <td class="align-middle">
+                <div class="pb-1">
+                    Production
+                </div>
+                <div class="text-secondary">
+                    May 1, 2018
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     129,000
                 </div>
             </td>
-            <td>
-                <div style="justify-content: space-between;">
-                    <div>
-                        March 3, 2018
-                    </div>
-                    <div style="">
-                        ...
-                    </div>
+            <td class="align-middle">
+                <div>
+                    March 3, 2018
+                </div>
+            </td>
+            <td class="align-middle">
+                <div>
+                    ...
                 </div>
             </td>
         </tr>
-        <tr style="">
-            <td style="">
-                <div>
+        <tr class="border-bottom border-top">
+            <td class="align-middle">
+                <div class="h-100 d-flex align-items-center">
                     <div class="table-company-logo">
                     </div>
-                    <div class="table-company-name">
+                    <div class="ml-2 text-primary table-company-name">
                         Abercrombie
                     </div>
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     Enterprise
                 </div>
             </td>
-            <td>
-                <div class="td-flex-direction-column">
-                    <div>
-                        Production
-                    </div>
-                    <div>
-                        May 1, 2018
-                    </div>
+            <td class="align-middle">
+                <div class="pb-1">
+                    Production
+                </div>
+                <div class="text-secondary">
+                    May 1, 2018
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     129,000
                 </div>
             </td>
-            <td>
-                <div style="justify-content: space-between;">
-                    <div>
-                        March 3, 2018
-                    </div>
-                    <div style="">
-                        ...
-                    </div>
+            <td class="align-middle">
+                <div>
+                    March 3, 2018
+                </div>
+            </td>
+            <td class="align-middle">
+                <div>
+                    ...
                 </div>
             </td>
         </tr>
-        <tr style="">
-            <td style="">
-                <div>
+        <tr class="border-bottom border-top">
+            <td class="align-middle">
+                <div class="h-100 d-flex align-items-center">
                     <div class="table-company-logo">
                     </div>
-                    <div class="table-company-name">
+                    <div class="ml-2 text-primary table-company-name">
                         Abercrombie
                     </div>
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     Enterprise
                 </div>
             </td>
-            <td>
-                <div class="td-flex-direction-column">
-                    <div>
-                        Production
-                    </div>
-                    <div>
-                        May 1, 2018
-                    </div>
+            <td class="align-middle">
+                <div class="pb-1">
+                    Production
+                </div>
+                <div class="text-secondary">
+                    May 1, 2018
                 </div>
             </td>
-            <td>
+            <td class="align-middle">
                 <div>
                     129,000
                 </div>
             </td>
-            <td>
-                <div style="justify-content: space-between;">
-                    <div>
-                        March 3, 2018
-                    </div>
-                    <div style="">
-                        ...
-                    </div>
+            <td class="align-middle">
+                <div>
+                    March 3, 2018
+                </div>
+            </td>
+            <td class="align-middle">
+                <div>
+                    ...
                 </div>
             </td>
         </tr>
-        <tr style="">
-            <td style="">
-                <div>
-                    <div class="table-company-logo">
-                    </div>
-                    <div class="table-company-name">
-                        Abercrombie
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div>
-                    Enterprise
-                </div>
-            </td>
-            <td>
-                <div class="td-flex-direction-column">
-                    <div>
-                        Production
-                    </div>
-                    <div>
-                        May 1, 2018
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div>
-                    129,000
-                </div>
-            </td>
-            <td>
-                <div style="justify-content: space-between;">
-                    <div>
-                        March 3, 2018
-                    </div>
-                    <div style="">
-                        ...
-                    </div>
-                </div>
-            </td>
-        </tr>
+
         </tbody>
     </table>
 </div>
-<footer class="px-5 pb-5">
-    <div class="pb-3 d-flex">
-        <div class="text-primary px-3">
+<footer class="px-4 pb-4">
+    <div class=" pb-1 d-flex">
+        <a class="text-primary">
             Changelog
-        </div>
-        <div class="text-primary px-3">
+        </a>
+        <a class="text-primary pl-1">
             Developer documentation
-        </div>
-        <div class="text-primary px-3">
+        </a>
+        <a class="text-primary pl-1">
             Studio help
-        </div>
-        <div class="text-primary px-3">
+        </a>
+        <a class="text-primary pl-1">
             Submit a bug
-        </div>
+        </a>
     </div>
-    <div class="d-flex">
-        <div class="px-3">
+    <div class="pb-1 d-flex">
+        <a>
             <span class="text-primary">Terms <span class="text-muted">+</span> Privacy</span><span class="slyce-copyright text-muted"> © Slyce 2018 </span>
-        </div>
+        </a>
     </div>
 </footer>
 

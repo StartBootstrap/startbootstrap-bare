@@ -10,8 +10,8 @@ code {
 }
 
 h1 {
-  font: bold normal 40px 'Circular Std', sans-serif;
-  line-height: 48px;
+  font: bold normal 5vh 'Circular Std', sans-serif;
+  line-height: 5vh;
   letter-spacing: 0.56px;
 }
 
@@ -32,17 +32,28 @@ h4 {
   line-height: 24px;
   letter-spacing: 0.23px;
 }
-footer{
+
+footer {
+  position: absolute;
   font-family: "Circular Std";
   letter-spacing: 0.44px;
   font-weight: 300;
-  line-height: 14px;
+  line-height: 1.5vh;
+  font-size: 1.5vh;
+  bottom: 0px;
 }
 
 p {
+  /*
   font: normal normal 24px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.24px;
+  */
+
+  font-family: "Circular Std";
+  font-size: 1.5vh;
+  font-weight: 300;
+  line-height: 2.5vh;
 
   &.p--small {
     font: normal normal 12px 'Circular Std', sans-serif;
@@ -67,8 +78,9 @@ a {
 .text--bigger {
   font-size: 16px;
 }
-.slyce-text--bigger{
-    font-size: 16px;
+
+.slyce-text--bigger {
+  font-size: 16px;
 }
 
 

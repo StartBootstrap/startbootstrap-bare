@@ -5,9 +5,10 @@
 }
 
 .navbar {
+  height:5vh;
   .nav-link {
     font-family: "Circular Std";
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: 300;
     letter-spacing: 0.44px;
     line-height: 14px;
@@ -19,7 +20,12 @@
     padding: 0rem 0rem 0rem 1rem;
   }
   .profile-icon{
-    width:32px;
-    height:32px;
+    width: 4vh;
+    height: 4vh;
+  }
+  .navbar-brand{
+    img{
+      height:4vh;
+    }
   }
 }
