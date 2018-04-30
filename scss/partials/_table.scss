@@ -1,7 +1,7 @@
 .table {
   .table-company-logo {
-    height: 48px;
-    width: 64px;
+    height: 5vh;
+    width: 7vh;
     border-radius: 6px;
     background-color: #E5EBED;
   }
@@ -14,21 +14,17 @@
   }
 
   tr {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 1.5vh;
     color: #132843;
     font-weight: 300;
   }
   .thead-light th {
     color: #7F8FA4;
     font-family: "Circular Std";
-    font-size: 12px;
+    font-size: 1.3vh;
     font-weight: 300;
     letter-spacing: 0.38px;
     line-height: 12px;
-    /*
-    padding: 1rem 0rem 1rem 0rem;
-    */
     background-color: #F2F5F6;
   }
 }
