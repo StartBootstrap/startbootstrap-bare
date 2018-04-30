@@ -1,30 +1,30 @@
+@import '../colors';
 .table {
   .table-company-logo {
     height: 5vh;
     width: 7vh;
     border-radius: 6px;
-    background-color: #E5EBED;
+    background-color: $gray_7;
   }
 
   thead-light > td {
     font-size: 14px;
     line-height: 14px;
-    color: #132843;
+    color: $gray_2;
     font-weight: 300;
   }
 
-  tr {
-    font-size: 1.5vh;
-    color: #132843;
+  thead.thead-light  th {
+    font-size: 1.2vh;
+    color: $gray_4;
     font-weight: 300;
+    background-color: #F2F5F6;
   }
-  .thead-light th {
-    color: #7F8FA4;
+  tbody td {
     font-family: "Circular Std";
     font-size: 1.3vh;
     font-weight: 300;
     letter-spacing: 0.38px;
-    line-height: 12px;
-    background-color: #F2F5F6;
+    line-height: 1.3vh;
   }
 }
