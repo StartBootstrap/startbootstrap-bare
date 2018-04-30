@@ -22,13 +22,13 @@ h2 {
 }
 
 h3 {
-  font: bold normal 20px 'Circular Std', sans-serif;
+  font: bold normal 2vh 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.34px;
 }
 
 h4 {
-  font: normal normal 16px 'Circular Std', sans-serif;
+  font: normal normal 1.5vh 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.23px;
 }
@@ -51,12 +51,12 @@ p {
   */
 
   font-family: "Circular Std";
-  font-size: 1.5vh;
+  font-size: 1.3vh;
   font-weight: 300;
   line-height: 2.5vh;
 
   &.p--small {
-    font: normal normal 12px 'Circular Std', sans-serif;
+    font: normal normal 1.1vh 'Circular Std', sans-serif;
     line-height: 16px;
   }
 }
@@ -82,5 +82,11 @@ a {
 .slyce-text--bigger {
   font-size: 16px;
 }
+
+.font-weight-light{
+  font-weight: 300 !important;
+}
+
+
 
 

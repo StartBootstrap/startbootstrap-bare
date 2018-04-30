@@ -1,0 +1,14 @@
+@import '../_colors';
+
+.rectangle-30 {
+  border: 1px solid #7F8FA4;
+  border-radius: 6px;
+  border-style: dashed;
+}
+
+.border-secondary{
+  border:white !important;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+}

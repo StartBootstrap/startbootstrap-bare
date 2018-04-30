@@ -41,20 +41,20 @@ label {
   color: $gray_6 !important;
 }
 
-input.form-control{
+input.form-control {
   border-radius: 8px;
 }
 
 .slyce-account-controls {
   border-top: solid 1px #E5EBED;
-  font-size:1.5vh;
+  font-size: 1.5vh;
   max-font-size: 5rem;
-  .btn{
+  .btn {
     font-size: 1.5vh;
     height: 3.25vh;
   }
   .input-group {
-    height:3vh;
+    height: 3vh;
 
     input.form-control::-webkit-input-placeholder {
       color: #7F8FA4;
@@ -63,16 +63,61 @@ input.form-control{
       font-weight: bold;
       letter-spacing: 0.44px;
       line-height: 14px;
-      text-align:center;
+      text-align: center;
     }
-    input.form-control::placeholder{
+    input.form-control::placeholder {
       color: #7F8FA4;
       font-family: "Circular Std";
-      font-size:1vh;
+      font-size: 1vh;
       font-weight: bold;
       letter-spacing: 0.44px;
       line-height: 14px;
-      text-align:center;
+      text-align: center;
     }
+  }
+}
+
+.custom-select {
+  min-width: 10vh;
+  @extend .text-primary;
+  font-size: 1vh;
+  font-weight: bold;
+  letter-spacing: -0.15px;
+  line-height: 18px;
+  min-height: 2.5vh;
+  border: 1px solid #287CF3;
+  border-radius: 8px;
+}
+
+.dropdown-toggle {
+  min-width: 0;
+  min-height: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  color: #132843;
+  font-family: "Circular Std";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.15px;
+  line-height: 20px;
+}
+
+.dropdown-item:hover {
+  background-color: $gray_8;
+}
+
+.dropdown-menu {
+  min-width: 240px;
+  .dropdown-item-box{
+    border-radius: 3px;
+    content: "";
+    background-color: #7F8FA4;
+    width: 14px;
+    height: 14px;
   }
 }
