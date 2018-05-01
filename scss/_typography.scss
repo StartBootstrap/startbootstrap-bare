@@ -47,6 +47,7 @@ p {
   font: normal normal 14px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.24px;
+  font-weight: 300;
 
   &.p--small {
     font: normal normal 12px 'Circular Std', sans-serif;
@@ -80,6 +81,24 @@ a {
   font-weight: 300 !important;
 }
 
+.active-services {
+  color: #7F8FA4;
+  font-family: "Circular Std";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 11px;
+}
 
-
-
+ul {
+  margin-left: -5px;
+  li {
+    color: #132843;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.24px;
+    line-height: 24px;
+    padding: 1px 0px 1px 10px;
+  }
+}
