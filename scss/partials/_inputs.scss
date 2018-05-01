@@ -255,3 +255,45 @@ label.col-form-label {
     width: 100%;
   }
 }
+
+.slyce-checkbox{
+  height: 16px;
+  width: 16px;
+  border: 1px solid $gray_6;
+  display: inline-block;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 1px;
+  
+  input{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .slyce-checkbox__mark{
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    .line{
+      background-color: red;
+    }
+    .line:first-child{
+      height: 2px;
+      width: 10px;
+      transform: rotate(45deg)
+    }
+    .line:last-child{
+      height: 2px;
+      width: 10px;
+      transform: rotate(-45deg)
+    }
+  }
+ input:checked + .slyce-checkbox__mark{
+  background-color: $primary;
+ }
+}
