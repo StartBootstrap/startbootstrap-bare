@@ -3,22 +3,20 @@
     padding: 7px;
     min-width: 120px;
     border-radius: 8px;
-    font-size: 14px;}
-
+    font-size: 14px;
+}
 .slyce-btn--loading,
 .slyce-btn--loading.btn-outline-primary {
     color: transparent !important;
     align-items: center;
     display: flex;
     transition: color 0s;
-
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
         color: transparent !important;
     }
-
-    &:after{
+    &:after {
         content: "";
         $size: 1.2em;
         $speed: .5s;
@@ -32,6 +30,16 @@
         border-bottom-color: transparent;
     }
 }
+
+.btn.slyce-btn--icon{
+    display: flex;
+    line-height: 16px;
+    svg{
+        margin-right: 5px;
+    }
+}
+
+
 @keyframes scale-in {
     from {
         transform: scale(0);
