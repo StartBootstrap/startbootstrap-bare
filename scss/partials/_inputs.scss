@@ -1,11 +1,9 @@
 @import '../_colors';
 $iconsPath: "../../assets/icons/";
-
-.slyce-form-section__header{
+.slyce-form-section__header {
   position: relative;
   margin-bottom: 24px;
-
-  h5{
+  h5 {
     display: inline-block;
     background-color: $white;
     margin: 0;
@@ -15,8 +13,7 @@ $iconsPath: "../../assets/icons/";
     font-size: 16px;
     font-weight: 300;
   }
-
-  &:before{
+  &:before {
     content: "";
     display: block;
     width: 100%;
@@ -37,23 +34,22 @@ input.form-control.slyce-input--underlined {
   padding: 6px 0;
   transition: padding .3s, border-color .3s;
   font-weight: 300;
-
   &:focus {
     padding: 6px 0;
   }
 }
 
-.slyce-input-container{
+.slyce-input-container {
   position: relative;
 }
 
-.slyce-input__message{
+.slyce-input__message {
   font-size: 14px;
   color: $gray_3;
 }
 
-.slyce-input{
-  &:after{
+.slyce-input {
+  &:after {
     content: "";
     opacity: 0;
     visibility: hidden;
@@ -65,22 +61,21 @@ input.form-control.slyce-input--underlined {
     transition: all .3s;
     background-size: contain;
   }
-
-  &.slyce-input--error{
-    .form-control{
+  &.slyce-input--error {
+    .form-control {
       border-color: $danger;
     }
-    &:after{
+    &:after {
       opacity: 1;
       visibility: visible;
       background-image: url('#{$iconsPath}/ic_validError.svg');
     }
   }
-  &.slyce-input--success{
-    .form-control{
+  &.slyce-input--success {
+    .form-control {
       border-color: $success;
     }
-    &:after{
+    &:after {
       opacity: 1;
       visibility: visible;
       background-image: url('#{$iconsPath}/ic_validSuccess.svg');
@@ -88,15 +83,12 @@ input.form-control.slyce-input--underlined {
   }
 }
 
-
-input.form-control{
+input.form-control {
   font-size: 14px;
   color: $gray_3;
   padding: 6px 16px;
   border-radius: 3px;
   font-weight: 300;
-
-
   &:focus {
     border-color: $gray_1;
     box-shadow: none;
@@ -112,7 +104,7 @@ label.slyce-label--major {
   margin-bottom: 5px;
 }
 
-label.col-form-label{
+label.col-form-label {
   font-weight: 300;
   color: $gray_3;
   font-size: 14px;
@@ -215,5 +207,51 @@ label.col-form-label{
     background-color: #7F8FA4;
     width: 14px;
     height: 14px;
+  }
+}
+
+.slyce-select-dropdown {
+  width: 100%;
+
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 8px;
+    top: 16px;
+    right: 10px;
+    transition: all .2s;
+    background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
+  }
+
+  &.show{
+    &::after{
+      transform: rotate(180deg)
+    }
+  }
+
+  &.show >.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    color: inherit;
+  }
+  &>button {
+    border-radius: 3px;
+    background-color: transparent;
+    color: $gray_3;
+    border-color: $gray_6;
+    text-align: left;
+    padding: 6px 16px;
+    &:hover,
+    &active,
+    &:focus {
+      background-color: transparent !important;
+      color: inherit !important;
+    }
+  }
+  a,
+  button,
+  .dropdown-menu {
+    width: 100%;
   }
 }

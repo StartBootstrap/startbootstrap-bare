@@ -30,6 +30,9 @@ $iconsPath: "../assets/icons/";
         color: $primary !important;
         border-color: $primary !important;
         opacity: .8;
+        .slyce-svg-icon{
+            fill: $primary !important;
+        }
     }
     &:focus{}
 }

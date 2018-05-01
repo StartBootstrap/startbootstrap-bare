@@ -285,7 +285,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="btn slyce-btn--close-modal"></button>
-                <div class="modal-body">
+
+                <div class="modal-header">
                     <h3>New Account
                         <svg data-toggle="tooltip" data-placement="top" title="Tooltip on top" width="16px" height="16px" viewBox="0 0 16 16" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -307,6 +308,8 @@
                             </g>
                         </svg>
                     </h3>
+                </div>
+                <div class="modal-body">
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -359,7 +362,7 @@
 
 
                     <div class="slyce-form-section__header">
-                        <h5>Section</h5>
+                        <h5>Contact Info</h5>
                     </div>
 
                     <div class="form-group row">
@@ -392,6 +395,41 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label text-right">Phone Number</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slyce-form-section__header">
+                        <h5>Plan Details</h5>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label text-right">Enrolled Plan</label>
+                        <div class="col-sm-8">
+                            <div class="dropdown slyce-select-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Select Plan...
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary px-2 mt-3">Create Account</button>
                 </div>
             </div>
         </div>
