@@ -1,0 +1,58 @@
+$gray_1: #001734;
+$gray_2: #132843;
+$gray_3: #546175;
+$gray_4: #7f8fa4;
+$gray_5: #b8c2cc;
+$gray_6: #d4dbe0;
+$gray_7: #e5ebed;
+$gray_8: #f2f5f6;
+
+$white: #fff;
+
+$primary_alt: #1b55a6;
+
+$primary: #287cf3;
+$info: #30a8f0;
+$success: #57d98f;
+$warning: #ffe345;
+$orange: #ffa94c;
+$coral: #fd7676;
+$purple: #c589e0;
+
+$link: rgb(40, 124, 243);
+$link_hover: rgb(40, 124, 243);
+$link_active: rgb(27, 85, 166);
+
+$theme-colors: (
+  "primary": #287cf3,
+  "danger": #fd7676,
+  "info": #30a8f0,
+  "success": #57d98f,
+  "warning": #ffe345
+);
+
+$filter-blue: #001734;
+
+.text-muted{
+  color: $gray_3;
+}
+
+.text-primary{
+  color: $primary;
+}
+
+.text-dark{
+  color:$gray_2;
+}
+
+.bg-dark{
+  color: $gray_2;
+}
+
+.text-secondary{
+  color: $gray_4;
+}
+
+.bg-secondary{
+  background-color: $gray_8 !important;
+}

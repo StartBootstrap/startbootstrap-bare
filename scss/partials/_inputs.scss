@@ -1,0 +1,133 @@
+@import '../_colors';
+
+input.form-control.underlined {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $gray_6;
+  padding: 6px 0;
+  font-weight: 300;
+  font-size: 1vh;
+  transition: padding .3s, border-color .3s;
+
+  &:focus {
+    padding: 6px 10px;
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+
+label {
+  margin: 0;
+  color: $primary;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.44px;
+  margin-bottom: 5px;
+}
+
+::-webkit-input-placeholder {
+  color: $gray_6 !important;
+}
+
+::-moz-placeholder {
+  color: $gray_6 !important;
+}
+
+:-ms-input-placeholder {
+  color: $gray_6 !important;
+}
+
+:-moz-placeholder {
+  color: $gray_6 !important;
+}
+
+input.form-control {
+  border-radius: 8px;
+}
+
+.slyce-account-controls {
+  color: #132843;
+  font-family: "Circular Std";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
+  .btn {
+    color: #FFFFFF;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+  }
+}
+
+.input-group {
+  input.form-control::-webkit-input-placeholder {
+    color: #7F8FA4;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+    text-align: center;
+  }
+  input.form-control::placeholder {
+    color: #7F8FA4;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+.custom-select {
+  min-width: 10vh;
+  @extend .text-primary;
+  font-size: 1vh;
+  font-weight: bold;
+  letter-spacing: -0.15px;
+  line-height: 18px;
+  min-height: 2.5vh;
+  border: 1px solid #287CF3;
+  border-radius: 8px;
+}
+
+.dropdown-toggle {
+  min-width: 0;
+  min-height: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  color: #132843;
+  font-family: "Circular Std";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.15px;
+  line-height: 20px;
+}
+
+.dropdown-item:hover {
+  background-color: $gray_8;
+}
+
+.dropdown-menu {
+  min-width: 240px;
+  .dropdown-item-box {
+    border-radius: 3px;
+    content: "";
+    background-color: #7F8FA4;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.dropdown-menu-left {
+  position:absolute;
+  left: -217px !important;
+}

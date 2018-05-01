@@ -1,0 +1,36 @@
+@import '../colors';
+
+.hero{
+    width: 50%;
+    height: 100%;
+    background-color: $primary-alt;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .hero__container{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: auto;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -10px;
+            background-color: $primary-alt;
+            height: 100%;
+            width: 25%;
+            max-width: 250px;
+            display: block;
+            background: rgb(27,85,166);
+            background: linear-gradient(90deg, rgba(27,85,166,1) 0%, rgba(27,85,166,1) 10%, rgba(27,85,166,0) 100%);
+        }
+    }
+    .hero__image{
+        height: 100%;
+    }
+
+}
