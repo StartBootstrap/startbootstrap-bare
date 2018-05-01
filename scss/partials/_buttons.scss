@@ -1,3 +1,4 @@
+$iconsPath: "../assets/icons/";
 @import '../_colors';
 .btn {
     padding: 7px;
@@ -39,6 +40,25 @@
     }
 }
 
+.slyce-btn--close-modal{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    min-width: auto;
+    padding: 0;
+    border-radius: 3px;
+    background-image: url('#{$iconsPath}/ic_close.svg');
+    background-size: 14px 14px;
+    background-position: center center;
+    z-index: 99;
+    background-repeat: no-repeat;
+    &:active{
+        opacity: .9;
+        background-image: url('#{$iconsPath}/ic_close.svg') !important;
+    }
+}
 
 @keyframes scale-in {
     from {
