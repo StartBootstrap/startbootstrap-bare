@@ -1,12 +1,14 @@
 @import '../_colors';
 
 input.form-control.underlined {
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: normal;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid $gray_6;
   padding: 6px 0;
   font-weight: 300;
-  font-size: 1vh;
   transition: padding .3s, border-color .3s;
 
   &:focus {
@@ -16,7 +18,15 @@ input.form-control.underlined {
   }
 }
 
-label {
+input.form-control{
+  font-size: 14px;
+  font-weight: 300;
+  color: $gray_3;
+  padding: 6px 16px;
+  border-radius: 3px;
+}
+
+label.label--major {
   margin: 0;
   color: $primary;
   font-size: 12px;
@@ -25,20 +35,31 @@ label {
   margin-bottom: 5px;
 }
 
+label{
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 ::-webkit-input-placeholder {
   color: $gray_6 !important;
+  font-weight: 300;
 }
 
 ::-moz-placeholder {
   color: $gray_6 !important;
+  font-weight: 300;
 }
 
 :-ms-input-placeholder {
   color: $gray_6 !important;
+  font-weight: 300;
 }
 
 :-moz-placeholder {
   color: $gray_6 !important;
+  font-weight: 300;
 }
 
 input.form-control {
