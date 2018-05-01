@@ -10,8 +10,8 @@ input.form-control.underlined {
   transition: padding .3s, border-color .3s;
 
   &:focus {
-    padding: 6px 10px;
-    border-color: $primary;
+    padding: 6px 0;
+    border-color: $gray_1;
     box-shadow: none;
   }
 }
