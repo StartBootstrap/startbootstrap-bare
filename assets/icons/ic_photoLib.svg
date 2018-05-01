@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_photoLib</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S1---Styleguide" transform="translate(-388.000000, -2171.000000)">
+            <g id="04---Icons" transform="translate(260.000000, 2094.000000)">
+                <g id="Icons" transform="translate(0.000000, 75.000000)">
+                    <g id="ic_photoLib" transform="translate(128.000000, 0.000000)">
+                        <rect id="Rectangle-4" x="0" y="0" width="16" height="16"></rect>
+                        <path d="M3.84,7.4 C4.5472,7.4 5.12,6.8624 5.12,6.2 C5.12,5.537 4.5472,5 3.84,5 C3.13344,5 2.56,5.537 2.56,6.2 C2.56,6.8624 3.13344,7.4 3.84,7.4 L3.84,7.4 Z M8.72192,9.386 L6.80832,7.4774 L4.896,10.5404 L3.46112,9.1346 L1.90656,12.2126 L14.10176,12.2126 L11.35168,5.4656 L8.72192,9.386 Z M1.28,12.8 L14.72,12.8 L14.72,3.2 L1.28,3.2 L1.28,12.8 Z M16,12.8 L16,3.2 C16,2.537 15.4272,2 14.72,2 L1.28,2 C0.5728,2 0,2.537 0,3.2 L0,12.8 C0,13.4624 0.5728,14 1.28,14 L14.72,14 C15.4272,14 16,13.4624 16,12.8 L16,12.8 Z" id="Icon" fill="#546175"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

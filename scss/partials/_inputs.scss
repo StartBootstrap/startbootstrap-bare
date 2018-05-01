@@ -1,5 +1,5 @@
 @import '../_colors';
-$iconsPath: "../../dist/assets/icons/";
+$iconsPath: "../../assets/icons/";
 
 
 input.form-control.slyce-input--underlined {
@@ -11,6 +11,7 @@ input.form-control.slyce-input--underlined {
   border-bottom: 1px solid $gray_6;
   padding: 6px 0;
   transition: padding .3s, border-color .3s;
+  font-weight: 300;
 
   &:focus {
     padding: 6px 0;
@@ -68,6 +69,7 @@ input.form-control{
   color: $gray_3;
   padding: 6px 16px;
   border-radius: 3px;
+  font-weight: 300;
 
 
   &:focus {
