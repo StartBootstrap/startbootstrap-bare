@@ -1,6 +1,8 @@
 @import '../_colors';
+$iconsPath: "../../dist/assets/icons/";
 
-input.form-control.underlined {
+
+input.form-control.slyce-input--underlined {
   font-size: 20px;
   line-height: 19px;
   letter-spacing: normal;
@@ -8,25 +10,73 @@ input.form-control.underlined {
   border-radius: 0;
   border-bottom: 1px solid $gray_6;
   padding: 6px 0;
-  font-weight: 300;
   transition: padding .3s, border-color .3s;
 
   &:focus {
     padding: 6px 0;
+  }
+}
+
+.slyce-input-container{
+  position: relative;
+}
+
+.slyce-input__message{
+  font-size: 14px;
+  color: $gray_3;
+}
+
+.slyce-input{
+  &:after{
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all .3s;
+    background-size: contain;
+  }
+
+  &.slyce-input--error{
+    .form-control{
+      border-color: $danger;
+    }
+    &:after{
+      opacity: 1;
+      visibility: visible;
+      background-image: url('#{$iconsPath}/ic_validError.svg');
+    }
+  }
+  &.slyce-input--success{
+    .form-control{
+      border-color: $success;
+    }
+    &:after{
+      opacity: 1;
+      visibility: visible;
+      background-image: url('#{$iconsPath}/ic_validSuccess.svg');
+    }
+  }
+}
+
+
+input.form-control{
+  font-size: 14px;
+  color: $gray_3;
+  padding: 6px 16px;
+  border-radius: 3px;
+
+
+  &:focus {
     border-color: $gray_1;
     box-shadow: none;
   }
 }
 
-input.form-control{
-  font-size: 14px;
-  font-weight: 300;
-  color: $gray_3;
-  padding: 6px 16px;
-  border-radius: 3px;
-}
-
-label.label--major {
+label.slyce-label--major {
   margin: 0;
   color: $primary;
   font-size: 12px;
@@ -38,32 +88,23 @@ label.label--major {
 label{
   font-size: 14px;
   letter-spacing: 0.24px;
-  font-weight: 300;
   line-height: 24px;
 }
 
 ::-webkit-input-placeholder {
   color: $gray_6 !important;
-  font-weight: 300;
 }
 
 ::-moz-placeholder {
   color: $gray_6 !important;
-  font-weight: 300;
 }
 
 :-ms-input-placeholder {
   color: $gray_6 !important;
-  font-weight: 300;
 }
 
 :-moz-placeholder {
   color: $gray_6 !important;
-  font-weight: 300;
-}
-
-input.form-control {
-  border-radius: 8px;
 }
 
 .slyce-account-controls {
