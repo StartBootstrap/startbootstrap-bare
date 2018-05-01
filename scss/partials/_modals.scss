@@ -1,0 +1,16 @@
+@import '../_colors';
+
+.modal-dialog{
+    border-radius: 8px;
+
+    .modal-body{
+        padding: 40px;
+    }
+
+    p {
+        color: $gray_4;
+        font-weight: 300;
+    }
+}
+
+

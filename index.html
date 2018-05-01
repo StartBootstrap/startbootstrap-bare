@@ -15,36 +15,121 @@
 </head>
 
 <body>
-<nav class="navbar  navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="dist/assets/images/slyce_studio_logo.png" height="32" width="auto"/></a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Studio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Learn</a>
-            </li>
-        </ul>
-    </div>
-    <div class="rounded-circle">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="dist/assets/images/slyce_studio_logo.png" height="32" width="auto" />
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Studio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Learn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rounded-circle">
 
-    </div>
-</nav>
+        </div>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="dist/javascript/slyce.js"></script>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">E-mail</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input">
+                        <input type="email" class="form-control slyce-input--underlined" placeholder="Enter e-mail">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">E-mail</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--error">
+                        <input type="email" class="form-control slyce-input--underlined" placeholder="Enter e-mail">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">Password</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--success">
+                        <input type="password" class="form-control slyce-input--underlined" placeholder="Enter password">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Email</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Email</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--success">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Success message!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Password</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--error">
+                        <input type="Password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/javascript/slyce.js"></script>
 
 </body>
 
 </html>
-
-
