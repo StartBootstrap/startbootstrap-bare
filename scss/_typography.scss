@@ -10,8 +10,8 @@ code {
 }
 
 h1 {
-  font: bold normal 5vh 'Circular Std', sans-serif;
-  line-height: 5vh;
+  font: bold normal 40px 'Circular Std', sans-serif;
+  line-height: 48px;
   letter-spacing: 0.56px;
 }
 
@@ -22,41 +22,34 @@ h2 {
 }
 
 h3 {
-  font: bold normal 2vh 'Circular Std', sans-serif;
+  font: bold normal 20px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.34px;
 }
 
 h4 {
-  font: normal normal 1.5vh 'Circular Std', sans-serif;
+  font: normal normal 16px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.23px;
 }
 
 footer {
   position: absolute;
-  font-family: "Circular Std";
-  letter-spacing: 0.44px;
-  font-weight: 300;
-  line-height: 1.5vh;
-  font-size: 1.5vh;
   bottom: 0px;
+  font-family: "Circular Std";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.44px;
+  line-height: 14px;
 }
 
 p {
-  /*
-  font: normal normal 24px 'Circular Std', sans-serif;
+  font: normal normal 14px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.24px;
-  */
-
-  font-family: "Circular Std";
-  font-size: 1.3vh;
-  font-weight: 300;
-  line-height: 2.5vh;
 
   &.p--small {
-    font: normal normal 1.1vh 'Circular Std', sans-serif;
+    font: normal normal 12px 'Circular Std', sans-serif;
     line-height: 16px;
   }
 }
@@ -83,7 +76,7 @@ a {
   font-size: 16px;
 }
 
-.font-weight-light{
+.font-weight-light {
   font-weight: 300 !important;
 }
 

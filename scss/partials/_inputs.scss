@@ -22,7 +22,7 @@ label {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.44px;
-  margin-bottom: 5px;
+  margin-bottom: 5px;footer
 }
 
 ::-webkit-input-placeholder {
@@ -46,34 +46,39 @@ input.form-control {
 }
 
 .slyce-account-controls {
-  border-top: solid 1px #E5EBED;
-  font-size: 1.5vh;
-  max-font-size: 5rem;
+  color: #132843;
+  font-family: "Circular Std";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
   .btn {
-    font-size: 1.5vh;
-    height: 3.25vh;
+    color: #FFFFFF;
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
   }
-  .input-group {
-    height: 3vh;
+}
 
-    input.form-control::-webkit-input-placeholder {
-      color: #7F8FA4;
-      font-family: "Circular Std";
-      font-size: 1.5vh;
-      font-weight: bold;
-      letter-spacing: 0.44px;
-      line-height: 14px;
-      text-align: center;
-    }
-    input.form-control::placeholder {
-      color: #7F8FA4;
-      font-family: "Circular Std";
-      font-size: 1vh;
-      font-weight: bold;
-      letter-spacing: 0.44px;
-      line-height: 14px;
-      text-align: center;
-    }
+.input-group {
+  input.form-control::-webkit-input-placeholder {
+    color: #7F8FA4;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+    text-align: center;
+  }
+  input.form-control::placeholder {
+    color: #7F8FA4;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+    text-align: center;
   }
 }
 
@@ -113,7 +118,7 @@ input.form-control {
 
 .dropdown-menu {
   min-width: 240px;
-  .dropdown-item-box{
+  .dropdown-item-box {
     border-radius: 3px;
     content: "";
     background-color: #7F8FA4;
