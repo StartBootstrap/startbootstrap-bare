@@ -134,3 +134,11 @@ $iconsPath: "../assets/icons/";
         transform: rotate(360deg);
     }
 }
+
+.slyce-btn-copy{
+  min-width:0;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding:0;
+}
