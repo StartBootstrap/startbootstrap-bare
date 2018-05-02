@@ -319,7 +319,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Company Name</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Company Name</label>
                         <div class="col-sm-8">
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
@@ -330,7 +330,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Company Logo</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Company Logo</label>
                         <div class="col-sm-8">
                             <button type="button" class="btn px-2 slyce-btn--icon btn-outline-primary btn--file">
                                 <svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -366,7 +366,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">First Name</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">First Name</label>
                         <div class="col-sm-8">
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
@@ -376,7 +376,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Last Name</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Last Name</label>
                         <div class="col-sm-8">
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
@@ -386,7 +386,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Email</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Email</label>
                         <div class="col-sm-8">
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
@@ -396,7 +396,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Phone Number</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Phone Number</label>
                         <div class="col-sm-8">
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
@@ -411,7 +411,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Enrolled Plan</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Enrolled Plan</label>
                         <div class="col-sm-8">
                             <div class="dropdown slyce-select-dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -428,7 +428,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Account Status</label>
+                        <label class="col-sm-4 slyce-col-form-label text-right">Account Status</label>
                         <div class="col-sm-8">
                             <div class="dropdown slyce-select-dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -445,16 +445,63 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label text-right">Enabled Services</label>
-                        <div class="col-sm-8">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Enabled Services</label>
+                        <div class="col-sm-8 slyce-col-form-controls">
                             <p>Select services that can be performed:</p>
-                            <div class="slyce-checkbox">
-                                <input type="checkbox">
-                                <div class="slyce-checkbox__mark">
-                                    <div class="line"></div>
-                                    <div class="line"></div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" disabled checked id="vs-3d">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
                                 </div>
+                                <label for="vs-3d">Visual Search (3D)</label>
                             </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" checked>
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label>Barcode Detection (2D)</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-radio">
+                                    <input type="radio" checked disabled>
+                                    <div class="slyce-radio__mark"></div>
+                                </div>
+                                <label>Barcode Detection (2D)</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-radio">
+                                    <input type="radio">
+                                    <div class="slyce-radio__mark"></div>
+                                </div>
+                                <label>Barcode Detection (2D)</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="slyce-form-section__header">
+                        <h5>Notes</h5>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem unde, quis ipsa inventore
+                        autem consequatur architecto iusto nesciunt est laudantium at aliquam labore delectus quo deserunt
+                        molestias veniam. Dolore.</p>
+
+                    <div class="form-group row">
+                        <div class="col">
+                            <textarea cols="30" rows="10"></textarea>
                         </div>
                     </div>
 
