@@ -1,9 +1,41 @@
+$iconsPath: "../assets/icons/";
 @import '../_colors';
 .btn {
     padding: 7px;
     min-width: 120px;
     border-radius: 8px;
-    font-size: 14px;}
+    font-size: 14px;
+    cursor: pointer;
+
+    .slyce-svg-icon{
+        transition: all .2s;
+    }
+}
+
+.btn-outline-primary{
+    transition: all .2s;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent !important;
+    }
+    &:hover{
+        color: $primary_alt;
+        border-color: $primary_alt;
+        .slyce-svg-icon{
+            fill: $primary_alt !important;
+        }
+    }
+    &:active{
+        color: $primary !important;
+        border-color: $primary !important;
+        opacity: .8;
+        .slyce-svg-icon{
+            fill: $primary !important;
+        }
+    }
+    &:focus{}
+}
 
 .slyce-btn--loading,
 .slyce-btn--loading.btn-outline-primary {
@@ -11,14 +43,12 @@
     align-items: center;
     display: flex;
     transition: color 0s;
-
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
         color: transparent !important;
     }
-
-    &:after{
+    &:after {
         content: "";
         $size: 1.2em;
         $speed: .5s;
@@ -32,6 +62,61 @@
         border-bottom-color: transparent;
     }
 }
+
+.btn.slyce-btn--icon{
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    svg, img{
+        margin-right: 8px;
+    }
+
+    &.btn-outline-primary .slyce-svg-icon{
+        fill: $primary;
+    }
+
+    &.btn-primary .slyce-svg-icon{
+        fill: $white;
+    }
+}
+
+.btn--file{
+    position: relative;
+    border-radius: 100px;
+    border-width: 2px;
+    input{
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+    }
+}
+
+.slyce-btn--close-modal{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    min-width: auto;
+    padding: 0;
+    border-radius: 3px;
+    background-image: url('#{$iconsPath}/ic_close.svg');
+    background-size: 14px 14px;
+    background-position: center center;
+    z-index: 99;
+    background-repeat: no-repeat;
+    &:active{
+        opacity: .9;
+        background-image: url('#{$iconsPath}/ic_close.svg') !important;
+    }
+}
+
 @keyframes scale-in {
     from {
         transform: scale(0);

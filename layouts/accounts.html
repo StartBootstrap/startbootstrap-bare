@@ -15,48 +15,51 @@
 </head>
 
 <body>
-<nav class="navbar  navbar-expand navbar-light bg-light py-0 px-4">
-    <a class="navbar-brand" href="#"><img src="../assets/images/slyce_studio_logo.png" height="32" width="auto"/></a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="d-flex align-items-center nav-item active py-0 px-1">
-                <a class="nav-link" href="#">Studio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="d-flex align-items-center nav-item py-0 px-1">
-                <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="d-flex align-items-center nav-item py-0 px-1">
-                <a class="nav-link" href="#">Learn</a>
-            </li>
-            <li class="align-items-center justify-content-end d-flex nav-item pl-1">
-                <div>
-                    <a class="profile-icon nav-link bg-dark rounded-circle" href="#">
+    <nav class="navbar  navbar-expand navbar-light bg-light py-0 px-4">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/images/slyce_studio_logo.png" height="32" width="auto" />
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="d-flex align-items-center nav-item active py-0 px-1">
+                    <a class="nav-link" href="#">Studio
+                        <span class="sr-only">(current)</span>
                     </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="single-col px-5 py-2">
-    <div class="border-bottom-1">
-        <h1 class="m-0">Title</h1>
-        <p class="pt-2 text-muted p--small">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius augue vel ipsum hendrerit accumsan.
-            In vel dolor vitae orci pharetra tempor quis eu eros.
-        </p>
-    </div>
-    <div class="py-2 d-flex align-items-center justify-content-between slyce-account-controls">
-        <div>Accounts (32)</div>
-        <div class="input-group w-25">
-            <input type="text" class="form-control" placeholder="Search accounts" aria-label="Username" aria-describedby="basic-addon1">
+                </li>
+                <li class="d-flex align-items-center nav-item py-0 px-1">
+                    <a class="nav-link" href="#">Analytics</a>
+                </li>
+                <li class="d-flex align-items-center nav-item py-0 px-1">
+                    <a class="nav-link" href="#">Learn</a>
+                </li>
+                <li class="align-items-center justify-content-end d-flex nav-item pl-1">
+                    <div>
+                        <a class="profile-icon nav-link bg-dark rounded-circle" href="#">
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div>
-            <button type="submit" class="btn btn-primary px-2">
-                <div class=" d-flex align-items-center">
+    </nav>
+    <div class="container py-2">
+        <div class="border-bottom-1">
+            <h1 class="m-0">Title</h1>
+            <p class="pt-2 text-muted p--small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius augue vel ipsum hendrerit accumsan. In vel dolor vitae
+                orci pharetra tempor quis eu eros.
+            </p>
+        </div>
+        <div class="py-2 d-flex align-items-center justify-content-between slyce-account-controls">
+            <div>Accounts (32)</div>
+            <div class="input-group w-25">
+                <input type="text" class="form-control" placeholder="Search accounts" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary px-2 slyce-btn--icon" data-toggle="modal" data-target="#exampleModal">
                     <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
                         <title>ic_add</title>
@@ -68,312 +71,482 @@
                                     <g id="Icons" transform="translate(0.000000, 75.000000)">
                                         <g id="ic_add" transform="translate(32.000000, 0.000000)">
                                             <rect id="Rectangle-3" x="0" y="0" width="16" height="16"></rect>
-                                            <path d="M9,7.0175494 L15.1176471,7.0175494 C15.3937894,7.0175494 15.6176471,7.24140703 15.6176471,7.5175494 L15.6176471,8.5175494 C15.6176471,8.79369178 15.3937894,9.0175494 15.1176471,9.0175494 L9,9.0175494 L9,15.1351965 C9,15.4113388 8.77614237,15.6351965 8.5,15.6351965 L7.5,15.6351965 C7.22385763,15.6351965 7,15.4113388 7,15.1351965 L7,9.0175494 L0.882352941,9.0175494 C0.606210566,9.0175494 0.382352941,8.79369178 0.382352941,8.5175494 L0.382352941,7.5175494 C0.382352941,7.24140703 0.606210566,7.0175494 0.882352941,7.0175494 L7,7.0175494 L7,0.899902344 C7,0.623759969 7.22385763,0.399902344 7.5,0.399902344 L8.5,0.399902344 C8.77614237,0.399902344 9,0.623759969 9,0.899902344 L9,7.0175494 Z" id="Combined-Shape" fill="white"></path>
+                                            <path d="M9,7.0175494 L15.1176471,7.0175494 C15.3937894,7.0175494 15.6176471,7.24140703 15.6176471,7.5175494 L15.6176471,8.5175494 C15.6176471,8.79369178 15.3937894,9.0175494 15.1176471,9.0175494 L9,9.0175494 L9,15.1351965 C9,15.4113388 8.77614237,15.6351965 8.5,15.6351965 L7.5,15.6351965 C7.22385763,15.6351965 7,15.4113388 7,15.1351965 L7,9.0175494 L0.882352941,9.0175494 C0.606210566,9.0175494 0.382352941,8.79369178 0.382352941,8.5175494 L0.382352941,7.5175494 C0.382352941,7.24140703 0.606210566,7.0175494 0.882352941,7.0175494 L7,7.0175494 L7,0.899902344 C7,0.623759969 7.22385763,0.399902344 7.5,0.399902344 L8.5,0.399902344 C8.77614237,0.399902344 9,0.623759969 9,0.899902344 L9,7.0175494 Z"
+                                                id="Combined-Shape" class="slyce-svg-icon" fill="white"></path>
                                         </g>
                                     </g>
                                 </g>
                             </g>
                         </g>
                     </svg>
-                    <div class="px-1">
-                        New account
-                    </div>
-                </div>
-            </button>
+                    New account
+                </button>
+            </div>
         </div>
     </div>
-    <table class="table rounded-top">
-        <thead class="thead-light rounded-top">
-        <tr>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">Name</th>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">Plan</th>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">Status</th>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">Operations</th>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">Date Created</th>
-            <th class="py-1 px-2 text-secondary align-middle" scope="col">   </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="border-bottom border-top">
-            <td class="py-2 align-middle">
-                <div class="h-100 d-flex align-items-center">
-                    <div class="table-company-logo">
-                    </div>
-                    <div class="ml-2 text-primary table-company-name">
-                        Abercrombie
-                    </div>
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    Enterprise
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="pb-1">
-                    Production
-                </div>
-                <div class="text-secondary">
-                    May 1, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    129,000
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    March 3, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Edit Account Settings
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Delete Account
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Copy Account API Keys
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="border-bottom border-top">
-            <td class="py-2 align-middle">
-                <div class="h-100 d-flex align-items-center">
-                    <div class="table-company-logo">
-                    </div>
-                    <div class="ml-2 text-primary table-company-name">
-                        Abercrombie
-                    </div>
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    Enterprise
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="pb-1">
-                    Production
-                </div>
-                <div class="text-secondary">
-                    May 1, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    129,000
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    March 3, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Edit Account Settings
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Delete Account
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Copy Account API Keys
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="border-bottom border-top">
-            <td class="py-2 align-middle">
-                <div class="h-100 d-flex align-items-center">
-                    <div class="table-company-logo">
-                    </div>
-                    <div class="ml-2 text-primary table-company-name">
-                        Abercrombie
-                    </div>
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    Enterprise
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="pb-1">
-                    Production
-                </div>
-                <div class="text-secondary">
-                    May 1, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    129,000
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    March 3, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Edit Account Settings
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Delete Account
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Copy Account API Keys
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="border-bottom border-top">
-            <td class="py-2 align-middle">
-                <div class="h-100 d-flex align-items-center">
-                    <div class="table-company-logo">
-                    </div>
-                    <div class="ml-2 text-primary table-company-name">
-                        Abercrombie
-                    </div>
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    Enterprise
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="pb-1">
-                    Production
-                </div>
-                <div class="text-secondary">
-                    May 1, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    129,000
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div>
-                    March 3, 2018
-                </div>
-            </td>
-            <td class="py-2 align-middle">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Edit Account Settings
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Delete Account
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                            <div class="dropdown-item-box rounded">
-                            </div>
-                            <div class="pl-1">
-                                Copy Account API Keys
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<footer class="position-absolute px-4 pb-4">
-    <div class=" pb-1 d-flex">
-        <a class="text-primary">
-            Changelog
-        </a>
-        <a class="text-primary pl-1">
-            Developer documentation
-        </a>
-        <a class="text-primary pl-1">
-            Studio help
-        </a>
-        <a class="text-primary pl-1">
-            Submit a bug
-        </a>
-    </div>
-    <div class="pb-1 d-flex">
-        <a>
-            <span class="text-primary">Terms <span class="text-muted">+</span> Privacy</span><span class="slyce-copyright text-muted"> © Slyce 2018 </span>
-        </a>
-    </div>
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="../../vendor/jquery/jquery.min.js"></script>
-<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../javascript/slyce.js"></script>
+    <div class="container">
+        <table class="table rounded-top">
+            <thead class="thead-light rounded-top">
+                <tr>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col">Name</th>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col">Plan</th>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col">Status</th>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col">Operations</th>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col">Date Created</th>
+                    <th class="py-1 px-2 text-secondary align-middle" scope="col"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom border-top">
+                    <td class="py-2 align-middle">
+                        <div class="h-100 d-flex align-items-center">
+                            <div class="table-company-logo">
+                            </div>
+                            <div class="ml-2 text-primary table-company-name">
+                                Abercrombie
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            Enterprise
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div class="pb-1">
+                            Production
+                        </div>
+                        <div class="text-secondary">
+                            May 1, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            129,000
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            March 3, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            ...
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom border-top">
+                    <td class="py-2 align-middle">
+                        <div class="h-100 d-flex align-items-center">
+                            <div class="table-company-logo">
+                            </div>
+                            <div class="ml-2 text-primary table-company-name">
+                                Abercrombie
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            Enterprise
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div class="pb-1">
+                            Production
+                        </div>
+                        <div class="text-secondary">
+                            May 1, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            129,000
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            March 3, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            ...
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom border-top">
+                    <td class="py-2 align-middle">
+                        <div class="h-100 d-flex align-items-center">
+                            <div class="table-company-logo">
+                            </div>
+                            <div class="ml-2 text-primary table-company-name">
+                                Abercrombie
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            Enterprise
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div class="pb-1">
+                            Production
+                        </div>
+                        <div class="text-secondary">
+                            May 1, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            129,000
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            March 3, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            ...
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom border-top">
+                    <td class="py-2 align-middle">
+                        <div class="h-100 d-flex align-items-center">
+                            <div class="table-company-logo">
+                            </div>
+                            <div class="ml-2 text-primary table-company-name">
+                                Abercrombie
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            Enterprise
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div class="pb-1">
+                            Production
+                        </div>
+                        <div class="text-secondary">
+                            May 1, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            129,000
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            March 3, 2018
+                        </div>
+                    </td>
+                    <td class="py-2 align-middle">
+                        <div>
+                            ...
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="px-4 pb-4">
+        <div class=" pb-1 d-flex">
+            <a class="text-primary">
+                Changelog
+            </a>
+            <a class="text-primary pl-1">
+                Developer documentation
+            </a>
+            <a class="text-primary pl-1">
+                Studio help
+            </a>
+            <a class="text-primary pl-1">
+                Submit a bug
+            </a>
+        </div>
+        <div class="pb-1 d-flex">
+            <a>
+                <span class="text-primary">Terms
+                    <span class="text-muted">+</span> Privacy</span>
+                <span class="slyce-copyright text-muted"> © Slyce 2018 </span>
+            </a>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="exampleModal" class="" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" data-dismiss="modal" class="btn slyce-btn--close-modal"></button>
+
+                <div class="modal-header">
+                    <h3>New Account
+                        <svg data-toggle="tooltip" data-placement="top" title="Tooltip on top" width="16px" height="16px" viewBox="0 0 16 16" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                            <title>ic_help</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="S1---Styleguide" transform="translate(-420.000000, -2169.000000)" fill="#546175">
+                                    <g id="04---Icons" transform="translate(260.000000, 2094.000000)">
+                                        <g id="Icons" transform="translate(0.000000, 75.000000)">
+                                            <g id="ic_help" transform="translate(160.000000, 0.000000)">
+                                                <path d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14.2222222 C8.49091978,14.2222222 8.88888889,13.8242531 8.88888889,13.3333333 C8.88888889,12.8424136 8.49091978,12.4444444 8,12.4444444 C7.50908022,12.4444444 7.11111111,12.8424136 7.11111111,13.3333333 C7.11111111,13.8242531 7.50908022,14.2222222 8,14.2222222 Z M11.4574147,5.37697778 C11.1608926,4.09431111 10.1154964,3.05431111 8.82967697,2.76275556 C6.50736592,2.23475556 4.45931554,3.95208889 4.44417778,6.17786667 C4.44417778,6.18586667 4.44863006,6.30853333 4.44863006,6.30853333 C4.49404335,6.75742222 4.86091151,7.11208889 5.32216807,7.11208889 C5.81280971,7.11208889 6.21084385,6.71475556 6.21262476,6.22497778 C6.2117343,5.24364444 7.01047395,4.44542222 7.99353814,4.44542222 C8.97571186,4.44542222 9.77445151,5.24275556 9.77445151,6.2232 C9.77445151,7.20275556 8.97571186,8.00097778 7.99353814,8.00097778 L8.00066179,8.00097778 C7.51269152,8.00097778 7.11910967,8.39297778 7.11198601,8.87831111 L7.11198601,8.91297778 L7.11198601,9.6552 L7.11198601,10.6676444 C7.11198601,11.1583111 7.51091061,11.5565333 8.0024427,11.5565333 C8.49486525,11.5565333 8.89289939,11.1583111 8.89289939,10.6676444 L8.89289939,9.97342222 C8.89289939,9.78053333 9.02201561,9.61875556 9.20366877,9.55386667 C10.8180667,8.97075556 11.8946289,7.26942222 11.4574147,5.37697778 Z"
+                                                    id="Combined-Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </h3>
+                </div>
+                <div class="modal-body">
+
+                    <p>Capture additional information that may be relevant to this account.</p>
+
+
+                    <div class="slyce-form-section__header">
+                        <h5>Account Details</h5>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Company Name</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Company Logo</label>
+                        <div class="col-sm-8">
+                            <button type="button" class="btn px-2 slyce-btn--icon btn-outline-primary btn--file">
+                                <svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                    <title>ic_photoLib</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs></defs>
+                                    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="S1---Styleguide" transform="translate(-388.000000, -2171.000000)">
+                                            <g id="04---Icons" transform="translate(260.000000, 2094.000000)">
+                                                <g id="Icons" transform="translate(0.000000, 75.000000)">
+                                                    <g id="ic_photoLib" transform="translate(128.000000, 0.000000)">
+                                                        <rect id="Rectangle-4" x="0" y="0" width="16" height="16"></rect>
+                                                        <path d="M3.84,7.4 C4.5472,7.4 5.12,6.8624 5.12,6.2 C5.12,5.537 4.5472,5 3.84,5 C3.13344,5 2.56,5.537 2.56,6.2 C2.56,6.8624 3.13344,7.4 3.84,7.4 L3.84,7.4 Z M8.72192,9.386 L6.80832,7.4774 L4.896,10.5404 L3.46112,9.1346 L1.90656,12.2126 L14.10176,12.2126 L11.35168,5.4656 L8.72192,9.386 Z M1.28,12.8 L14.72,12.8 L14.72,3.2 L1.28,3.2 L1.28,12.8 Z M16,12.8 L16,3.2 C16,2.537 15.4272,2 14.72,2 L1.28,2 C0.5728,2 0,2.537 0,3.2 L0,12.8 C0,13.4624 0.5728,14 1.28,14 L14.72,14 C15.4272,14 16,13.4624 16,12.8 L16,12.8 Z"
+                                                            id="Icon" class="slyce-svg-icon" fill="#546175"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Upload Image
+                                <input type="file">
+                            </button>
+
+                            <small class="slyce-small">Use .PNG or .JPG</small>
+                        </div>
+                    </div>
+
+
+                    <div class="slyce-form-section__header">
+                        <h5>Contact Info</h5>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">First Name</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Last Name</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Email</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Phone Number</label>
+                        <div class="col-sm-8">
+                            <div class="slyce-input-container">
+                                <div class="slyce-input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slyce-form-section__header">
+                        <h5>Plan Details</h5>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Enrolled Plan</label>
+                        <div class="col-sm-8">
+                            <div class="dropdown slyce-select-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Select plan...
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Account Status</label>
+                        <div class="col-sm-8">
+                            <div class="dropdown slyce-select-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Select status…
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Enabled Services</label>
+                        <div class="col-sm-8 slyce-col-form-controls">
+                            <p>Select services that can be performed:</p>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb1">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb1">Visual Search (3D)</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb2">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb2">Barcode Detection (2D)</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb3">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb3">Exact Match (1D)</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb4">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb4">Logo Detection</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb5">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb5">Fashion Detector</label>
+                            </div>
+
+                            <div class="slyce-ckeck-group">
+                                <div class="slyce-checkbox">
+                                    <input type="checkbox" id="cb6">
+                                    <div class="slyce-checkbox__mark">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <label for="cb6">Hardware Detection</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="slyce-form-section__header">
+                        <h5>Notes</h5>
+                    </div>
+
+                    <p>Capture additional information that may be relevant to this account.</p>
+
+                    <div class="form-group row">
+                        <div class="col">
+                            <textarea cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary px-2 mt-3">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/slyce.js"></script>
 
 </body>
 
 </html>
-
-

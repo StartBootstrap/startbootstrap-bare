@@ -47,7 +47,7 @@ gulp.task('sass', function () {
 gulp.task('assets', function() {
     return gulp.src('./assets/**/*')
         .pipe(gulp.dest('./dist/assets'));
-})
+});
 
 gulp.task('assets:watch', function(){
     gulp.watch('./assets/**/*', ['assets']);
