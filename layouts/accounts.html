@@ -59,7 +59,7 @@
                 <input type="text" class="form-control" placeholder="Search accounts" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             <div>
-                <button type="submit" class="btn btn-primary px-2 slyce-btn--icon" data-target="#exampleModal">
+                <button type="submit" class="btn btn-primary px-2 slyce-btn--icon"  data-toggle="modal" data-target="#exampleModal">
                     <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
                         <title>ic_add</title>
@@ -281,10 +281,10 @@
     </footer>
 
 
-    <div class="" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" class="" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <button type="button" class="btn slyce-btn--close-modal"></button>
+                <button type="button" data-dismiss="modal" class="btn slyce-btn--close-modal"></button>
 
                 <div class="modal-header">
                     <h3>New Account
