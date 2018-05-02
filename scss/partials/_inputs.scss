@@ -1,28 +1,96 @@
 @import '../_colors';
+$iconsPath: "../../assets/icons/";
 
-input.form-control.underlined {
+
+input.form-control.slyce-input--underlined {
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: normal;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid $gray_6;
   padding: 6px 0;
-  font-weight: 300;
-  font-size: 1vh;
   transition: padding .3s, border-color .3s;
+  font-weight: 300;
 
   &:focus {
-    padding: 6px 10px;
-    border-color: $primary;
+    padding: 6px 0;
+  }
+}
+
+.slyce-input-container{
+  position: relative;
+}
+
+.slyce-input__message{
+  font-size: 14px;
+  color: $gray_3;
+}
+
+.slyce-input{
+  &:after{
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all .3s;
+    background-size: contain;
+  }
+
+  &.slyce-input--error{
+    .form-control{
+      border-color: $danger;
+    }
+    &:after{
+      opacity: 1;
+      visibility: visible;
+      background-image: url('#{$iconsPath}/ic_validError.svg');
+    }
+  }
+  &.slyce-input--success{
+    .form-control{
+      border-color: $success;
+    }
+    &:after{
+      opacity: 1;
+      visibility: visible;
+      background-image: url('#{$iconsPath}/ic_validSuccess.svg');
+    }
+  }
+}
+
+
+input.form-control{
+  font-size: 14px;
+  color: $gray_3;
+  padding: 6px 16px;
+  border-radius: 3px;
+  font-weight: 300;
+
+
+  &:focus {
+    border-color: $gray_1;
     box-shadow: none;
   }
 }
 
-label {
+label.slyce-label--major {
   margin: 0;
   color: $primary;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.44px;
   margin-bottom: 5px;
+}
+
+label{
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 24px;
 }
 
 ::-webkit-input-placeholder {
@@ -39,10 +107,6 @@ label {
 
 :-moz-placeholder {
   color: $gray_6 !important;
-}
-
-input.form-control {
-  border-radius: 8px;
 }
 
 .slyce-account-controls {
