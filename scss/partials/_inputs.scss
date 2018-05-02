@@ -246,6 +246,7 @@ textarea {
     background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
   }
   &.show {
+    background-color: $gray_8;
     &::after {
       transform: rotate(180deg)
     }
@@ -272,6 +273,10 @@ textarea {
   button,
   .dropdown-menu {
     width: 100%;
+  }
+  .dropdown-item:hover{
+    background-color: $primary;
+    color: $white;
   }
 }
 
@@ -323,22 +328,22 @@ textarea {
       background-color: $gray_6;
     }
   }
-  &.slyce-input--error {
-    .slyce-radio__mark {
-      border-color: $danger !important;
-      &:after {
-        background-color: $danger !important;
-      }
-    }
-  }
-  &.slyce-input--success {
-    .slyce-radio__mark {
-      border-color: $success !important;
-      &:after {
-        background-color: $success !important;
-      }
-    }
-  }
+  // &.slyce-input--error {
+  //   .slyce-radio__mark {
+  //     border-color: $danger !important;
+  //     &:after {
+  //       background-color: $danger !important;
+  //     }
+  //   }
+  // }
+  // &.slyce-input--success {
+  //   .slyce-radio__mark {
+  //     border-color: $success !important;
+  //     &:after {
+  //       background-color: $success !important;
+  //     }
+  //   }
+  // }
 }
 
 .slyce-checkbox {
@@ -403,16 +408,16 @@ textarea {
       display: block;
     }
   }
-  &.slyce-input--error {
-    .slyce-checkbox__mark{
-      border-color: $danger !important;
-      background-color: $danger !important;
-    }
-  }
-  &.slyce-input--success {
-    .slyce-checkbox__mark{
-      border-color: $success !important;
-      background-color: $success !important;
-    }
-  }
+  // &.slyce-input--error {
+  //   .slyce-checkbox__mark{
+  //     border-color: $danger !important;
+  //     background-color: $danger !important;
+  //   }
+  // }
+  // &.slyce-input--success {
+  //   .slyce-checkbox__mark{
+  //     border-color: $success !important;
+  //     background-color: $success !important;
+  //   }
+  // }
 }
