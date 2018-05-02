@@ -33,6 +33,15 @@ h4 {
   letter-spacing: 0.23px;
 }
 
+h5 {
+  color: #7F8FA4;
+  font-family: "Circular Std";
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 11px;
+}
+
 footer {
   position: absolute;
   bottom: 0px;
@@ -47,6 +56,15 @@ p {
   font: normal normal 14px 'Circular Std', sans-serif;
   line-height: 24px;
   letter-spacing: 0.24px;
+  font-weight: 300;
+
+  &.p--smaller {
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.09px;
+    line-height: 16px;
+  }
 
   &.p--small {
     font: normal normal 12px 'Circular Std', sans-serif;
@@ -80,6 +98,19 @@ a {
   font-weight: 300 !important;
 }
 
-
-
+.slyce-small{
+  margin-top: 18px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $gray_4;
+  font-weight: 300;
+}
+.slyce-active-services {
+  color: #7F8FA4;
+  font-family: "Circular Std";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 11px;
+}
 

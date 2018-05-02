@@ -16,6 +16,8 @@
 @import './partials/_header';
 @import './partials/_header';
 @import './partials/_boxes';
+@import './partials/_modals';
+@import './partials/_progress';
 
 
 
@@ -28,3 +30,15 @@ section{
 .col__content{
 }
 
+ul {
+    margin-left: -5px;
+    li {
+        color: #132843;
+        font-family: "Circular Std";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.24px;
+        line-height: 24px;
+        padding: 1px 0px 1px 10px;
+    }
+}

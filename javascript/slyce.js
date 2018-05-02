@@ -1,7 +1,7 @@
-(function(){
-    var duo_tone_filter = function(){
+(function () {
+    var duo_tone_filter = function () {
         var div = document.createElement('div');
-        if (isFirefox || isChrome || isSafari ){
+        if (isFirefox || isChrome || isSafari) {
             div.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"svg-filters\">\n" +
                 "<filter id=\"duotone_slyceblue\">\n" +
                 "    <feColorMatrix type=\"matrix\" result=\"grayscale\"\n" +
@@ -33,10 +33,12 @@
     var isFirefox = typeof InstallTrigger !== 'undefined';
 
     // Safari 3.0+ "[object HTMLElementConstructor]"
-    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
     // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
     // Edge 20+
     var isEdge = !isIE && !!window.StyleMedia;
@@ -48,5 +50,9 @@
     var isBlink = (isChrome || isOpera) && !!window.CSS;
 
     duo_tone_filter();
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
 
 })()

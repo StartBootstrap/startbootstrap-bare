@@ -15,36 +15,251 @@
 </head>
 
 <body>
-<nav class="navbar  navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="dist/assets/images/slyce_studio_logo.png" height="32" width="auto"/></a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Studio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Learn</a>
-            </li>
-        </ul>
-    </div>
-    <div class="rounded-circle">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="dist/assets/images/slyce_studio_logo.png" height="32" width="auto" />
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Studio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Learn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rounded-circle">
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">E-mail</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input">
+                        <input type="email" class="form-control slyce-input--underlined" placeholder="Enter e-mail">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">E-mail</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--error">
+                        <input type="email" class="form-control slyce-input--underlined" placeholder="Enter e-mail">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="slyce-label--major">Password</label>
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--success">
+                        <input type="password" class="form-control slyce-input--underlined" placeholder="Enter password">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Email</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Email</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--success">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Success message!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label text-right">Password</label>
+            <div class="col-sm-10">
+                <div class="slyce-input-container">
+                    <div class="slyce-input slyce-input--error">
+                        <input type="Password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="slyce-input__message mt-1">
+                        Error message!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+
+
+        <div class="form-group row">
+            <label class="col-sm-4 slyce-col-form-label text-right">Enabled Services</label>
+            <div class="col-sm-8 slyce-col-form-controls">
+                <p>Select services that can be performed:</p>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-checkbox">
+                        <input type="checkbox" disabled checked id="vs-3d">
+                        <div class="slyce-checkbox__mark">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <label for="vs-3d">Visual Search (3D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-checkbox">
+                        <input type="checkbox">
+                        <div class="slyce-checkbox__mark">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <label>Visual Search (3D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-checkbox">
+                        <input type="checkbox" checked>
+                        <div class="slyce-checkbox__mark">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-checkbox slyce-input--error">
+                        <input type="checkbox" checked>
+                        <div class="slyce-checkbox__mark">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-checkbox slyce-input--success">
+                        <input type="checkbox">
+                        <div class="slyce-checkbox__mark">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-radio">
+                        <input type="radio" checked disabled>
+                        <div class="slyce-radio__mark"></div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-radio">
+                        <input type="radio">
+                        <div class="slyce-radio__mark"></div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-radio slyce-input--error">
+                        <input type="radio" checked>
+                        <div class="slyce-radio__mark"></div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+                <div class="slyce-ckeck-group">
+                    <div class="slyce-radio slyce-input--success">
+                        <input type="radio">
+                        <div class="slyce-radio__mark"></div>
+                    </div>
+                    <label>Barcode Detection (2D)</label>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="form-group row">
+            <label class="col-sm-4 slyce-col-form-label text-right">Account Status</label>
+            <div class="col-sm-8">
+                <div class="dropdown slyce-select-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Select status…
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
 
     </div>
-</nav>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="dist/javascript/slyce.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/javascript/slyce.js"></script>
 
 </body>
 
 </html>
-
-
