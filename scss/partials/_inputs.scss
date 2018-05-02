@@ -204,6 +204,16 @@ textarea {
   min-height: 0;
 }
 
+.dropdown-toggle:hover{
+  background-color: $gray_8;
+}
+
+.dropdown-toggle:focus{
+  outline: 0;
+  box-shadow: none;
+  background-color: $gray_3;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -231,7 +241,6 @@ textarea {
     height: 14px;
   }
 }
-
 .slyce-select-dropdown {
   width: 100%;
   &::after {

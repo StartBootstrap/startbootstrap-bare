@@ -6,9 +6,24 @@
   border-style: dashed;
 }
 
-.border-secondary{
-  border:white !important;
+.border-secondary {
+  border: white !important;
   border-radius: 12px;
   background-color: #FFFFFF;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+}
+
+.rectangle-3 {
+  height: 24px;
+  width: 24px;
+  background-color: #D4DBE0;
+  content: "";
+}
+
+.rectangle-4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 2px;
+  background-color: #D4DBE0;
+  content:"";
 }
