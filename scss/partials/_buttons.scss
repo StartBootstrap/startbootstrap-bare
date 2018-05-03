@@ -1,144 +1,204 @@
-$iconsPath: "../assets/icons/";
+$iconsPath: "../assets/icons";
 @import '../_colors';
 .btn {
-    padding: 7px;
-    min-width: 120px;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
+  padding: 7px;
+  min-width: 120px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .2s !important;
+  .slyce-svg-icon {
+    transition: all .2s;
+  }
 
-    .slyce-svg-icon{
-        transition: all .2s;
-    }
+  &:disabled{
+    cursor: not-allowed;
+  }
 }
 
-.btn-outline-primary{
-    transition: all .2s;
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: transparent !important;
+.btn-outline-primary {
+  transition: all .2s;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent !important;
+  }
+  &:hover {
+    color: $primary_alt;
+    border-color: $primary_alt;
+    .slyce-svg-icon {
+      fill: $primary_alt !important;
     }
-    &:hover{
-        color: $primary_alt;
-        border-color: $primary_alt;
-        .slyce-svg-icon{
-            fill: $primary_alt !important;
-        }
+  }
+  &:active {
+    color: $primary !important;
+    border-color: $primary !important;
+    opacity: .8;
+    .slyce-svg-icon {
+      fill: $primary !important;
     }
-    &:active{
-        color: $primary !important;
-        border-color: $primary !important;
-        opacity: .8;
-        .slyce-svg-icon{
-            fill: $primary !important;
-        }
-    }
-    &:focus{}
+  }
+  &:focus {}
 }
 
 .slyce-btn--loading,
 .slyce-btn--loading.btn-outline-primary {
+  color: transparent !important;
+  align-items: center;
+  display: inline-flex;
+  transition: color 0s;
+  justify-content: center;
+  position: relative;
+  &:hover,
+  &:active,
+  &:focus {
     color: transparent !important;
-    align-items: center;
-    display: flex;
-    transition: color 0s;
-    &:hover,
-    &:active,
-    &:focus {
-        color: transparent !important;
-    }
-    &:after {
-        content: "";
-        $size: 1.2em;
-        $speed: .5s;
-        display: block;
-        width: $size;
-        height: $size;
-        border-radius: 50%;
-        border: 2px solid silver;
-        animation: circ-anim $speed linear infinite, scale-in .1s linear;
-        border-color: $primary;
-        border-bottom-color: transparent;
-    }
-}
-
-.btn.slyce-btn--icon{
-    display: flex;
-    align-items: center;
-    line-height: 16px;
-    svg, img{
-        margin-right: 8px;
-    }
-
-    &.btn-outline-primary .slyce-svg-icon{
-        fill: $primary;
-    }
-
-    &.btn-primary .slyce-svg-icon{
-        fill: $white;
-    }
-}
-
-.btn--file{
-    position: relative;
-    border-radius: 100px;
-    border-width: 2px;
-    input{
-        opacity: 0;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: block;
-    }
-}
-
-.slyce-btn--close-modal{
-    height: 16px;
-    width: 16px;
+  }
+  &:after {
+    content: "";
+    $size: 1.2em;
+    $speed: .5s;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 2px solid silver;
+    animation: circ-anim $speed linear infinite, scale-in .1s linear;
+    border-color: $primary;
+    border-bottom-color: transparent;
     position: absolute;
-    right: 18px;
-    top: 18px;
-    min-width: auto;
-    padding: 0;
-    border-radius: 3px;
-    background-image: url('#{$iconsPath}/ic_close.svg');
-    background-size: 14px 14px;
-    background-position: center center;
-    z-index: 99;
-    background-repeat: no-repeat;
-    &:active{
-        opacity: .9;
-        background-image: url('#{$iconsPath}/ic_close.svg') !important;
+    top: calc(50% - .6em);
+    left: calc(50% - .6em);
+  }
+  &:hover{
+    &:after{
+      border-color: $primary_alt;
+      border-bottom-color: transparent;
     }
+  }
+}
+.slyce-btn--loading.btn-primary {
+  &:after {
+    border-color: $white;
+    border-bottom-color: transparent;
+  }
+}
+
+.btn.slyce-btn--icon {
+  display: inline-flex;
+  align-items: center;
+  line-height: 16px;
+  svg,
+  img {
+    margin-right: 8px;
+  }
+  &.btn-outline-primary .slyce-svg-icon {
+    fill: $primary;
+  }
+  &.btn-primary .slyce-svg-icon {
+    fill: $white;
+  }
+}
+
+.slyce-btn--file {
+  position: relative;
+  border-radius: 100px;
+  border-width: 2px;
+  input {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+
+.slyce-btn--progress__progressbar{
+  display: none;
+}
+.slyce-btn--progress{
+  min-width: 100%;
+  border-radius: 50px;
+  height: 16px;
+  overflow: hidden;
+  color: transparent;
+  background-color: $gray_4;
+  border: none;
+  position: relative;
+  padding: 0;
+  transition: all 1s;
+  cursor: default !important;
+
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray_4 !important;
+    box-shadow: none !important;
+  }
+
+  &.btn.slyce-btn--icon{
+    svg{
+      opacity: 0;
+    }
+  }
+
+  .slyce-btn--progress__progressbar{
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.slyce-btn--close-modal {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  min-width: auto;
+  padding: 0;
+  border-radius: 3px;
+  background-image: url('#{$iconsPath}/ic_close.svg');
+  background-size: 14px 14px;
+  background-position: center center;
+  z-index: 99;
+  background-repeat: no-repeat;
+  &:active {
+    opacity: .9;
+    background-image: url('#{$iconsPath}/ic_close.svg') !important;
+  }
 }
 
 @keyframes scale-in {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes circ-anim {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.slyce-btn-copy{
-  min-width:0;
+.slyce-btn-copy {
+  min-width: 0;
   border-radius: 0;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding:0;
+  padding: 0;
 }
