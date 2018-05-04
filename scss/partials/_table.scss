@@ -8,6 +8,12 @@
     background-color: $gray_7;
   }
 
+  th{
+    span{
+      cursor: pointer;
+    }
+  }
+
   thead-light > td {
     font-size: 14px;
     line-height: 14px;
