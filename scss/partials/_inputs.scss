@@ -430,3 +430,42 @@ textarea {
   //   }
   // }
 }
+
+.slyce-input--loading{
+  &:after {
+    content: "";
+    $size: 16px;
+    $speed: .5s;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 2px solid silver;
+    animation: circ-anim $speed linear infinite, scale-in .1s linear;
+    border-color: $primary;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+    background-image: none !important;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
