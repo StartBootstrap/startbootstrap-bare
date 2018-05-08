@@ -50,6 +50,10 @@ input.form-control.slyce-input--underlined {
 .slyce-input__message {
   font-size: 14px;
   color: $gray_3;
+
+  p{
+    margin: 0;
+  }
 }
 
 .slyce-input {
