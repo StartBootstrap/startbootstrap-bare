@@ -335,10 +335,16 @@ textarea {
       background-color: $primary;
     }
   }
-  input:disabled + .slyce-radio__mark {
+  input:checked:disabled + .slyce-radio__mark {
     border-color: $gray_6;
     &:after {
       background-color: $gray_6;
+    }
+  }
+  input:disabled + .slyce-radio__mark {
+    border-color: $gray_8;
+    &:after {
+      background-color: $gray_8;
     }
   }
   // &.slyce-input--error {
@@ -414,11 +420,18 @@ textarea {
       display: block;
     }
   }
-  input:disabled+.slyce-checkbox__mark {
+  input:checked:disabled+.slyce-checkbox__mark {
     border-color: $gray_6;
     background-color: $gray_6;
     .line {
       display: block;
+    }
+  }
+  input:disabled+.slyce-checkbox__mark {
+    border-color: $gray_8;
+    background-color: $gray_8;
+    .line {
+      display: none;
     }
   }
   // &.slyce-input--error {
