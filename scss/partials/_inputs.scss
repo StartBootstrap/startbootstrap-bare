@@ -243,6 +243,13 @@ textarea {
     width: 14px;
     height: 14px;
   }
+  .dropdown-item:hover{
+    background-color:#287cf3 !important;
+  }
+}
+
+.dropdown-menu.show {
+  width:100% !important;
 }
 
 .slyce-select-dropdown {
