@@ -99,12 +99,26 @@ $iconsPath: "../assets/icons";
   &.btn-primary .slyce-svg-icon {
     fill: $white;
   }
+
+  &.slyce-btn--loading{
+    .slyce-svg-icon {
+      display: none;
+    }
+  }
+}
+
+.slyce-btn--round{
+  border-radius: 100px;
+  border-width: 2px;
+}
+
+.slyce-btn--nostroke{
+  padding: 0;
+  min-width: 0;
 }
 
 .slyce-btn--file {
   position: relative;
-  border-radius: 100px;
-  border-width: 2px;
   input {
     opacity: 0;
     position: absolute;
