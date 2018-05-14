@@ -1,0 +1,78 @@
+@import '../_colors';
+$iconsPath: "../assets/icons/";
+
+.slyce-radio {
+  background-color: $white;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  input {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .slyce-radio__mark {
+    border: 1px solid $gray_6;
+    padding: 1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      animation: scale-in .2s;
+      display: none;
+      height: 100%;
+      width: 100%;
+      content: "";
+      border-radius: 100%;
+    }
+  }
+  input:checked+.slyce-radio__mark {
+    border-color: $primary;
+    &:after {
+      display: block;
+      background-color: $primary;
+    }
+  }
+  input:checked:disabled+.slyce-radio__mark {
+    border-color: $gray_6;
+    &:after {
+      background-color: $gray_6;
+    }
+  }
+  input:disabled+.slyce-radio__mark {
+    border-color: $gray_7;
+    background-color: $gray_8;
+    &:after {
+      background-color: $gray_8;
+    }
+  }
+  // &.slyce-input--error {
+  //   .slyce-radio__mark {
+  //     border-color: $danger !important;
+  //     &:after {
+  //       background-color: $danger !important;
+  //     }
+  //   }
+  // }
+  // &.slyce-input--success {
+  //   .slyce-radio__mark {
+  //     border-color: $success !important;
+  //     &:after {
+  //       background-color: $success !important;
+  //     }
+  //   }
+  // }
+}

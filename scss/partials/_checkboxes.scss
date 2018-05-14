@@ -1,0 +1,180 @@
+@import '../_colors';
+$iconsPath: "../assets/icons/";
+
+.slyce-checkbox {
+  background-color: $white;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  input {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .slyce-checkbox__mark {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $gray_6;
+    transition: all .2s;
+    .line {
+      height: 2px;
+      transition: all .2s;
+      background-color: $white;
+      position: absolute;
+      border-radius: 2px;
+      display: none;
+    }
+    .line:first-child {
+      width: 5px;
+      transform: rotate(45deg);
+      bottom: 7px;
+      left: 4px;
+      animation: scale-in-rotate-1 .2s;
+    }
+    .line:last-child {
+      width: 9px;
+      transform: rotate(-45deg);
+      bottom: 8px;
+      left: 6px;
+      animation: scale-in-rotate-2 .2s;
+    }
+  }
+  input:checked+.slyce-checkbox__mark {
+    border-color: $gray_6;
+    background-color: $white;
+    .line {
+      display: block;
+      background-color: $primary;
+    }
+  }
+  input:checked:disabled+.slyce-checkbox__mark {
+    border-color: $gray_7;
+    background-color: $gray_8;
+    .line {
+      display: block;
+      background-color: $gray_6;
+    }
+  }
+  input:disabled+.slyce-checkbox__mark {
+    border-color: $gray_7;
+    background-color: $gray_8;
+    .line {
+      display: none;
+    }
+  }
+  // &.slyce-input--error {
+  //   .slyce-checkbox__mark{
+  //     border-color: $danger !important;
+  //     background-color: $danger !important;
+  //   }
+  // }
+  // &.slyce-input--success {
+  //   .slyce-checkbox__mark{
+  //     border-color: $success !important;
+  //     background-color: $success !important;
+  //   }
+  // }
+}
+
+.slyce-checkbox.slyce-checkbox--switch{
+  width: 32px;
+  height: 20px;
+
+  input{
+    cursor: pointer;
+  }
+
+  input:disabled {
+    cursor: not-allowed;
+  }
+
+  .slyce-checkbox__mark{
+    padding: 1px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid $gray_5;
+  }
+
+  .line:first-child{
+    display: block;
+    left: 2px;
+    top: 2px;
+    position: absolute;
+    background-color: $gray_5;
+    height: 12px;
+    width: 12px;
+    border-radius: 100px;
+  }
+  .line:last-child {
+    display: none;
+  }
+  input:checked + .slyce-checkbox__mark {
+    background-color: $success;
+    border-color: $success;
+    .line:first-child{
+      left: 13px;
+      background-color: $white;
+      display: block
+    }
+    .line:last-child {
+      display: none;
+    }
+  }
+  input:disabled + .slyce-checkbox__mark {
+    .line:first-child{
+      display: block;
+      background-color: $gray_6;
+    }
+    .line:last-child {
+      display: none;
+    }
+  }
+  input:disabled:checked + .slyce-checkbox__mark {
+    background-color: $gray_7;
+    border-color: $gray_7;
+
+    .line:first-child{
+      display: block;
+      background-color: $white;
+    }
+    .line:last-child {
+      display: none;
+    }
+  }
+}
+
+@keyframes scale-in-rotate-1 {
+  from {
+    transform: rotate(45deg), scale(0,0);
+    width: 0;
+  }
+  to {
+    transform: rotate(45deg) scale(1,1);
+    width: 4px;
+  }
+}
+@keyframes scale-in-rotate-2 {
+  from {
+    width: 0;
+    transform: rotate(-45deg) scale(0,0);
+  }
+  to {
+    width: 7px;
+    transform: rotate(-45deg) scale(1,1);
+  }
+}
