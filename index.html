@@ -153,6 +153,47 @@
       <div class="col-sm-8 slyce-col-form-controls">
         <p>Select services that can be performed:</p>
 
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d">
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" checked>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" disabled>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox disabled slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" checked disabled>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="slyce-ckeck-group">
           <div class="slyce-checkbox">
             <input type="checkbox" disabled checked id="vs-3d">
@@ -322,64 +363,74 @@
 
     <table class="table rounded-top">
       <thead class="bg-secondary thead-light rounded-top">
-      <tr>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Space Name</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Workflows</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Operations</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Date Created</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span></span></th>
-      </tr>
+        <tr>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Space Name</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Workflows</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Operations</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Date Created</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span></span>
+          </th>
+        </tr>
       </thead>
       <tbody>
-      <tr class="border-top">
-        <td class="px-2 py-2 align-middle">
-          <div class="text-primary">
-            Hollister
-          </div>
-        </td>
-        <td class="px-2 py-2 align-middle text-primary font-weight-light">
-          Default 3D
-        </td>
-        <td class="px-2 py-2 align-middle">
-          <div class="pb-1">
-            129,000 /
-          </div>
-          <div class="text-secondary">
-            300,000
-          </div>
-        </td>
-        <td class="px-2 py-2 align-middle">
-          March 3, 2018
-        </td>
-        <td class="px-2 py-2">
-          <div class="btn-group">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Copy the Space ID
-                </div>
-              </a>
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Delete Space
-                </div>
-              </a>
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Space Settings
-                </div>
-              </a>
+        <tr class="border-top">
+          <td class="px-2 py-2 align-middle">
+            <div class="text-primary">
+              Hollister
             </div>
-          </div>
-        </td>
-      </tr>
+          </td>
+          <td class="px-2 py-2 align-middle text-primary font-weight-light">
+            Default 3D
+          </td>
+          <td class="px-2 py-2 align-middle">
+            <div class="pb-1">
+              129,000 /
+            </div>
+            <div class="text-secondary">
+              300,000
+            </div>
+          </td>
+          <td class="px-2 py-2 align-middle">
+            March 3, 2018
+          </td>
+          <td class="px-2 py-2">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Copy the Space ID
+                  </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Delete Space
+                  </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Space Settings
+                  </div>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
