@@ -50,6 +50,9 @@ input.form-control.slyce-input--underlined {
 .slyce-input__message {
   font-size: 14px;
   color: $gray_3;
+  p {
+    margin: 0;
+  }
 }
 
 .slyce-input {
@@ -204,11 +207,11 @@ textarea {
   min-height: 0;
 }
 
-.dropdown-toggle:hover{
+.dropdown-toggle:hover {
   background-color: $gray_8;
 }
 
-.dropdown-toggle:focus{
+.dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
   background-color: $gray_3;
@@ -291,7 +294,7 @@ textarea {
   .dropdown-menu {
     width: 100%;
   }
-  .dropdown-item:hover{
+  .dropdown-item:hover {
     background-color: $primary;
     color: $white;
   }
@@ -324,7 +327,9 @@ textarea {
     border-radius: 100%;
     overflow: hidden;
     position: relative;
+
     &:after {
+      animation: scale-in .2s;
       display: none;
       height: 100%;
       width: 100%;
@@ -332,17 +337,23 @@ textarea {
       border-radius: 100%;
     }
   }
-  input:checked + .slyce-radio__mark {
+  input:checked+.slyce-radio__mark {
     border-color: $primary;
     &:after {
       display: block;
       background-color: $primary;
     }
   }
-  input:disabled + .slyce-radio__mark {
+  input:checked:disabled+.slyce-radio__mark {
     border-color: $gray_6;
     &:after {
       background-color: $gray_6;
+    }
+  }
+  input:disabled+.slyce-radio__mark {
+    border-color: $gray_8;
+    &:after {
+      background-color: $gray_8;
     }
   }
   // &.slyce-input--error {
@@ -361,6 +372,27 @@ textarea {
   //     }
   //   }
   // }
+}
+
+@keyframes scale-in-rotate-1 {
+  from {
+    transform: rotate(45deg), scale(0,0);
+    width: 0;
+  }
+  to {
+    transform: rotate(45deg) scale(1,1);
+    width: 4px;
+  }
+}
+@keyframes scale-in-rotate-2 {
+  from {
+    width: 0;
+    transform: rotate(-45deg) scale(0,0);
+  }
+  to {
+    width: 7px;
+    transform: rotate(-45deg) scale(1,1);
+  }
 }
 
 .slyce-checkbox {
@@ -389,7 +421,9 @@ textarea {
     overflow: hidden;
     position: relative;
     border: 1px solid $gray_6;
+    transition: all .2s;
     .line {
+      transition: all .2s;
       background-color: $white;
       position: absolute;
       border-radius: 2px;
@@ -398,17 +432,18 @@ textarea {
     .line:first-child {
       height: 2px;
       width: 4px;
-      top: 4px;
       transform: rotate(45deg);
+      bottom: 4px;
       left: 1px;
+      animation: scale-in-rotate-1 .2s;
     }
     .line:last-child {
       height: 2px;
       width: 7px;
       transform: rotate(-45deg);
-      top: 4px;
+      bottom: 4px;
       left: 3px;
-      ;
+      animation: scale-in-rotate-2 .2s;
     }
   }
   input:checked+.slyce-checkbox__mark {
@@ -418,11 +453,18 @@ textarea {
       display: block;
     }
   }
-  input:disabled+.slyce-checkbox__mark {
+  input:checked:disabled+.slyce-checkbox__mark {
     border-color: $gray_6;
     background-color: $gray_6;
     .line {
       display: block;
+    }
+  }
+  input:disabled+.slyce-checkbox__mark {
+    border-color: $gray_8;
+    background-color: $gray_8;
+    .line {
+      display: none;
     }
   }
   // &.slyce-input--error {
@@ -437,4 +479,53 @@ textarea {
   //     background-color: $success !important;
   //   }
   // }
+}
+
+.slyce-input--loading {
+  &:after {
+    content: "";
+    $size: 16px;
+    $speed: .5s;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 2px solid silver;
+    animation: circ-anim $speed linear infinite, scale-in .1s linear;
+    border-color: $primary;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+    background-image: none !important;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-ms-clear,
+::-ms-reveal,
+::-webkit-contacts-auto-fill-button,
+::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
