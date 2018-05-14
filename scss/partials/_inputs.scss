@@ -137,10 +137,16 @@ label {
 }
 
 textarea {
+  border: none;
+  border-radius: 3px;
   width: 100%;
   border-radius: 3px;
-  border: 1px solid $gray_6;
+  background-color: $gray_8;
   padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
   font-size: 14px;
 }
 
