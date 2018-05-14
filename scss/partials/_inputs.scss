@@ -57,8 +57,15 @@ input.form-control.slyce-input--underlined {
 .slyce-input__message {
   font-size: 14px;
   color: $gray_3;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
   p {
     margin: 0;
+  }
+
+  &.slyce-input__message--minor {
+    font-size: 12px;
   }
 }
 
