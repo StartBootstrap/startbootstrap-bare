@@ -35,11 +35,11 @@ input.form-control.slyce-input--underlined {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid $gray_6;
-  padding: 6px 0;
+  padding: 8px 0;
   transition: padding .3s, border-color .3s;
   font-weight: 300;
   &:focus {
-    padding: 6px 0;
+    padding: 8px 0;
   }
 }
 
@@ -63,7 +63,7 @@ input.form-control.slyce-input--underlined {
     height: 16px;
     width: 16px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 10px;
     transition: all .3s;
     background-size: contain;
@@ -93,7 +93,7 @@ input.form-control.slyce-input--underlined {
 input.form-control {
   font-size: 14px;
   color: $gray_3;
-  padding: 6px 16px;
+  padding: 8px 16px;
   border-radius: 3px;
   font-weight: 300;
   &:focus {
@@ -133,7 +133,7 @@ textarea {
   width: 100%;
   border-radius: 3px;
   border: 1px solid $gray_6;
-  padding: 6px 16px;
+  padding: 8px 16px;
   font-size: 14px;
 }
 
@@ -301,9 +301,10 @@ textarea {
 }
 
 .slyce-radio {
-  background-color: $gray_8;
-  height: 13px;
-  width: 13px;
+  background-color: $white;
+  vertical-align: middle;
+  height: 14px;
+  width: 14px;
   display: inline-block;
   border-radius: 100%;
   overflow: hidden;
@@ -351,7 +352,8 @@ textarea {
     }
   }
   input:disabled+.slyce-radio__mark {
-    border-color: $gray_8;
+    border-color: $gray_7;
+    background-color: $gray_8;
     &:after {
       background-color: $gray_8;
     }
@@ -396,9 +398,10 @@ textarea {
 }
 
 .slyce-checkbox {
-  background-color: $gray_8;
-  height: 12px;
-  width: 12px;
+  background-color: $white;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
   display: inline-block;
   border-radius: 3px;
   overflow: hidden;
@@ -423,6 +426,7 @@ textarea {
     border: 1px solid $gray_6;
     transition: all .2s;
     .line {
+      height: 2px;
       transition: all .2s;
       background-color: $white;
       position: absolute;
@@ -430,38 +434,38 @@ textarea {
       display: none;
     }
     .line:first-child {
-      height: 2px;
-      width: 4px;
+      width: 5px;
       transform: rotate(45deg);
-      bottom: 4px;
-      left: 1px;
+      bottom: 7px;
+      left: 4px;
       animation: scale-in-rotate-1 .2s;
     }
     .line:last-child {
-      height: 2px;
-      width: 7px;
+      width: 9px;
       transform: rotate(-45deg);
-      bottom: 4px;
-      left: 3px;
+      bottom: 8px;
+      left: 6px;
       animation: scale-in-rotate-2 .2s;
     }
   }
   input:checked+.slyce-checkbox__mark {
-    border-color: $primary;
-    background-color: $primary;
+    border-color: $gray_6;
+    background-color: $white;
     .line {
       display: block;
+      background-color: $primary;
     }
   }
   input:checked:disabled+.slyce-checkbox__mark {
-    border-color: $gray_6;
-    background-color: $gray_6;
+    border-color: $gray_7;
+    background-color: $gray_8;
     .line {
       display: block;
+      background-color: $gray_6;
     }
   }
   input:disabled+.slyce-checkbox__mark {
-    border-color: $gray_8;
+    border-color: $gray_7;
     background-color: $gray_8;
     .line {
       display: none;
