@@ -107,7 +107,7 @@ $iconsPath: "../assets/icons/";
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid $gray_4;
+    border: 2px solid $gray_5;
   }
 
   .line:first-child{
@@ -115,7 +115,7 @@ $iconsPath: "../assets/icons/";
     left: 2px;
     top: 2px;
     position: absolute;
-    background-color: $gray_4;
+    background-color: $gray_5;
     height: 12px;
     width: 12px;
     border-radius: 100px;
@@ -127,7 +127,7 @@ $iconsPath: "../assets/icons/";
     background-color: $success;
     border-color: $success;
     .line:first-child{
-      left: 12px;
+      left: 13px;
       background-color: $white;
       display: block
     }
