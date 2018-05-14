@@ -45,6 +45,11 @@
   </nav>
   <div class="container">
     <div class="row">
+      <div class="col-xs-12">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="row">
       <div class="form-group">
         <label class="slyce-label--major">E-mail</label>
         <div class="slyce-input-container">
@@ -61,7 +66,7 @@
           <div class="slyce-input slyce-input--error">
             <input type="email" class="form-control slyce-input--underlined" placeholder="Enter e-mail">
           </div>
-          <div class="slyce-input__message mt-1">
+          <div class="slyce-input__message slyce-input__message--minor mt-1">
             Error message!
           </div>
         </div>
@@ -74,7 +79,20 @@
           <div class="slyce-input slyce-input--success">
             <input type="password" class="form-control slyce-input--underlined" placeholder="Enter password">
           </div>
-          <div class="slyce-input__message mt-1">
+          <div class="slyce-input__message slyce-input__message--minor mt-1">
+            Error message!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label class="slyce-label--major">Password</label>
+        <div class="slyce-input-container">
+          <div class="slyce-input slyce-input--loading">
+            <input type="password" class="form-control slyce-input--underlined" placeholder="Enter password">
+          </div>
+          <div class="slyce-input__message slyce-input__message--minor mt-1">
             Error message!
           </div>
         </div>
@@ -135,6 +153,47 @@
       <div class="col-sm-8 slyce-col-form-controls">
         <p>Select services that can be performed:</p>
 
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d">
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" checked>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" disabled>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-checkbox disabled slyce-checkbox--switch">
+            <input type="checkbox" id="vs-3d" checked disabled>
+            <div class="slyce-checkbox__mark">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="slyce-ckeck-group">
           <div class="slyce-checkbox">
             <input type="checkbox" disabled checked id="vs-3d">
@@ -148,7 +207,7 @@
 
         <div class="slyce-ckeck-group">
           <div class="slyce-checkbox">
-            <input type="checkbox">
+            <input type="checkbox" disabled>
             <div class="slyce-checkbox__mark">
               <div class="line"></div>
               <div class="line"></div>
@@ -193,6 +252,14 @@
         <div class="slyce-ckeck-group">
           <div class="slyce-radio">
             <input type="radio" checked disabled>
+            <div class="slyce-radio__mark"></div>
+          </div>
+          <label>Barcode Detection (2D)</label>
+        </div>
+
+        <div class="slyce-ckeck-group">
+          <div class="slyce-radio">
+            <input type="radio" disabled>
             <div class="slyce-radio__mark"></div>
           </div>
           <label>Barcode Detection (2D)</label>
@@ -263,7 +330,8 @@
     <div>
       <button type="button" class="btn btn-primary slyce-btn--progress" tabindex="-1">
         Test
-        <div class="slyce-btn--progress__progressbar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="slyce-btn--progress__progressbar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+          aria-valuemax="100"></div>
       </button>
     </div>
     <button type="button" class="btn px-2 slyce-btn--icon btn-outline-primary slyce-btn--file">
@@ -295,64 +363,74 @@
 
     <table class="table rounded-top">
       <thead class="bg-secondary thead-light rounded-top">
-      <tr>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Space Name</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Workflows</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Operations</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span>Date Created</span></th>
-        <th class="py-1 px-2 text-secondary align-middle" scope="col"><span></span></th>
-      </tr>
+        <tr>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Space Name</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Workflows</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Operations</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span>Date Created</span>
+          </th>
+          <th class="py-1 px-2 text-secondary align-middle" scope="col">
+            <span></span>
+          </th>
+        </tr>
       </thead>
       <tbody>
-      <tr class="border-top">
-        <td class="px-2 py-2 align-middle">
-          <div class="text-primary">
-            Hollister
-          </div>
-        </td>
-        <td class="px-2 py-2 align-middle text-primary font-weight-light">
-          Default 3D
-        </td>
-        <td class="px-2 py-2 align-middle">
-          <div class="pb-1">
-            129,000 /
-          </div>
-          <div class="text-secondary">
-            300,000
-          </div>
-        </td>
-        <td class="px-2 py-2 align-middle">
-          March 3, 2018
-        </td>
-        <td class="px-2 py-2">
-          <div class="btn-group">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Copy the Space ID
-                </div>
-              </a>
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Delete Space
-                </div>
-              </a>
-              <a class="d-flex align-items-center dropdown-item py-1" href="#">
-                <div class="dropdown-item-box rounded">
-                </div>
-                <div class="pl-1">
-                  Space Settings
-                </div>
-              </a>
+        <tr class="border-top">
+          <td class="px-2 py-2 align-middle">
+            <div class="text-primary">
+              Hollister
             </div>
-          </div>
-        </td>
-      </tr>
+          </td>
+          <td class="px-2 py-2 align-middle text-primary font-weight-light">
+            Default 3D
+          </td>
+          <td class="px-2 py-2 align-middle">
+            <div class="pb-1">
+              129,000 /
+            </div>
+            <div class="text-secondary">
+              300,000
+            </div>
+          </td>
+          <td class="px-2 py-2 align-middle">
+            March 3, 2018
+          </td>
+          <td class="px-2 py-2">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">...</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Copy the Space ID
+                  </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Delete Space
+                  </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item py-1" href="#">
+                  <div class="dropdown-item-box rounded">
+                  </div>
+                  <div class="pl-1">
+                    Space Settings
+                  </div>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>

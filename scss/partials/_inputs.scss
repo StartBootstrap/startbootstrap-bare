@@ -1,7 +1,15 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
+
 input:disabled {
   cursor: not-allowed;
+}
+
+.col-form-label {
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 14px;
+  font-weight: 300;
 }
 
 .slyce-form-section__header {
@@ -35,11 +43,11 @@ input.form-control.slyce-input--underlined {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid $gray_6;
-  padding: 6px 0;
+  padding: 8px 0;
   transition: padding .3s, border-color .3s;
   font-weight: 300;
   &:focus {
-    padding: 6px 0;
+    padding: 8px 0;
   }
 }
 
@@ -50,6 +58,16 @@ input.form-control.slyce-input--underlined {
 .slyce-input__message {
   font-size: 14px;
   color: $gray_3;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
+  p {
+    margin: 0;
+  }
+
+  &.slyce-input__message--minor {
+    font-size: 12px;
+  }
 }
 
 .slyce-input {
@@ -60,7 +78,7 @@ input.form-control.slyce-input--underlined {
     height: 16px;
     width: 16px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 10px;
     transition: all .3s;
     background-size: contain;
@@ -90,7 +108,7 @@ input.form-control.slyce-input--underlined {
 input.form-control {
   font-size: 14px;
   color: $gray_3;
-  padding: 6px 16px;
+  padding: 8px 16px;
   border-radius: 3px;
   font-weight: 300;
   &:focus {
@@ -103,9 +121,9 @@ label.slyce-label--major {
   margin: 0;
   color: $primary;
   font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.44px;
-  margin-bottom: 5px;
 }
 
 .slyce-col-form-label {
@@ -127,10 +145,16 @@ label {
 }
 
 textarea {
+  border: none;
+  border-radius: 3px;
   width: 100%;
   border-radius: 3px;
-  border: 1px solid $gray_6;
-  padding: 6px 16px;
+  background-color: $gray_8;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 24px;
   font-size: 14px;
 }
 
@@ -204,11 +228,11 @@ textarea {
   min-height: 0;
 }
 
-.dropdown-toggle:hover{
+.dropdown-toggle:hover {
   background-color: $gray_8;
 }
 
-.dropdown-toggle:focus{
+.dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
   background-color: $gray_3;
@@ -291,150 +315,57 @@ textarea {
   .dropdown-menu {
     width: 100%;
   }
-  .dropdown-item:hover{
+  .dropdown-item:hover {
     background-color: $primary;
     color: $white;
   }
 }
 
-.slyce-radio {
-  background-color: $gray_8;
-  height: 13px;
-  width: 13px;
-  display: inline-block;
-  border-radius: 100%;
-  overflow: hidden;
-  position: relative;
-  input {
-    opacity: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  .slyce-radio__mark {
-    border: 1px solid $gray_6;
-    padding: 1px;
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    overflow: hidden;
-    position: relative;
-    &:after {
-      display: none;
-      height: 100%;
-      width: 100%;
-      content: "";
-      border-radius: 100%;
-    }
-  }
-  input:checked + .slyce-radio__mark {
+.slyce-input--loading {
+  &:after {
+    content: "";
+    $size: 16px;
+    $speed: .5s;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: 2px solid silver;
+    animation: circ-anim $speed linear infinite, scale-in .1s linear;
     border-color: $primary;
-    &:after {
-      display: block;
-      background-color: $primary;
-    }
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+    background-image: none !important;
   }
-  input:disabled + .slyce-radio__mark {
-    border-color: $gray_6;
-    &:after {
-      background-color: $gray_6;
-    }
-  }
-  // &.slyce-input--error {
-  //   .slyce-radio__mark {
-  //     border-color: $danger !important;
-  //     &:after {
-  //       background-color: $danger !important;
-  //     }
-  //   }
-  // }
-  // &.slyce-input--success {
-  //   .slyce-radio__mark {
-  //     border-color: $success !important;
-  //     &:after {
-  //       background-color: $success !important;
-  //     }
-  //   }
-  // }
 }
 
-.slyce-checkbox {
-  background-color: $gray_8;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  input {
-    opacity: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+@keyframes scale-in {
+  from {
+    transform: scale(0);
   }
-  .slyce-checkbox__mark {
-    height: 100%;
-    width: 100%;
-    border-radius: 2px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid $gray_6;
-    .line {
-      background-color: $white;
-      position: absolute;
-      border-radius: 2px;
-      display: none;
-    }
-    .line:first-child {
-      height: 2px;
-      width: 4px;
-      top: 4px;
-      transform: rotate(45deg);
-      left: 1px;
-    }
-    .line:last-child {
-      height: 2px;
-      width: 7px;
-      transform: rotate(-45deg);
-      top: 4px;
-      left: 3px;
-      ;
-    }
+  to {
+    transform: scale(1);
   }
-  input:checked+.slyce-checkbox__mark {
-    border-color: $primary;
-    background-color: $primary;
-    .line {
-      display: block;
-    }
+}
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0);
   }
-  input:disabled+.slyce-checkbox__mark {
-    border-color: $gray_6;
-    background-color: $gray_6;
-    .line {
-      display: block;
-    }
+  to {
+    transform: rotate(360deg);
   }
-  // &.slyce-input--error {
-  //   .slyce-checkbox__mark{
-  //     border-color: $danger !important;
-  //     background-color: $danger !important;
-  //   }
-  // }
-  // &.slyce-input--success {
-  //   .slyce-checkbox__mark{
-  //     border-color: $success !important;
-  //     background-color: $success !important;
-  //   }
-  // }
+}
+
+::-ms-clear,
+::-ms-reveal,
+::-webkit-contacts-auto-fill-button,
+::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
