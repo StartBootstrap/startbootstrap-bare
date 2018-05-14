@@ -23,7 +23,7 @@ h2 {
 
 h3 {
   font: bold normal 20px 'Circular Std', sans-serif;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.34px;
 }
 
@@ -60,20 +60,22 @@ p {
 
   &.p--smaller {
     font-family: "Circular Std";
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     letter-spacing: -0.09px;
-    line-height: 16px;
+    line-height: 11px;
   }
 
   &.p--small {
     font: normal normal 12px 'Circular Std', sans-serif;
-    line-height: 16px;
+    line-height: 12px;
   }
 }
 
 a {
   font-family: 'Circular Std', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
   color: $link;
 
   &:hover {
