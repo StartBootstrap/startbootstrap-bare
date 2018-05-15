@@ -65,7 +65,7 @@ input.form-control.slyce-input--underlined {
     margin: 0;
   }
 
-  &.slyce-input__message--minor {
+  &.slyce-input__message--minor, &.slyce-input__message--minor * {
     font-size: 12px;
   }
 }
