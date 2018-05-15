@@ -1,11 +1,13 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
 
+$radio_size: 20px;
+
 .slyce-radio {
   background-color: $white;
   vertical-align: middle;
-  height: 14px;
-  width: 14px;
+  height: $radio_size;
+  width: $radio_size;
   display: inline-block;
   border-radius: 100%;
   overflow: hidden;
@@ -23,7 +25,7 @@ $iconsPath: "../assets/icons/";
   }
   .slyce-radio__mark {
     border: 1px solid $gray_6;
-    padding: 1px;
+    padding: 3px;
     height: 100%;
     width: 100%;
     border-radius: 100%;
