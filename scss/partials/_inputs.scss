@@ -245,6 +245,10 @@ textarea {
   display: none;
 }
 
+.carrot.dropdown-toggle::after {
+  display: inline-block;
+}
+
 .dropdown-item {
   color: #132843;
   font-family: "Circular Std";
