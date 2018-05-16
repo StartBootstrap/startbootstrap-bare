@@ -10,6 +10,9 @@ input:disabled {
   letter-spacing: 0.24px;
   line-height: 14px;
   font-weight: 300;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.5;
 }
 
 .slyce-form-section__header {
@@ -65,7 +68,7 @@ input.form-control.slyce-input--underlined {
     margin: 0;
   }
 
-  &.slyce-input__message--minor {
+  &.slyce-input__message--minor, &.slyce-input__message--minor * {
     font-size: 12px;
   }
 }

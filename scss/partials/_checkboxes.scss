@@ -8,7 +8,7 @@ $iconsPath: "../assets/icons/";
   width: 20px;
   display: inline-block;
   border-radius: 3px;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   input {
     opacity: 0;
@@ -74,6 +74,10 @@ $iconsPath: "../assets/icons/";
     .line {
       display: none;
     }
+  }
+
+  input:focus+.slyce-checkbox__mark {
+    box-shadow: 0 0 0 0.2rem rgba(40, 124, 243, 0.5);
   }
   // &.slyce-input--error {
   //   .slyce-checkbox__mark{
