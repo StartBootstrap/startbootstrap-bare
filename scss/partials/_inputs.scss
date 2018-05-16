@@ -229,16 +229,17 @@ textarea {
 .dropdown-toggle {
   min-width: 0;
   min-height: 0;
+  background-color:transparent;
 }
 
 .dropdown-toggle:hover {
-  background-color: $gray_8;
+  background-color: $gray_8 !important;
 }
 
 .dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
-  background-color: $gray_3;
+  background-color: $gray_3 !important;
 }
 
 .dropdown-toggle::after {
