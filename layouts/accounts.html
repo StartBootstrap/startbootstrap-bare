@@ -336,7 +336,8 @@
                         <label class="col-sm-4 slyce-col-form-label text-right">Company Logo</label>
                         <div class="col-sm-8">
                             <button type="button" class="btn px-2 slyce-btn--icon btn-outline-primary slyce-btn--file">
-                                <svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
                                     <title>ic_photoLib</title>
                                     <desc>Created with Sketch.</desc>
@@ -404,6 +405,96 @@
                             <div class="slyce-input-container">
                                 <div class="slyce-input">
                                     <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-1">
+                        <label class="col-sm-4 slyce-col-form-label text-right">Office Address</label>
+                        <div class="col-sm-8">
+                            <button class="btn bg-transparent">
+                                <div class="d-flex align-items-center ">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                        <title>ic_add</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs></defs>
+                                        <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="S1---Styleguide" transform="translate(-292.000000, -2169.000000)">
+                                                <g id="04---Icons" transform="translate(260.000000, 2094.000000)">
+                                                    <g id="Icons" transform="translate(0.000000, 75.000000)">
+                                                        <g id="ic_add" transform="translate(32.000000, 0.000000)">
+                                                            <rect id="Rectangle-3" x="0" y="0" width="16" height="16"></rect>
+                                                            <path d="M9,7.0175494 L15.1176471,7.0175494 C15.3937894,7.0175494 15.6176471,7.24140703 15.6176471,7.5175494 L15.6176471,8.5175494 C15.6176471,8.79369178 15.3937894,9.0175494 15.1176471,9.0175494 L9,9.0175494 L9,15.1351965 C9,15.4113388 8.77614237,15.6351965 8.5,15.6351965 L7.5,15.6351965 C7.22385763,15.6351965 7,15.4113388 7,15.1351965 L7,9.0175494 L0.882352941,9.0175494 C0.606210566,9.0175494 0.382352941,8.79369178 0.382352941,8.5175494 L0.382352941,7.5175494 C0.382352941,7.24140703 0.606210566,7.0175494 0.882352941,7.0175494 L7,7.0175494 L7,0.899902344 C7,0.623759969 7.22385763,0.399902344 7.5,0.399902344 L8.5,0.399902344 C8.77614237,0.399902344 9,0.623759969 9,0.899902344 L9,7.0175494 Z"
+                                                                  id="Combined-Shape" fill="#287CF3"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <div class="px-1 text-primary font-weight-light">
+                                        Add Address
+                                    </div>
+                                </div>
+                            </button>
+
+                            <div class="py-1">
+                                <!--Condition 1 where plus button is not pressed-->
+                                <!--<p class="text-muted p&#45;&#45;small">-->
+                                <!--Add the office address where the account owner is located.-->
+                                <!--This is optional.-->
+                                <!--</p>-->
+                                <div class="p-1 border rounded">
+                                    <div class="pt-1">
+                                        <label>Country</label>
+                                        <div class="dropdown slyce-select-dropdown w-50">
+                                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle--minWidth100" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                Select a Country
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Gotham City</a>
+                                                <a class="dropdown-item" href="#">Metro City</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex pt-1">
+                                        <div class="w-75">
+                                            <label>Street Address</label>
+                                            <input type="streetAddress" class="form-control" placeholder="street address">
+                                        </div>
+                                        <div class="pl-1 ml-auto">
+                                            <label>Apt, Suite, Bldg</label>
+                                            <input type="unitNumber" class="form-control" placeholder="#">
+                                        </div>
+                                    </div>
+                                    <div class="pt-1">
+                                        <label>City</label>
+                                        <input type="city" class="form-control" placeholder="city">
+                                    </div>
+                                    <div class="pt-1">
+                                        <label>State</label>
+                                        <div class="dropdown slyce-select-dropdown w-100">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                Select a State...
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Gotham State</a>
+                                                <a class="dropdown-item" href="#">Metro State</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-1">
+                                        <label>Zip Code</label>
+                                        <input type="zipCode" class="form-control" placeholder="zip code">
+                                    </div>
                                 </div>
                             </div>
                         </div>

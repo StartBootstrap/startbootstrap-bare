@@ -250,6 +250,14 @@ textarea {
   display: inline-block;
 }
 
+.dropdown-toggle--minWidth100{
+  min-width: 100px;
+}
+
+.dropdown-toggle{
+  height:38px;
+}
+
 .dropdown-item {
   color: #132843;
   font-family: "Circular Std";
@@ -323,9 +331,13 @@ textarea {
   .dropdown-menu {
     width: 100%;
   }
+  .dropdown-item{
+    font-weight: 300;
+  }
   .dropdown-item:hover {
-    background-color: $primary;
-    color: $white;
+    background-color: #F5F5F5;
+    color: #333333;
+    font-weight: bold;
   }
 }
 
