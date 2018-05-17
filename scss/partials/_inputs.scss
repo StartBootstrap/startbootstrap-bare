@@ -272,9 +272,6 @@ textarea {
     width: 14px;
     height: 14px;
   }
-  .dropdown-item:hover{
-    background-color:#287cf3 !important;
-  }
 }
 
 .dropdown-menu.show {
@@ -323,9 +320,13 @@ textarea {
   .dropdown-menu {
     width: 100%;
   }
+  .dropdown-item{
+    font-weight: 300;
+  }
   .dropdown-item:hover {
-    background-color: $primary;
-    color: $white;
+    background-color: #F5F5F5;
+    color: #333333;
+    font-weight: bold;
   }
 }
 
