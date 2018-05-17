@@ -233,13 +233,13 @@ textarea {
 }
 
 .dropdown-toggle:hover {
-  background-color: $gray_8 !important;
+  background-color: $gray_8;
 }
 
 .dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
-  background-color: $gray_3 !important;
+  background-color: $gray_3;
 }
 
 .dropdown-toggle::after {
@@ -273,12 +273,12 @@ textarea {
     height: 14px;
   }
   .dropdown-item:hover{
-    background-color:#287cf3 !important;
+    background-color:#287cf3 ;
   }
 }
 
 .dropdown-menu.show {
-  width:100% !important;
+  width:100%;
 }
 
 .slyce-select-dropdown {
