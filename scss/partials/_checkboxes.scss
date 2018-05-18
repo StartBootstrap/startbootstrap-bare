@@ -61,7 +61,7 @@ $iconsPath: "../assets/icons/";
     }
   }
   input:checked:disabled+.slyce-checkbox__mark {
-    border-color: $gray_7;
+    border-color: $gray_6;
     background-color: $gray_8;
     .line {
       display: block;
@@ -69,7 +69,7 @@ $iconsPath: "../assets/icons/";
     }
   }
   input:disabled+.slyce-checkbox__mark {
-    border-color: $gray_7;
+    border-color: $gray_6;
     background-color: $gray_8;
     .line {
       display: none;
@@ -142,15 +142,15 @@ $iconsPath: "../assets/icons/";
   input:disabled + .slyce-checkbox__mark {
     .line:first-child{
       display: block;
-      background-color: $gray_6;
+      background-color: $white;
     }
     .line:last-child {
       display: none;
     }
   }
   input:disabled:checked + .slyce-checkbox__mark {
-    background-color: $gray_7;
-    border-color: $gray_7;
+    background-color: $gray_6;
+    border-color: $gray_6;
 
     .line:first-child{
       display: block;

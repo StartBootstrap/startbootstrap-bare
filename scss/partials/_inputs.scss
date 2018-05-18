@@ -24,7 +24,7 @@ input:disabled {
     margin: 0;
     position: relative;
     padding-right: 15px;
-    color: $gray_3;
+    color: $gray_1;
     font-size: 16px;
     font-weight: 300;
   }
@@ -33,7 +33,7 @@ input:disabled {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: $gray_7;
+    background-color: $gray_5;
     position: absolute;
     top: 50%;
   }
@@ -60,7 +60,7 @@ input.form-control.slyce-input--underlined {
 
 .slyce-input__message {
   font-size: 14px;
-  color: $gray_3;
+  color: $gray_1;
   font-weight: 300;
   letter-spacing: 0.24px;
   line-height: 24px;
@@ -110,7 +110,7 @@ input.form-control.slyce-input--underlined {
 
 input.form-control {
   font-size: 14px;
-  color: $gray_3;
+  color: $gray_1;
   padding: 8px 16px;
   border-radius: 3px;
   font-weight: 300;
@@ -140,7 +140,7 @@ label.slyce-label--major {
 
 label {
   font-weight: 300;
-  color: $gray_3;
+  color: $gray_1;
   font-size: 14px;
   letter-spacing: 0.24px;
   line-height: 24px;
@@ -161,19 +161,19 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-  color: $gray_6 !important;
+  color: $gray_5 !important;
 }
 
 ::-moz-placeholder {
-  color: $gray_6 !important;
+  color: $gray_5 !important;
 }
 
 :-ms-input-placeholder {
-  color: $gray_6 !important;
+  color: $gray_5 !important;
 }
 
 :-moz-placeholder {
-  color: $gray_6 !important;
+  color: $gray_5 !important;
 }
 
 .slyce-account-controls {
@@ -238,7 +238,7 @@ textarea {
 .dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
-  background-color: $gray_3 !important;
+  background-color: $gray_1 !important;
 }
 
 .dropdown-toggle::after {
@@ -311,7 +311,7 @@ textarea {
   &>button {
     border-radius: 3px;
     background-color: transparent;
-    color: $gray_3;
+    color: $gray_1;
     border-color: $gray_6;
     text-align: left;
     padding: 6px 16px;
