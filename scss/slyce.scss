@@ -21,6 +21,7 @@
 @import './partials/_modals';
 @import './partials/_progress';
 @import './partials/_file-uploader';
+@import './partials/_dropdowns';
 
 
 
@@ -30,7 +31,8 @@ section{
     width: 100%;
 }
 
-.col__content{
+*:disabled{
+  cursor: not-allowed !important;
 }
 
 ul {
