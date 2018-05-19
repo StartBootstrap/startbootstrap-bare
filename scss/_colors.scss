@@ -16,6 +16,32 @@ $gray_6: #d4dbe0;
 $gray_7: #e5ebed;
 $gray_8: #f2f5f6;
 
+
+.slyce-bg-gray_1 {
+  background-color: $gray_1;
+}
+.slyce-bg-gray_2 {
+  background-color: $gray_2;
+}
+.slyce-bg-gray_3 {
+  background-color: $gray_3;
+}
+.slyce-bg-gray_4 {
+  background-color: $gray_4;
+}
+.slyce-bg-gray_5 {
+  background-color: $gray_5;
+}
+.slyce-bg-gray_6 {
+  background-color: $gray_6;
+}
+.slyce-bg-gray_7 {
+  background-color: $gray_7;
+}
+.slyce-bg-gray_8 {
+  background-color: $gray_8;
+}
+
 $white: #fff;
 
 $primary_alt: #1b55a6;
@@ -27,6 +53,32 @@ $warning: #ffe345;
 $orange: #ffa94c;
 $coral: #fd7676;
 $purple: #c589e0;
+
+.slyce-bg-primary_alt{
+  background-color: $primary_alt;
+}
+
+.slyce-bg-primary{
+  background-color: $primary;
+}
+.slyce-bg-info{
+  background-color: $info;
+}
+.slyce-bg-success{
+  background-color: $success;
+}
+.slyce-bg-warning{
+  background-color: $warning;
+}
+.slyce-bg-orange{
+  background-color: $orange;
+}
+.slyce-bg-coral{
+  background-color: $coral;
+}
+.slyce-bg-purple{
+  background-color: $purple;
+}
 
 $link: #287CF3;
 $link_hover: #287CF3;
