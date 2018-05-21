@@ -232,13 +232,13 @@ textarea {
 }
 
 .dropdown-toggle:hover {
-  background-color: $gray_8 !important;
+  background-color: $gray_8;
 }
 
 .dropdown-toggle:focus {
   outline: 0;
   box-shadow: none;
-  background-color: $gray_1 !important;
+  background-color: $gray_3;
 }
 
 .dropdown-toggle::after {
@@ -253,9 +253,9 @@ textarea {
   min-width: 100px;
 }
 
-.dropdown-toggle{
-  height:38px;
-}
+// .dropdown-toggle{
+//   height:38px;
+// }
 
 .dropdown-item {
   color: #132843;
@@ -279,10 +279,13 @@ textarea {
     width: 14px;
     height: 14px;
   }
+  .dropdown-item:hover{
+    background-color:#287cf3 ;
+  }
 }
 
 .dropdown-menu.show {
-  width:100% !important;
+  width:100%;
 }
 
 .slyce-select-dropdown {
