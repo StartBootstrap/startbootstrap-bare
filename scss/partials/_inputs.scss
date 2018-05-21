@@ -3,6 +3,12 @@ $iconsPath: "../assets/icons/";
 
 input:disabled {
   cursor: not-allowed;
+
+  &.form-control,
+  &.form-control[readonly],
+  & {
+    background-color: $gray_6;
+  }
 }
 
 .col-form-label {
@@ -45,7 +51,7 @@ input.form-control.slyce-input--underlined {
   letter-spacing: normal;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $gray_6;
+  border-bottom: 1px solid $gray_5;
   padding: 8px 0;
   transition: padding .3s, border-color .3s;
   font-weight: 300;
