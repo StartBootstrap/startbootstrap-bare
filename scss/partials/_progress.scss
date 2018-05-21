@@ -1,10 +1,63 @@
 @import '../_colors';
 
 .progress{
-  background-color: #7F8FA4 !important;
+  background-color: $gray_5;
+  border-radius: 50px;
+  height: 7px;
+  overflow: visible;
+}
+
+.progress-bar{
+  position: relative;
   border-radius: 50px;
 
+  &:hover{
+    .slyce-progress__tip {
+      transform: scale(1);
+      opacity: 1;
+      transition-delay: 0s;
+
+      .slyce-popover{
+        transition-delay: .2s;
+        opacity: 1;
+      }
+    }
+  }
 }
-.progress-bar{
-  border-radius: 50px;
+
+.slyce-progress__tip{
+  transform: scale(0);
+  opacity: 0;
+  transition: all .2s linear;
+  transition-delay: 1s;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-color: inherit;
+  right: -6px;
+  border-radius: 100px;
+  border: 3px solid rgba($primary, 0.5);
+  box-sizing: content-box;
+}
+
+.slyce-popover--right{
+  left: auto;
+  right: 0;
+}
+
+.slyce-popover{
+  opacity: 0;
+  transition: all .2s;
+  transition-delay: 1.2s;
+  margin-top: 18px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  max-width: 300px;
+  min-width: 250px;
+  width: auto;
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px rgba(51,51,51, 0.2);
+  padding: 12px;
 }
