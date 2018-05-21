@@ -261,7 +261,7 @@ textarea {
 // }
 
 .dropdown-item {
-  color: #132843;
+  color: $gray_2;
   font-family: "Circular Std";
   font-size: 14px;
   font-weight: bold;
@@ -278,12 +278,12 @@ textarea {
   .dropdown-item-box {
     border-radius: 3px;
     content: "";
-    background-color: #7F8FA4;
+    background-color: $gray_4;
     width: 14px;
     height: 14px;
   }
   .dropdown-item:hover{
-    background-color:#287cf3 ;
+    background-color: $gray_8 ;
   }
 }
 
