@@ -32,7 +32,10 @@
     "devDependencies": {
         "browser-sync": "2.23.6",
         "gulp": "^3.9.1",
+        "gulp-consolidate": "^0.2.0",
+        "gulp-iconfont": "^9.1.0",
         "gulp-sass": "^4.0.1",
-        "gulp-sourcemaps": "^2.6.4"
+        "gulp-sourcemaps": "^2.6.4",
+        "underscore": "^1.9.0"
     }
 }

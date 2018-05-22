@@ -1,0 +1,82 @@
+/**
+iconfont Webfont
+*/
+font-face {
+ font-family: 'iconfont';
+ src: url('iconfont.eot?1527015961591');
+ src: url('iconfont.eot?#iefix-1527015961591') format('embedded-opentype'),
+  url('iconfont.woff2?1527015961591') format('woff2'),
+  url('iconfont.woff?1527015961591') format('woff'),
+  url('iconfont.ttf?1527015961591') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+ font-family: 'iconfont';
+ display: inline-block;
+ vertical-align: middle;
+ line-height: 1;
+ font-weight: normal;
+ font-style: normal;
+ speak: none;
+ text-decoration: inherit;
+ font-size: inherit;
+ text-transform: none;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+
+.icon-ic_add:before {
+ content: '\ea01';
+}
+
+.icon-ic_arrowBack:before {
+ content: '\ea02';
+}
+
+.icon-ic_arrowForward_small:before {
+ content: '\ea03';
+}
+
+.icon-ic_close:before {
+ content: '\ea04';
+}
+
+.icon-ic_copy:before {
+ content: '\ea05';
+}
+
+.icon-ic_dropCarrot_small:before {
+ content: '\ea06';
+}
+
+.icon-ic_help:before {
+ content: '\ea07';
+}
+
+.icon-ic_more:before {
+ content: '\ea08';
+}
+
+.icon-ic_photoLib:before {
+ content: '\ea09';
+}
+
+.icon-ic_search:before {
+ content: '\ea0a';
+}
+
+.icon-ic_validError:before {
+ content: '\ea0b';
+}
+
+.icon-ic_validSuccess:before {
+ content: '\ea0c';
+}

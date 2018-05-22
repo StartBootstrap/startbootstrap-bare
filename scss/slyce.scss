@@ -2,8 +2,13 @@
 @import './_variables';
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
-// generated with https://glyphter.com/
-@import "../assets/icons/icons-font/css/Glyphter.css";
+
+// manually generated icon gonts using https://glyphter.com/
+@import "../assets/iconfont-manual/css/Glyphter.css";
+
+// gulp generated icon font
+// @import "../assets/iconfont-generated/iconfont.css";
+
 @import './_fonts';
 @import './_typography';
 @import './layouts/_half-split';

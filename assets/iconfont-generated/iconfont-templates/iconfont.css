@@ -1,0 +1,39 @@
+/**
+<%= fontName %> Webfont
+*/
+font-face {
+ font-family: '<%= fontName %>';
+ src: url('<%= fontName %>.eot?<%= fontDate %>');
+ src: url('<%= fontName %>.eot?#iefix-<%= fontDate %>') format('embedded-opentype'),
+  url('<%= fontName %>.woff2?<%= fontDate %>') format('woff2'),
+  url('<%= fontName %>.woff?<%= fontDate %>') format('woff'),
+  url('<%= fontName %>.ttf?<%= fontDate %>') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+ font-family: '<%= fontName %>';
+ display: inline-block;
+ vertical-align: middle;
+ line-height: 1;
+ font-weight: normal;
+ font-style: normal;
+ speak: none;
+ text-decoration: inherit;
+ font-size: inherit;
+ text-transform: none;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+<% _.each(glyphs, function(icon){ %>
+.icon-<%= icon.name %>:before {
+ content: '\<%= icon.unicode[0].charCodeAt(0).toString(16) %>';
+}
+<% }) %>
