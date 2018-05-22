@@ -8,8 +8,8 @@ $iconsPath: "../assets/icons/";
   width: 20px;
   display: inline-block;
   border-radius: 3px;
-  // overflow: hidden;
   position: relative;
+
   input {
     opacity: 0;
     position: absolute;
@@ -21,14 +21,16 @@ $iconsPath: "../assets/icons/";
     right: 0;
     z-index: 10;
   }
+
   .slyce-checkbox__mark {
     height: 100%;
     width: 100%;
     border-radius: 2px;
     overflow: hidden;
     position: relative;
-    border: 1px solid $gray_6;
+    border: 1px solid $gray_5;
     transition: all .2s;
+
     .line {
       height: 2px;
       transition: all .2s;
@@ -37,6 +39,7 @@ $iconsPath: "../assets/icons/";
       border-radius: 2px;
       display: none;
     }
+
     .line:first-child {
       width: 5px;
       transform: rotate(45deg);
@@ -44,6 +47,7 @@ $iconsPath: "../assets/icons/";
       left: 4px;
       animation: scale-in-rotate-1 .2s;
     }
+
     .line:last-child {
       width: 9px;
       transform: rotate(-45deg);
@@ -53,24 +57,27 @@ $iconsPath: "../assets/icons/";
     }
   }
   input:checked+.slyce-checkbox__mark {
-    border-color: $gray_6;
+    border-color: $gray_5;
     background-color: $white;
+
     .line {
       display: block;
       background-color: $primary;
     }
   }
   input:checked:disabled+.slyce-checkbox__mark {
-    border-color: $gray_7;
+    border-color: $gray_5;
     background-color: $gray_8;
+
     .line {
       display: block;
-      background-color: $gray_6;
+      background-color: $gray_5;
     }
   }
   input:disabled+.slyce-checkbox__mark {
-    border-color: $gray_7;
+    border-color: $gray_5;
     background-color: $gray_8;
+
     .line {
       display: none;
     }
@@ -111,7 +118,7 @@ $iconsPath: "../assets/icons/";
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid $gray_5;
+    border: 2px solid $gray_3;
   }
 
   .line:first-child{
@@ -119,43 +126,50 @@ $iconsPath: "../assets/icons/";
     left: 2px;
     top: 2px;
     position: absolute;
-    background-color: $gray_5;
+    background-color: $gray_3;
     height: 12px;
     width: 12px;
     border-radius: 100px;
   }
+
   .line:last-child {
     display: none;
   }
+
   input:checked + .slyce-checkbox__mark {
     background-color: $success;
     border-color: $success;
+
     .line:first-child{
       left: 13px;
       background-color: $white;
       display: block
     }
+
     .line:last-child {
       display: none;
     }
   }
   input:disabled + .slyce-checkbox__mark {
+    background-color: $gray_5;
     .line:first-child{
       display: block;
-      background-color: $gray_6;
+      background-color: $white;
     }
+
     .line:last-child {
       display: none;
     }
   }
   input:disabled:checked + .slyce-checkbox__mark {
-    background-color: $gray_7;
-    border-color: $gray_7;
+    background-color: $gray_5;
+    border-color: $gray_5;
 
     .line:first-child{
       display: block;
       background-color: $white;
     }
+
     .line:last-child {
       display: none;
     }
