@@ -1,4 +1,5 @@
 @import '../colors';
+$iconsPath: "../assets/icons/";
 
 .table {
   .table-company-logo {
@@ -8,13 +9,29 @@
     background-color: $gray_7;
   }
 
+  thead {
+    .selected {
+      color: rgba(51, 51, 51, 0.75);
+      font-family: "Circular Std";
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.38px;
+      line-height: 12px;
+      position:relative;
+    }
+  }
+
   th {
     span {
       cursor: pointer;
     }
-    height: 12px;
-    width: 74px;
+
     color: rgba(51, 51, 51, 0.5);
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.38px;
+    line-height: 12px;
   }
   tbody {
     td {
@@ -30,12 +47,10 @@
 
     .text-primary {
       @extend .text-primary;
-      height: 12px;
-      width: 29px;
+      color: #287CF3;
       font-family: "Circular Std";
       font-size: 14px;
       font-weight: bold;
-      line-height: 12px;
     }
     .text-primary.font-weight-light {
       @extend .text-primary;
