@@ -148,7 +148,7 @@ $iconsPath: "../assets/icons";
     .slyce-svg-icon {
       fill: $white;
     }
-    &:active {
+    &:active:not(:disabled) {
       .slyce-svg-icon {
         opacity: 0.56;
       }
