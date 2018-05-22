@@ -90,3 +90,22 @@ $iconsPath: "../assets/icons/";
     width: auto;
   }
 }
+
+.slyce-dropdown {
+
+}
+
+.slyce-dropdown--icon {
+  $iconSize: 24px;
+  .btn {
+    height: $iconSize;
+    width: $iconSize;
+    border-radius: 4px;
+    padding: 0;
+  }
+  svg{
+    height: $iconSize;
+    width: $iconSize;
+    padding: 5px;
+  }
+}
