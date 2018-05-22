@@ -1,9 +1,7 @@
 @import './_colors';
 @import './_variables';
-
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 @import './_fonts';
 @import './_typography';
 @import './layouts/_half-split';
@@ -23,27 +21,22 @@
 @import './partials/_file-uploader';
 @import './partials/_dropdowns';
 
-
-
-
-section{
-    position: relative;
-    width: 100%;
+section {
+  position: relative;
+  width: 100%;
 }
 
-*:disabled{
+*:disabled {
   cursor: not-allowed !important;
 }
 
 ul {
-    margin-left: -5px;
-    li {
-        color: #132843;
-        font-family: "Circular Std";
-        font-size: 14px;
-        font-weight: 300;
-        letter-spacing: 0.24px;
-        line-height: 24px;
-        padding: 1px 0px 1px 10px;
-    }
+  margin-left: -5px;
+  li {
+    color: rgba(51, 51, 51, 0.75);
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 }

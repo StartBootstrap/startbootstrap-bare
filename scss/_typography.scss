@@ -100,13 +100,14 @@ a {
   font-weight: 300 !important;
 }
 
-.slyce-small{
+.slyce-small {
   margin-top: 18px;
   font-size: 11px;
   text-transform: uppercase;
   color: $gray_4;
   font-weight: 300;
 }
+
 .slyce-active-services {
   color: #7F8FA4;
   font-family: "Circular Std";
@@ -114,5 +115,22 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 11px;
+}
+
+.slyce-sub-tag {
+  color: rgba(51, 51, 51, 0.75) !important;
+  font-family: "Circular Std" !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 24px !important;
+}
+
+.slyce-tag {
+  color: rgba(51, 51, 51, 0.5);
+  font-family: "Circular Std";
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 14px;
 }
 
