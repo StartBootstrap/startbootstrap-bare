@@ -59,37 +59,3 @@ $progress-tip-size: 12px;
     background-color: rgba($primary, 0.3);
   }
 }
-
-
-.slyce-popover{
-  transition-property: all;
-  transition-duration: .2s;
-  opacity: 0;
-  margin-top: 18px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  max-width: 300px;
-  min-width: 250px;
-  width: auto;
-  background-color: $white;
-  border-radius: 3px;
-  box-shadow: 1px 1px 6px rgba(51,51,51, 0.2);
-  padding: 12px;
-  cursor: auto;
-  z-index: 99;
-  -webkit-font-smoothing: subpixel-antialiased;
-
-  &, * {
-    line-height: 20px;
-    font-weight: 300;
-    font-size: 14px;
-    font-weight: 300;
-    font-size: 14px;
-  }
-}
-
-.slyce-popover--right{
-  left: auto;
-  right: 0;
-}
