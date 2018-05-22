@@ -1,5 +1,6 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
+
 .slyce-uploaded-file__container {
   border-radius: 3px;
   border: 1px solid $gray_6;
@@ -53,6 +54,16 @@ $iconsPath: "../assets/icons/";
   height: 16px;
   width: 16px;
   background-image: url('#{$iconsPath}/ic_validSuccess.svg');
+}
+
+.slyce-uploaded-file--mini{
+  padding: 0;
+  border: none;
+
+  .slyce-uploaded-file__success-message{
+    animation: fadeOutLeft .5s forwards ease-in;
+    animation-delay: 3s;
+  }
 }
 
 @keyframes expand {
