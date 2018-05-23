@@ -1,5 +1,6 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
+
 .slyce-uploaded-file__container {
   border-radius: 3px;
   border: 1px solid $gray_6;
@@ -60,6 +61,16 @@ $iconsPath: "../assets/icons/";
 .slyce-animate--collapse{
   transform-origin: top;
   animation: collapse .2s forwards ease-in-out;
+}
+
+.slyce-uploaded-file--mini{
+  padding: 0;
+  border: none;
+
+  .slyce-uploaded-file__success-message{
+    animation: fadeOutLeft .5s forwards ease-in;
+    animation-delay: 3s;
+  }
 }
 
 @keyframes expand {
