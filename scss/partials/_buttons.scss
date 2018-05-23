@@ -24,7 +24,7 @@ $iconsPath: "../assets/icons";
   // override bootstrap values
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show>&.dropdown-toggle {
+  .show > &.dropdown-toggle {
     background-color: $primary;
     color: $white;
   }
@@ -51,7 +51,7 @@ $iconsPath: "../assets/icons";
   // override bootstrap values
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show>&.dropdown-toggle {
+  .show > &.dropdown-toggle {
     background-color: transparent;
   }
   &:hover {
@@ -69,7 +69,7 @@ $iconsPath: "../assets/icons";
     border-color: $primary_alt;
     opacity: .56;
   }
-  &:disabled{
+  &:disabled {
     background-color: $gray_6;
     color: $gray_3;
     border: none;
@@ -137,7 +137,7 @@ $iconsPath: "../assets/icons";
         fill: $primary_alt;
       }
     }
-    &:disabled{
+    &:disabled {
       .slyce-svg-icon {
         fill: $gray_4;
       }
@@ -153,7 +153,7 @@ $iconsPath: "../assets/icons";
         opacity: 0.56;
       }
     }
-    &:disabled{
+    &:disabled {
       .slyce-svg-icon {
         fill: $gray_3;
       }
@@ -235,7 +235,11 @@ $iconsPath: "../assets/icons";
 .slyce-btn-copy {
   min-width: 0;
   border-radius: 0;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding: 0;
+  i {
+    padding: 0px 7px 0px 7px;
+    font-size: 30px
+  }
 }

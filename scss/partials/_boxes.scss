@@ -5,6 +5,7 @@
   border-radius: 6px;
   border-style: dashed;
 }
+
 .rectangle-3 {
   height: 24px;
   width: 24px;
@@ -17,11 +18,11 @@
   width: 40px;
   border-radius: 2px;
   background-color: #D4DBE0;
-  content:"";
+  content: "";
 }
 
-.slyce-border{
-  border: white !important;
+.slyce-border {
+  border: 1px solid #D9D9D9;
   border-radius: 2px;
   background-color: #FFFFFF;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
