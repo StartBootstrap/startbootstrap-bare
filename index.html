@@ -781,13 +781,52 @@
     <br>
     <hr>
     <br>
+  <div id="progress">
+      <a href="#progress" class="text-muted">
+        <h2>#Progress:</h2>
+      </a>
 
+      <div class="row">
+        <div class="col">
+          <h4>Progress</h4>
+          <div class="slyce-progress">
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Progress with popover</h4>
+          <div class="slyce-progress c-pointer">
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
 
-</div>
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="dist/javascript/slyce.js"></script>
+                <div class="slyce-progress__tip">
+                  <div class="slyce-popover slyce-popover--right">
+                    <span class="text-primary">112,123</span> searches this month
+                    <br>
+                    <span class="slyce-text-gray_3">181,158 remaining</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/javascript/slyce.js"></script>
 </body>
 
 </html>
