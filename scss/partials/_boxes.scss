@@ -5,14 +5,6 @@
   border-radius: 6px;
   border-style: dashed;
 }
-
-.border-secondary {
-  border: white !important;
-  border-radius: 2px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
-}
-
 .rectangle-3 {
   height: 24px;
   width: 24px;
@@ -26,4 +18,11 @@
   border-radius: 2px;
   background-color: #D4DBE0;
   content:"";
+}
+
+.slyce-border{
+  border: white !important;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
 }
