@@ -23,3 +23,15 @@ $fontsPath: "../assets/fonts";
 @include fontface('Circular Std', 'CircularStd-Black', 'otf', 900, normal);
 @include fontface('Circular Std', 'CircularStd-BlackItalic', 'otf', 900, italic);
 @include fontface('Oxigen Mono', 'OxygenMono-Regular', 'ttf', normal, normal);
+
+.slyce-fs-normal {
+  font-size: 14px;
+}
+
+.slyce-fs-smaller {
+  font-size: 12px;
+}
+
+.slyce-fs-bigger {
+  font-size: 16px;
+}
