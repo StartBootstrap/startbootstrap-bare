@@ -2,6 +2,26 @@
 
 $progress-tip-size: 12px;
 
+.slyce-progress{
+  padding: 5px 0;
+
+  &:hover {
+
+    .progress-bar{
+      .slyce-progress__tip {
+        transform: scale(1);
+        opacity: 1;
+        transition-delay: 0s;
+
+        .slyce-popover{
+          transition-delay: 0.2s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 .progress{
   background-color: $gray_5;
   border-radius: 50px;
@@ -12,19 +32,6 @@ $progress-tip-size: 12px;
 .progress-bar{
   position: relative;
   border-radius: 50px;
-
-  &:hover{
-    .slyce-progress__tip {
-      transform: scale(1);
-      opacity: 1;
-      transition-delay: 0s;
-
-      .slyce-popover{
-        transition-delay: 0.2s;
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .slyce-progress__tip{
