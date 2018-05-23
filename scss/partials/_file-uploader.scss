@@ -5,8 +5,6 @@ $iconsPath: "../assets/icons/";
   border-radius: 3px;
   border: 1px solid $gray_6;
   padding: 16px;
-  max-height: 0;
-  animation: expand 1.2s forwards ease-in;
   overflow: hidden;
 
   .slyce-uploaded-file__success-row{
@@ -48,12 +46,21 @@ $iconsPath: "../assets/icons/";
     color: $gray_4;
   }
 }
-
 .slyce-icon--success {
   display: inline-block;
   height: 16px;
   width: 16px;
   background-image: url('#{$iconsPath}/ic_validSuccess.svg');
+}
+
+.slyce-animate--expand{
+  transform-origin: top;
+  animation: expand .2s forwards ease-in-out;
+}
+
+.slyce-animate--collapse{
+  transform-origin: top;
+  animation: collapse .2s forwards ease-in-out;
 }
 
 .slyce-uploaded-file--mini{
@@ -68,13 +75,18 @@ $iconsPath: "../assets/icons/";
 
 @keyframes expand {
   0% {
-    max-height: 0;
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
+    transform:scaleY(0);
   }
   100% {
-    max-height: 1000px;
+    transform:scaleY(1);
+  }
+}
+
+@keyframes collapse {
+  0% {
+    transform:scaleY(1);
+  }
+  100% {
+    transform:scaleY(0);
   }
 }

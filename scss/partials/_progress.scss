@@ -1,10 +1,68 @@
 @import '../_colors';
 
-.progress{
-  background-color: #7F8FA4 !important;
-  border-radius: 50px;
+$progress-tip-size: 12px;
 
+.slyce-progress{
+  padding: 5px 0;
+
+  &:hover {
+
+    .progress-bar{
+      .slyce-progress__tip {
+        transform: scale(1);
+        opacity: 1;
+        transition-delay: 0s;
+
+        .slyce-popover{
+          transition-delay: 0.2s;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
-.progress-bar{
+
+.progress{
+  background-color: $gray_5;
   border-radius: 50px;
+  height: 5px;
+  overflow: visible;
+}
+
+.progress-bar{
+  position: relative;
+  border-radius: 50px;
+}
+
+.slyce-progress__tip{
+  transition: all .2s;
+  transition-delay: 1.2s;
+  transform: scale(0);
+  opacity: 0;
+  background-color: inherit;
+  border-radius: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  height: $progress-tip-size;
+  width: $progress-tip-size;
+  right: -$progress-tip-size/2;
+  top: -$progress-tip-size/4;
+
+  .slyce-popover{
+    transition-delay: 1s;
+  }
+
+  &::after{
+    transition: all .3s;
+    transition-delay: .8s;
+    content: "";
+    height: $progress-tip-size + $progress-tip-size / 2;
+    width: $progress-tip-size + $progress-tip-size / 2;
+    position: absolute;
+    top: -$progress-tip-size / 4;
+    left: -$progress-tip-size / 4;
+    border-radius: 100px;
+    display: block;
+    background-color: rgba($primary, 0.3);
+  }
 }
