@@ -1,0 +1,16 @@
+@import '../_colors';
+
+.slyce-sede-nav {
+  .nav-link{
+    padding: 0;
+    margin-bottom: 24px;
+    color: $gray_1;
+    font-size: 16px;
+    font-weight: 300;
+
+    &:hover,
+    &.active{
+      color: $primary;
+    }
+  }
+}
