@@ -20,9 +20,28 @@
   content:"";
 }
 
-.slyce-border{
-  border: white !important;
+.slyce-br-2{
   border-radius: 2px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+}
+
+.slyce-bc-gray_1{
+  border-color: $gray_1
+}
+.slyce-bc-gray_2{
+  border-color: $gray_2
+}
+.slyce-bc-gray_3{
+  border-color: $gray_3
+}
+.slyce-bc-gray_4{
+  border-color: $gray_4
+}
+.slyce-bc-gray_5{
+  border-color: $gray_5
+}
+.slyce-bc-gray_6{
+  border-color: $gray_6
+}
+.slyce-bc-gray_7{
+  border-color: $gray_7
 }
