@@ -7,15 +7,40 @@ $slyceRed: #FD7676;
 $slyceViolet: #C589E0;
 
 
-$gray_1: #001734;
-$gray_2: #132843;
-$gray_3: #546175;
-$gray_4: #7f8fa4;
-$gray_5: #b8c2cc;
-$gray_6: #d4dbe0;
-$gray_7: #e5ebed;
+$gray_1: #333333;
+$gray_2: #646464;
+$gray_3: #959595;
+$gray_4: #adadad;
+$gray_5: #d9d9d9;
+$gray_6: #f5f5f5;
+$gray_7: #fcfcfc;
 $gray_8: #f2f5f6;
 
+
+.slyce-text-gray_1 {
+  color: $gray_1;
+}
+.slyce-text-gray_2 {
+  color: $gray_2;
+}
+.slyce-text-gray_3 {
+  color: $gray_3;
+}
+.slyce-text-gray_4 {
+  color: $gray_4;
+}
+.slyce-text-gray_5 {
+  color: $gray_5;
+}
+.slyce-text-gray_6 {
+  color: $gray_6;
+}
+.slyce-text-gray_7 {
+  color: $gray_7;
+}
+.slyce-text-gray_8 {
+  color: $gray_8;
+}
 
 .slyce-bg-gray_1 {
   background-color: $gray_1;
@@ -53,6 +78,32 @@ $warning: #ffe345;
 $orange: #ffa94c;
 $coral: #fd7676;
 $purple: #c589e0;
+
+
+.slyce-text-primary{
+  color: $primary;
+}
+.slyce-text-info{
+  color: $info;
+}
+.slyce-text-success{
+  color: $success;
+}
+.slyce-text-warning{
+  color: $warning;
+}
+.slyce-text-orange{
+  color: $orange;
+}
+.slyce-text-coral{
+  color: $coral;
+}
+.slyce-text-purple{
+  color: $purple;
+}
+.slyce-text-primary_alt{
+  color: $primary_alt;
+}
 
 .slyce-bg-primary_alt{
   background-color: $primary_alt;

@@ -1,5 +1,5 @@
 @import '../colors';
-
+$iconsPath: "../assets/icons/";
 .table {
   .table-company-logo {
     height: 48px;
@@ -7,31 +7,98 @@
     border-radius: 6px;
     background-color: $gray_7;
   }
-
-  th{
-    span{
+  thead {
+    .selected {
+      color: rgba(51, 51, 51, 0.75);
+      font-family: "Circular Std";
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.38px;
+      line-height: 12px;
+      position:relative;
+    }
+  }
+  th {
+    span {
       cursor: pointer;
+    }
+
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.38px;
+    line-height: 12px;
+  }
+  tbody {
+    td {
+      height: 24px;
+      width: 86px;
+      color: rgba(51, 51, 51, 0.75);
+      font-family: "Circular Std";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      border: none;
+    }
+
+    .text-primary {
+      @extend .text-primary;
+      color: #287CF3;
+      font-family: "Circular Std";
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .text-primary.font-weight-light {
+      @extend .text-primary;
+      @extend .font-weight-light;
+      height: 16px;
+      width: 76px;
+      color: #287CF3;
+      font-family: "Circular Std";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
     }
   }
 
-  thead-light > td {
-    font-size: 14px;
-    line-height: 14px;
-    color: $gray_2;
-    font-weight: 300;
+  thead.borderless th {
+    border: none;
   }
 
-  thead.thead-light th {
-    font-size: 12px;
-    color: $gray_4;
-    font-weight: 300;
-    background-color: #F2F5F6;
+  thead.thead-light {
+    * {
+      background-color: #F2F5F6;
+      border-top: none;
+      color: #7F8FA4;
+      font-family: "Circular Std";
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: 0.38px;
+    }
   }
-  tbody td {
-    font-family: "Circular Std";
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.38px;
-    line-height: 14px;
+}
+
+.slyce-table--bottom-gradient-overlay {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    pointer-events: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
   }
 }
