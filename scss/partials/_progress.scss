@@ -1,5 +1,4 @@
 @import '../_colors';
-
 $progress-tip-size: 12px;
 
 .slyce-progress{
@@ -35,8 +34,9 @@ $progress-tip-size: 12px;
 }
 
 .slyce-progress__tip{
+  z-index: 1;
   transition: all .2s;
-  transition-delay: 1.2s;
+  transition-delay: .7s;
   transform: scale(0);
   opacity: 0;
   background-color: inherit;
@@ -49,12 +49,12 @@ $progress-tip-size: 12px;
   top: -$progress-tip-size/4;
 
   .slyce-popover{
-    transition-delay: 1s;
+    transition-delay: .5s;
   }
 
   &::after{
     transition: all .3s;
-    transition-delay: .8s;
+    transition-delay: .2s;
     content: "";
     height: $progress-tip-size + $progress-tip-size / 2;
     width: $progress-tip-size + $progress-tip-size / 2;
