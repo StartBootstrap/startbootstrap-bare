@@ -1,6 +1,6 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
-.slyce-select {
+.slyce-select, .slyce-dropdown {
   .dropdown-toggle {
     cursor: pointer;
     width: 100%;
@@ -90,5 +90,32 @@ $iconsPath: "../assets/icons/";
 
   .dropdown-menu{
     width: auto;
+  }
+}
+
+.slyce-dropdown {
+  .btn{
+    &:hover{
+      background-color: $gray_6;
+    }
+    &:active,
+    &:focus {
+      background-color: $gray_3;
+    }
+  }
+}
+
+.slyce-dropdown--icon {
+  $iconSize: 24px;
+  .btn {
+    height: $iconSize;
+    width: $iconSize;
+    border-radius: 4px;
+    padding: 0;
+  }
+  svg{
+    height: $iconSize;
+    width: $iconSize;
+    padding: 5px;
   }
 }
