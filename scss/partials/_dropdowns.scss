@@ -1,6 +1,6 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
-.slyce-select {
+.slyce-select, .slyce-dropdown {
   .dropdown-toggle {
     cursor: pointer;
     width: 100%;
@@ -11,9 +11,10 @@ $iconsPath: "../assets/icons/";
 
     &:disabled{
       opacity: .5;
-    }
-    &:disabled:hover{
-      background-color: inherit;
+      background-color: $gray_6;
+      &:hover{
+        background-color: $gray_6;
+      }
     }
   }
 
@@ -36,7 +37,7 @@ $iconsPath: "../assets/icons/";
     padding: 8px 16px;
     border-radius: 3px;
     font-weight: 300;
-    border-color: $gray_6;
+    border-color: $gray_5;
     &:focus {
       background-color: rgba(51, 51, 51, 0.5);
       color: $white;
@@ -89,5 +90,32 @@ $iconsPath: "../assets/icons/";
 
   .dropdown-menu{
     width: auto;
+  }
+}
+
+.slyce-dropdown {
+  .btn{
+    &:hover{
+      background-color: $gray_6;
+    }
+    &:active,
+    &:focus {
+      background-color: $gray_3;
+    }
+  }
+}
+
+.slyce-dropdown--icon {
+  $iconSize: 24px;
+  .btn {
+    height: $iconSize;
+    width: $iconSize;
+    border-radius: 4px;
+    padding: 0;
+  }
+  svg{
+    height: $iconSize;
+    width: $iconSize;
+    padding: 5px;
   }
 }

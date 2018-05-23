@@ -1,44 +1,79 @@
 $iconsPath: "../assets/icons";
 @import '../_colors';
 .btn {
-  padding: 7px;
+  padding: 8px;
   min-width: 120px;
   border-radius: 8px;
   font-size: 14px;
+  line-height: 14px;
   cursor: pointer;
   transition: all .2s !important;
-  .slyce-svg-icon {
+  border: none;
+  * {
     transition: all .2s;
   }
-
-  &:disabled{
+  &:disabled {
     cursor: not-allowed;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  color: $white;
+
+  // override bootstrap values
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show>&.dropdown-toggle {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+    background-color: $primary_alt;
+  }
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
+    background-color: $primary_alt;
+    color: rgba($white, 0.56);
+  }
+
+  &:disabled {
+    background-color: $gray_6;
+    color: $gray_3;
   }
 }
 
 .btn-outline-primary {
   transition: all .2s;
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: transparent !important;
+  border: 1px solid $primary;
+  background-color: transparent;
+
+  // override bootstrap values
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show>&.dropdown-toggle {
+    background-color: transparent;
   }
   &:hover {
+    background-color: transparent
+  }
+
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+    background-color: transparent;
     color: $primary_alt;
     border-color: $primary_alt;
-    .slyce-svg-icon {
-      fill: $primary_alt !important;
-    }
   }
-  &:active {
-    color: $primary !important;
-    border-color: $primary !important;
-    opacity: .8;
-    .slyce-svg-icon {
-      fill: $primary !important;
-    }
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
+    background-color: transparent;
+    color: $primary_alt;
+    border-color: $primary_alt;
+    opacity: .56;
   }
-  &:focus {}
+  &:disabled{
+    background-color: $gray_6;
+    color: $gray_3;
+    border: none;
+  }
 }
 
 .slyce-btn--loading,
@@ -70,14 +105,14 @@ $iconsPath: "../assets/icons";
     top: calc(50% - .6em);
     left: calc(50% - .6em);
   }
-  &:hover{
-    &:after{
-      border-color: $primary_alt;
+  &:hover {
+    &:after {
       border-bottom-color: transparent;
     }
   }
 }
-.slyce-btn--loading.btn-primary {
+
+.btn-primary.slyce-btn--loading {
   &:after {
     border-color: $white;
     border-bottom-color: transparent;
@@ -88,31 +123,56 @@ $iconsPath: "../assets/icons";
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  line-height: 16px;
   svg,
   img {
     margin-right: 8px;
   }
-  &.btn-outline-primary .slyce-svg-icon {
-    fill: $primary;
-  }
-  &.btn-primary .slyce-svg-icon {
-    fill: $white;
+
+  &.btn-outline-primary {
+    .slyce-svg-icon {
+      fill: $primary;
+    }
+    &:hover {
+      .slyce-svg-icon {
+        fill: $primary_alt;
+      }
+    }
+    &:disabled{
+      .slyce-svg-icon {
+        fill: $gray_4;
+      }
+    }
   }
 
-  &.slyce-btn--loading{
+  &.btn-primary {
+    .slyce-svg-icon {
+      fill: $white;
+    }
+    &:active {
+      .slyce-svg-icon {
+        opacity: 0.56;
+      }
+    }
+    &:disabled{
+      .slyce-svg-icon {
+        fill: $gray_3;
+      }
+    }
+  }
+
+  &.slyce-btn--loading {
     .slyce-svg-icon {
       display: none;
     }
   }
 }
 
-.slyce-btn--round{
+.slyce-btn--round {
   border-radius: 100px;
   border-width: 2px;
 }
 
-.slyce-btn--nostroke{
+.slyce-btn--nostroke {
   padding: 2px;
   min-width: 0;
   background-color: transparent;
@@ -133,46 +193,6 @@ $iconsPath: "../assets/icons";
   }
 }
 
-
-.slyce-btn--progress__progressbar{
-  display: none;
-  border-radius: 50px;
-}
-.slyce-btn--progress{
-  min-width: 100%;
-  border-radius: 50px;
-  height: 16px;
-  overflow: hidden;
-  color: transparent;
-  background-color: $gray_4;
-  border: none;
-  position: relative;
-  padding: 0;
-  transition: all 1s;
-  cursor: default !important;
-
-  *:not(.slyce-btn--progress__progressbar){
-    display: none;
-    opacity: 0;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $gray_4 !important;
-    box-shadow: none !important;
-  }
-
-  .slyce-btn--progress__progressbar{
-    transition: all .2s ease-in-out;
-    display: block;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
-
 .slyce-btn--close-modal {
   height: 16px;
   width: 16px;
@@ -187,6 +207,7 @@ $iconsPath: "../assets/icons";
   background-position: center center;
   z-index: 99;
   background-repeat: no-repeat;
+
   &:active {
     opacity: .9;
     background-image: url('#{$iconsPath}/ic_close.svg') !important;

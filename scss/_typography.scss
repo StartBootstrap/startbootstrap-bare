@@ -3,6 +3,7 @@
 * {
   font-family: 'Circular Std', sans-serif;
   font-weight: normal;
+  color: $gray_1;
 }
 
 code {
@@ -34,7 +35,6 @@ h4 {
 }
 
 h5 {
-  color: #7F8FA4;
   font-family: "Circular Std";
   font-size: 11px;
   font-weight: 300;
@@ -76,15 +76,15 @@ a {
   font-family: 'Circular Std', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: $link;
+  color: $primary;
 
   &:hover {
-    color: $link_hover;
+    color: $primary;
     text-decoration: underline;
   }
 
   &:active {
-    color: $link_active;
+    color: $primary_alt;
   }
 }
 
@@ -107,6 +107,7 @@ a {
   color: $gray_4;
   font-weight: 300;
 }
+
 .slyce-active-services {
   color: #7F8FA4;
   font-family: "Circular Std";
