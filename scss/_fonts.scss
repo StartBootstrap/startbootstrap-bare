@@ -24,6 +24,10 @@ $fontsPath: "../assets/fonts";
 @include fontface('Circular Std', 'CircularStd-BlackItalic', 'otf', 900, italic);
 @include fontface('Oxigen Mono', 'OxygenMono-Regular', 'ttf', normal, normal);
 
+.slyce-lh-20{
+  line-height: 20px;
+}
+
 .slyce-fs-normal {
   font-size: 14px;
 }
