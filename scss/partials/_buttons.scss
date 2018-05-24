@@ -15,6 +15,32 @@ $iconsPath: "../assets/icons";
   &:disabled {
     cursor: not-allowed;
   }
+
+  &:disabled {
+    background-color: $gray_6;
+    color: $gray_3;
+  }
+}
+
+.btn.btn-danger{
+  background-color: $coral;
+  color: $white;
+
+  // override bootstrap values
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show>&.dropdown-toggle {
+    background-color: $coral;
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+    background-color: darken($coral, 10%);
+  }
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
+    background-color: darken($coral, 10%);
+    color: rgba($white, 0.56);
+  }
 }
 
 .btn.btn-primary {
@@ -24,7 +50,7 @@ $iconsPath: "../assets/icons";
   // override bootstrap values
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show>&.dropdown-toggle {
+  .show > &.dropdown-toggle {
     background-color: $primary;
     color: $white;
   }
@@ -51,7 +77,7 @@ $iconsPath: "../assets/icons";
   // override bootstrap values
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active,
-  .show>&.dropdown-toggle {
+  .show > &.dropdown-toggle {
     background-color: transparent;
   }
   &:hover {
@@ -69,7 +95,7 @@ $iconsPath: "../assets/icons";
     border-color: $primary_alt;
     opacity: .56;
   }
-  &:disabled{
+  &:disabled {
     background-color: $gray_6;
     color: $gray_3;
     border: none;
@@ -112,6 +138,7 @@ $iconsPath: "../assets/icons";
   }
 }
 
+.btn-danger.slyce-btn--loading,
 .btn-primary.slyce-btn--loading {
   &:after {
     border-color: $white;
@@ -124,44 +151,68 @@ $iconsPath: "../assets/icons";
   justify-content: center;
   align-items: center;
   svg,
-  img {
+  img,
+  .slyce-icon {
     margin-right: 8px;
+    display: flex;
+    font-size: 14px;
   }
 
   &.btn-outline-primary {
     .slyce-svg-icon {
       fill: $primary;
     }
+    .slyce-icon{
+      color: $primary;
+    }
     &:hover {
       .slyce-svg-icon {
         fill: $primary_alt;
       }
+      .slyce-icon{
+        color: $primary_alt;
+      }
     }
-    &:disabled{
+    &:disabled {
       .slyce-svg-icon {
         fill: $gray_4;
+      }
+      .slyce-icon{
+        color: $gray_4;
       }
     }
   }
 
-  &.btn-primary {
+  &.btn-primary,
+  &.btn-danger {
     .slyce-svg-icon {
       fill: $white;
     }
+    .slyce-icon{
+      color: $white;
+    }
+
     &:active:not(:disabled) {
-      .slyce-svg-icon {
+      .slyce-svg-icon,
+      .slyce-icon {
         opacity: 0.56;
       }
     }
-    &:disabled{
+    &:disabled {
       .slyce-svg-icon {
         fill: $gray_3;
+      }
+      .slyce-icon{
+        color: $gray_3;
       }
     }
   }
 
   &.slyce-btn--loading {
     .slyce-svg-icon {
+      display: none;
+    }
+    .slyce-icon{
       display: none;
     }
   }
@@ -235,7 +286,11 @@ $iconsPath: "../assets/icons";
 .slyce-btn-copy {
   min-width: 0;
   border-radius: 0;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding: 0;
+  i {
+    padding: 0px 7px 0px 7px;
+    font-size: 18px
+  }
 }

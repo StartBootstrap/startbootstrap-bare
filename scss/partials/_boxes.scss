@@ -6,13 +6,6 @@
   border-style: dashed;
 }
 
-.border-secondary {
-  border: white !important;
-  border-radius: 12px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16), 0 4px 24px 0 rgba(0, 0, 0, 0.16);
-}
-
 .rectangle-3 {
   height: 24px;
   width: 24px;
@@ -25,5 +18,31 @@
   width: 40px;
   border-radius: 2px;
   background-color: #D4DBE0;
-  content:"";
+  content: "";
+}
+
+.slyce-br-2{
+  border-radius: 2px;
+}
+
+.slyce-bc-gray_1{
+  border: 1px solid $gray_1
+}
+.slyce-bc-gray_2{
+  border: 1px solid $gray_2
+}
+.slyce-bc-gray_3{
+  border: 1px solid $gray_3
+}
+.slyce-bc-gray_4{
+  border: 1px solid $gray_4
+}
+.slyce-bc-gray_5{
+  border: 1px solid $gray_5
+}
+.slyce-bc-gray_6{
+  border: 1px solid $gray_6
+}
+.slyce-bc-gray_7{
+  border: 1px solid $gray_7
 }

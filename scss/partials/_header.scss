@@ -1,10 +1,35 @@
 @import '../colors';
 
 .navbar {
+  .navbar-brand {
+    * {
+      color: #FFFFFF;
+      font-family: "Circular Std";
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.33px;
+      line-height: 24px;
+    }
+  }
+  .navbar-collapse, .navbar-nav{
+    height:100%;
+  }
+}
+
+.navbar.navbar-light {
   background-color: (white !important);
   box-shadow: 0 1px 0 0 #E5EBED, 0 1px 4px 0 #E5EBED, 0 1px 4px 0 rgba(38, 180, 233, 0.07);
-  height: 48px;
+  height: 64px;
   .nav-link {
+    font-family: "Circular Std";
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+
+    /*
+    color: #FFFFFF;
+    */
     font-family: "Circular Std";
     font-size: 14px;
     font-weight: bold;
@@ -18,12 +43,26 @@
     padding: 0rem 0rem 0rem 1rem;
   }
   .profile-icon {
-    width:32px;
-    height:32px;
+    width: 32px;
+    height: 32px;
   }
   .navbar-brand {
     img {
       height: 32px;
+    }
+  }
+}
+
+.navbar.navbar-dark {
+  height:48px;
+  background-color: #333333 !important;
+  li.active {
+    & a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 !important;
+      border-bottom: 3px solid $slyceBlue;
     }
   }
 }
