@@ -1,4 +1,5 @@
 @import '../_colors';
+@import '../../assets/iconfont-manual/styles.css';
 $iconsPath: "../assets/icons/";
 .slyce-select, .slyce-dropdown {
   .dropdown-toggle {
@@ -74,12 +75,13 @@ $iconsPath: "../assets/icons/";
     justify-content: space-between;
   }
   .dropdown-toggle:after {
-    margin-left: 10px;
-    display: inline-block;
-    background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
-    width: 7px;
-    height: 4px;
+    display: block;
+    font-family: "slyce-icon-font" !important;
+    content: "\67";
+    height: 100%;
     border: none;
+    padding-right:10px;
+    font-size: 9px;
   }
 }
 
