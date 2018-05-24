@@ -31,6 +31,7 @@ $iconsPath: "../assets/icons/";
 }
 
 .slyce-select--input {
+  margin: 0 !important;
   .dropdown-toggle {
     font-size: 14px;
     color: #546175;
@@ -49,6 +50,20 @@ $iconsPath: "../assets/icons/";
       background-color: rgba(51, 51, 51, 0.5);
       color: $white;
     }
+  }
+}
+
+.slyce-select--outlined {
+  .dropdown-toggle{
+    color: $primary;
+    border-color: $primary;
+    border-radius: 4px;
+    min-width: 10em;
+    text-align:left;
+  }
+  .dropdown-toggle:focus{
+    color: $primary;
+    background-color: white;
   }
 }
 

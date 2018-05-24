@@ -219,18 +219,6 @@ textarea {
   }
 }
 
-.custom-select {
-  min-width: 10vh;
-  @extend .text-primary;
-  font-size: 1vh;
-  font-weight: bold;
-  letter-spacing: -0.15px;
-  line-height: 18px;
-  min-height: 2.5vh;
-  border: 1px solid #287CF3;
-  border-radius: 8px;
-}
-
 .dropdown-toggle {
   min-width: 0;
   min-height: 0;
