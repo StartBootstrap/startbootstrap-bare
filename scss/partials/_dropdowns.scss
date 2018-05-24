@@ -65,6 +65,14 @@ $iconsPath: "../assets/icons/";
   .dropdown-toggle:focus{
     color: $primary;
     background-color: white;
+    border-color: $primary;
+  }
+  &.show {
+    .dropdown-toggle {
+      color: $primary;
+      border-color: $primary;
+      background-color: white;
+    }
   }
 }
 
