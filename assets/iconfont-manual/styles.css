@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "slyce-icon-font";
+  src:url("fonts/slyce-icon-font.eot");
+  src:url("fonts/slyce-icon-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/slyce-icon-font.woff") format("woff"),
+    url("fonts/slyce-icon-font.ttf") format("truetype"),
+    url("fonts/slyce-icon-font.svg#slyce-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "slyce-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "slyce-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-validsuccess:before {
+  content: "\61";
+}
+.icon-ic-add:before {
+  content: "\62";
+}
+.icon-ic-arrowback:before {
+  content: "\63";
+}
+.icon-ic-arrowforward-small:before {
+  content: "\64";
+}
+.icon-ic-close:before {
+  content: "\65";
+}
+.icon-ic-copy:before {
+  content: "\66";
+}
+.icon-ic-dropcarrot-small:before {
+  content: "\67";
+}
+.icon-ic-help:before {
+  content: "\68";
+}
+.icon-ic-more:before {
+  content: "\69";
+}
+.icon-ic-photolib:before {
+  content: "\6a";
+}
+.icon-ic-search:before {
+  content: "\6b";
+}
+.icon-ic-validerror:before {
+  content: "\6c";
+}
