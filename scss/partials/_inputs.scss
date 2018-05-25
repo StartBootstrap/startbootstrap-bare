@@ -11,6 +11,10 @@ input:disabled {
   }
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
 .col-form-label {
   font-size: 14px;
   letter-spacing: 0.24px;
