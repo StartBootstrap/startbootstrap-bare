@@ -3,9 +3,13 @@ $iconsPath: "../assets/icons/";
 
 .slyce-uploaded-file__container {
   border-radius: 3px;
-  border: 1px solid $gray_6;
   padding: 16px;
   overflow: hidden;
+
+  .slyce-icon.icon-ic-validsuccess {
+    color: $success;
+    font-size: 16px;
+  }
 
   .slyce-uploaded-file__success-row{
     margin-bottom: 12px;

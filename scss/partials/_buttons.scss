@@ -155,7 +155,10 @@ $iconsPath: "../assets/icons";
   .slyce-icon {
     margin-right: 8px;
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
+    &:before{
+      line-height: 0;
+    }
   }
 
   &.btn-outline-primary {
@@ -227,6 +230,10 @@ $iconsPath: "../assets/icons";
   padding: 2px;
   min-width: 0;
   background-color: transparent;
+
+  .slyce-icon{
+    color: inherit;
+  }
 }
 
 .slyce-btn--file {
