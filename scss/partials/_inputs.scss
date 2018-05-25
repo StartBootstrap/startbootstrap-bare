@@ -101,8 +101,20 @@ input.form-control.slyce-input--underlined {
       opacity: 1;
       visibility: visible;
       font-family: "slyce-icon-font" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       content: "\6c";
       color: $coral;
+      padding: 1px;
+      top: 11px;
+      right: 9px;
+      box-sizing: content-box;
     }
   }
   &.slyce-input--success {
@@ -113,8 +125,20 @@ input.form-control.slyce-input--underlined {
       opacity: 1;
       visibility: visible;
       font-family: "slyce-icon-font" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       content: "\61";
       color: $success;
+      padding: 1px;
+      top: 11px;
+      right: 9px;
+      box-sizing: content-box;
     }
   }
 }

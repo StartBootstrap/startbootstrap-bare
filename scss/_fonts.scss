@@ -24,6 +24,11 @@ $fontsPath: "../assets/fonts";
 @include fontface('Circular Std', 'CircularStd-BlackItalic', 'otf', 900, italic);
 @include fontface('Oxigen Mono', 'OxygenMono-Regular', 'ttf', normal, normal);
 
+.slyce-icon{
+  display: inline-flex;
+  font-size: 16px;
+}
+
 .slyce-lh-20{
   line-height: 20px;
 }
@@ -40,7 +45,3 @@ $fontsPath: "../assets/fonts";
   font-size: 16px;
 }
 
-.slyce-icon{
-  display: inline-flex;
-  font-size: 16px;
-}
