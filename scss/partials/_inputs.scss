@@ -88,6 +88,7 @@ input.form-control.slyce-input--underlined {
     width: 16px;
     position: absolute;
     top: 12px;
+    line-height: 16px;
     right: 10px;
     transition: all .3s;
     background-size: contain;
@@ -99,7 +100,9 @@ input.form-control.slyce-input--underlined {
     &:after {
       opacity: 1;
       visibility: visible;
-      background-image: url('#{$iconsPath}/ic_validError.svg');
+      font-family: "slyce-icon-font" !important;
+      content: "\6c";
+      color: $coral;
     }
   }
   &.slyce-input--success {
@@ -109,7 +112,9 @@ input.form-control.slyce-input--underlined {
     &:after {
       opacity: 1;
       visibility: visible;
-      background-image: url('#{$iconsPath}/ic_validSuccess.svg');
+      font-family: "slyce-icon-font" !important;
+      content: "\61";
+      color: $success;
     }
   }
 }
@@ -293,7 +298,9 @@ textarea {
     top: 16px;
     right: 10px;
     transition: all .2s;
-    background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
+    // background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
+    content: "\67";
+    font-family: "slyce-icon-font" !important;
   }
   &.show {
     background-color: $gray_8;
