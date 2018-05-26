@@ -178,7 +178,10 @@ $iconsPath: "../assets/icons";
   .slyce-icon {
     margin-right: 8px;
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
+    &:before{
+      line-height: 0;
+    }
   }
 
   &.btn-outline-primary {
@@ -250,6 +253,10 @@ $iconsPath: "../assets/icons";
   padding: 2px;
   min-width: 0;
   background-color: transparent;
+
+  .slyce-icon{
+    color: inherit;
+  }
 }
 
 .slyce-btn--file {
@@ -276,15 +283,20 @@ $iconsPath: "../assets/icons";
   min-width: auto;
   padding: 0;
   border-radius: 3px;
-  background-image: url('#{$iconsPath}/ic_close.svg');
   background-size: 14px 14px;
   background-position: center center;
   z-index: 99;
   background-repeat: no-repeat;
+  background-color: transparent;
 
-  &:active {
+  &:after{
+    content: "\65";
+    font-family: "slyce-icon-font" !important;
+  }
+
+
+  &:active:after {
     opacity: .9;
-    background-image: url('#{$iconsPath}/ic_close.svg') !important;
   }
 }
 
