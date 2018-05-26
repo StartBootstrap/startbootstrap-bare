@@ -287,6 +287,7 @@ $iconsPath: "../assets/icons";
   background-position: center center;
   z-index: 99;
   background-repeat: no-repeat;
+  background-color: transparent;
 
   &:after{
     content: "\65";
