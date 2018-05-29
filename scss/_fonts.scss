@@ -46,6 +46,9 @@ $fontsPath: "../assets/fonts";
 }
 
 
+
+// the styles below should be copied from assets/iconfont-manual/styles.css each time the forn gets updated
+
 [data-icon]:before {
   font-family: "slyce-icon-font" !important;
   content: attr(data-icon);
