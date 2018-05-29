@@ -1,5 +1,6 @@
 $iconsPath: "../assets/icons";
 @import '../_colors';
+@import '../_fonts';
 .btn {
   padding: 8px;
   min-width: 120px;
@@ -289,13 +290,16 @@ $iconsPath: "../assets/icons";
   background-repeat: no-repeat;
   background-color: transparent;
 
-  &:after{
-    content: "\65";
-    font-family: "slyce-icon-font" !important;
-  }
+  @extend .icon-ic-close;
+  @extend [data-icon];
+
+  // &:after{
+  //   content: "\65";
+  //   font-family: "slyce-icon-font" !important;
+  // }
 
 
-  &:active:after {
+  &:active:before {
     opacity: .9;
   }
 }
