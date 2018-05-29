@@ -1,38 +1,32 @@
 @import '../_colors';
 
-.modal-dialog{
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
+.modal-dialog {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  box-sizing: content-box;
+
+  .modal-content {
     padding: 40px;
-    box-sizing: content-box;
-
-    // .row{
-    //     width: 100%;
-    // }
-
-    .modal-content{
-        padding: 40px;
-
-    }
-
-    .modal-body,
-    .modal-header,
-    .modal-footer{
-        padding: 0;
-        border: 0;
-        display: block
-    }
-
-    .modal-body{
-        max-height: 540px;
-        overflow: scroll;
-    }
-
-    p {
-        color: $gray_4;
-        font-weight: 300;
-    }
+  }
+  .modal-body,
+  .modal-header,
+  .modal-footer {
+    padding: 0;
+    border: 0;
+    display: block
+  }
+  .modal-body {
+    max-height: 540px;
+    overflow-x: hidden;
+  }
+  p {
+    // color: $gray_4;
+    font-weight: 300;
+    margin: 0;
+  }
+  h4{
+    margin: 0;
+  }
 }
-
-

@@ -44,6 +44,27 @@ $iconsPath: "../assets/icons";
   }
 }
 
+.btn.slyce-btn-orange {
+  background-color: $orange;
+  color: $white;
+
+  // override bootstrap values
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+    background-color: darken($orange, 10%);
+  }
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
+    background-color: darken($orange, 10%);
+    color: rgba($white, 0.56);
+  }
+}
+
 .btn.btn-primary {
   background-color: $primary;
   color: $white;
