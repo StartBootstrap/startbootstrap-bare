@@ -25,6 +25,24 @@
         div.style.display = 'none';
     }
 
+    var remove_placeholder = function () {
+      document.querySelectorAll('.slyce-input-wrapper').forEach(function(wrap){
+        var input = wrap.querySelector('input');
+        var placeHolder = wrap.querySelector('.placeholder');
+
+        input.addEventListener('blur', function() {
+          if (input && input.value && input.value != ''){
+            placeHolder.style['display'] = 'none';
+          } else {
+            placeHolder.style['display'] = 'flex';
+          }
+        });
+
+        input.addEventListener('focus', function(){
+          placeHolder.style['display'] = 'none';
+        });
+      })
+    }
 
     // Opera 8.0+
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
@@ -55,4 +73,7 @@
         $('[data-toggle="tooltip"]').tooltip();
     })
 
+    document.addEventListener("DOMContentLoaded", function(event) {
+      remove_placeholder();
+    });
 })()
