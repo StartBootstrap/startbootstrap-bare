@@ -91,6 +91,11 @@ $iconsPath: "../assets/icons";
   }
 }
 
+.btn.btn--bigger {
+  height: 36px;
+  width: 165px;
+}
+
 .btn-outline-primary {
   transition: all .2s;
   border: 1px solid $primary;
@@ -122,28 +127,6 @@ $iconsPath: "../assets/icons";
     color: $gray_3;
     border: none;
   }
-}
-
-.slyce-btn--save-changes {
-  font-family: "Circular Std";
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-  height: 36px;
-  width: 165px;
-  border-radius: 4px;
-  background-color: #F5F5F5;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-
-  color: rgba(51, 51, 51, 0.25);
-  font-family: "Circular Std";
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-}
-
-.slyce-btn--savechanges.disabled {
-  color: rgba(51, 51, 51, 0.25) !important;
 }
 
 .slyce-btn--loading,
@@ -200,7 +183,7 @@ $iconsPath: "../assets/icons";
     margin-right: 8px;
     display: flex;
     font-size: 16px;
-    &:before{
+    &:before {
       line-height: 0;
     }
   }
@@ -275,7 +258,7 @@ $iconsPath: "../assets/icons";
   min-width: 0;
   background-color: transparent;
 
-  .slyce-icon{
+  .slyce-icon {
     color: inherit;
   }
 }
@@ -310,11 +293,10 @@ $iconsPath: "../assets/icons";
   background-repeat: no-repeat;
   background-color: transparent;
 
-  &:after{
+  &:after {
     content: "\65";
     font-family: "slyce-icon-font" !important;
   }
-
 
   &:active:after {
     opacity: .9;
