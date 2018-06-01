@@ -1,5 +1,8 @@
 $iconsPath: "../assets/icons";
 @import '../_colors';
+button {
+  background-color: transparent;
+}
 .btn {
   padding: 8px;
   min-width: 120px;

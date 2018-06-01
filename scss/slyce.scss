@@ -96,6 +96,21 @@ ul {
   width: 60%;
 }
 
+.slyce-bb-no-radius {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.slyce-bt-no-radius {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.slyce-bt-none {
+  border-top: none !important;
+}
+
+
 .slyce-bl {
   border-left: 1px solid #ccc;
 }
