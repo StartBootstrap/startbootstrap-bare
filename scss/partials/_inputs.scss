@@ -1,4 +1,5 @@
 @import '../_colors';
+
 $iconsPath: "../assets/icons/";
 
 input:disabled {
@@ -13,6 +14,52 @@ input:disabled {
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.slyce-search {
+  color: $gray_1;
+  background-color: $gray_6;
+  &:focus {
+    background-color: $gray_6;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $gray_3 !important;
+    opacity: 1;
+    visibility: visible;
+    font-family: "slyce-icon-font" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\61";
+    color: $success;
+    padding: 1px;
+    top: 11px;
+    right: 9px;
+    box-sizing: content-box;
+  }
+
+  &::-moz-placeholder {
+    color: $gray_3 !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: $gray_3 !important;
+  }
+
+  &:-moz-placeholder {
+    color: $gray_3 !important;
+  }
+
+  &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+    font-family: "slyce-icon-font" !important;
+    content: "\61";
+  }
 }
 
 .col-form-label {
@@ -255,7 +302,7 @@ textarea {
 .dropdown-toggle {
   min-width: 0;
   min-height: 0;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .dropdown-toggle:hover {
@@ -276,7 +323,7 @@ textarea {
   display: inline-block;
 }
 
-.dropdown-toggle--minWidth100{
+.dropdown-toggle--minWidth100 {
   min-width: 100px;
 }
 
@@ -306,13 +353,13 @@ textarea {
     width: 14px;
     height: 14px;
   }
-  .dropdown-item:hover{
-    background-color: $gray_8 ;
+  .dropdown-item:hover {
+    background-color: $gray_8;
   }
 }
 
 .dropdown-menu.show {
-  width:100%;
+  width: 100%;
 }
 
 .slyce-select-dropdown {
@@ -336,11 +383,11 @@ textarea {
       transform: rotate(180deg)
     }
   }
-  &.show>.btn-secondary.dropdown-toggle {
+  &.show > .btn-secondary.dropdown-toggle {
     background-color: transparent;
     color: inherit;
   }
-  &>button {
+  & > button {
     border-radius: 3px;
     background-color: transparent;
     color: $gray_1;
@@ -359,7 +406,7 @@ textarea {
   .dropdown-menu {
     width: 100%;
   }
-  .dropdown-item{
+  .dropdown-item {
     font-weight: 300;
   }
   .dropdown-item:hover {
@@ -416,4 +463,31 @@ textarea {
   pointer-events: none;
   position: absolute;
   right: 0;
+}
+
+.slyce-input-wrapper {
+  * {
+    color: $gray_3;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.44px;
+    line-height: 14px;
+  }
+  position: relative;
+  width: 100%;
+  display: flex;
+  .placeholder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    pointer-events: none;
+    background-color:transparent;
+  }
+  input{
+    text-align:center;
+  }
 }

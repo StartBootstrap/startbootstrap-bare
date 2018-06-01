@@ -144,3 +144,17 @@ $iconsPath: "../assets/icons/";
     padding: 5px;
   }
 }
+
+.slyce-select--smaller {
+  display: inline-block;
+  .dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    min-width: auto;
+
+    &::after{
+      margin-left: 1.255em;
+    }
+  }
+}

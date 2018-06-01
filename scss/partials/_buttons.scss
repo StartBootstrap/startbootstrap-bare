@@ -4,7 +4,7 @@ $iconsPath: "../assets/icons";
 .btn {
   padding: 8px;
   min-width: 120px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 14px;
   line-height: 14px;
   cursor: pointer;
@@ -45,6 +45,27 @@ $iconsPath: "../assets/icons";
   }
 }
 
+.btn.slyce-btn-orange {
+  background-color: $orange;
+  color: $white;
+
+  // override bootstrap values
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+    background-color: darken($orange, 10%);
+  }
+  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
+    background-color: darken($orange, 10%);
+    color: rgba($white, 0.56);
+  }
+}
+
 .btn.btn-primary {
   background-color: $primary;
   color: $white;
@@ -69,6 +90,11 @@ $iconsPath: "../assets/icons";
     background-color: $gray_6;
     color: $gray_3;
   }
+}
+
+.btn.btn--bigger {
+  height: 36px;
+  width: 165px;
 }
 
 .btn-outline-primary {
@@ -102,28 +128,6 @@ $iconsPath: "../assets/icons";
     color: $gray_3;
     border: none;
   }
-}
-
-.slyce-btn--save-changes {
-  font-family: "Circular Std";
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-  height: 36px;
-  width: 165px;
-  border-radius: 4px;
-  background-color: #F5F5F5;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-
-  color: rgba(51, 51, 51, 0.25);
-  font-family: "Circular Std";
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-}
-
-.slyce-btn--savechanges.disabled {
-  color: rgba(51, 51, 51, 0.25) !important;
 }
 
 .slyce-btn--loading,
@@ -180,7 +184,7 @@ $iconsPath: "../assets/icons";
     margin-right: 8px;
     display: flex;
     font-size: 16px;
-    &:before{
+    &:before {
       line-height: 0;
     }
   }
@@ -255,7 +259,7 @@ $iconsPath: "../assets/icons";
   min-width: 0;
   background-color: transparent;
 
-  .slyce-icon{
+  .slyce-icon {
     color: inherit;
   }
 }
