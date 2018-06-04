@@ -1,6 +1,17 @@
 @import '../colors';
 $iconsPath: "../assets/icons/";
+/*.table:after{
+  content:'';
+  position:absolute;
+  opacity:0.7;
+  width:100%;
+  height:300px;
+  background: linear-gradient(to bottom, transparent 0%, white 100%);
+  bottom: 0px;
+  pointer-events: none;
+}*/
 .table {
+  position:relative;
   .table-company-logo {
     height: 48px;
     width: 64px;
@@ -31,6 +42,7 @@ $iconsPath: "../assets/icons/";
     line-height: 12px;
   }
   tbody {
+    position:relative;
     td {
       height: 24px;
       width: 86px;
@@ -62,6 +74,12 @@ $iconsPath: "../assets/icons/";
     }
   }
 
+  tr{
+    display:table;
+    width:100%;
+    table-layout:fixed;/* even columns width , fix width of table too*/
+  }
+
   thead.borderless th {
     border: none;
   }
@@ -79,16 +97,26 @@ $iconsPath: "../assets/icons/";
   }
 }
 
+.slyce-table--overflow-scroll {
+  tbody{
+    height: 700px;
+    overflow-y: scroll;
+    display:block;
+  }
+}
+
 .slyce-table--bottom-gradient-overlay {
   position: relative;
   &::after {
+    transition: all .6s;
     content: "";
+    opacity: 0;
     display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 0;
     width: 100%;
     pointer-events: none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
@@ -101,4 +129,12 @@ $iconsPath: "../assets/icons/";
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
   }
+
+  &.slyce-table--bottom-gradient-overlay__visible{
+    &::after {
+      opacity: 1;
+      height: 300px;
+    }
+  }
 }
+
