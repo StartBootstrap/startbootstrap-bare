@@ -491,3 +491,47 @@ textarea {
     text-align:center;
   }
 }
+
+
+.clickthough-input__deactivated {
+  display: inline-block;
+  div {
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.clickthough-input__activated {
+  display: inline-block;
+  input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: content-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.clickthough-input__deactivated div,
+.clickthough-input__activated input,
+.hidden-auto-input-width {
+  // border-bottom: 1px solid $primary;
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+  padding: 0;
+  background-color: transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
