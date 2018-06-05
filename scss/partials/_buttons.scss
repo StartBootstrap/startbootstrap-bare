@@ -100,6 +100,27 @@ $padding: 8px;
   }
 }
 
+@mixin btn-nostroke($color) {
+  color: $color;
+  .slyce-icon {
+    color: $color;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color, 10%);
+    .slyce-icon {
+      color: darken($color, 10%);
+    }
+  }
+
+  &:disabled {
+    .slyce-icon {
+      color: $gray_3;
+    }
+  }
+}
+
 button {
   background-color: transparent;
 }
@@ -119,7 +140,8 @@ button {
   transition: all $transition-time;
 
   .slyce-icon {
-    color: inherit;
+    color: $gray_1;
+    transition: all $transition-time;
   }
 
   &:hover,
@@ -181,7 +203,6 @@ button {
   align-items: center;
 
   .slyce-icon {
-    transition: all $transition-time;
     margin-right: 8px;
     display: flex;
     font-size: 16px;
@@ -213,6 +234,18 @@ button {
   @include btn-outlined($coral)
 }
 
+.slyce-btn--nostroke.slyce-text-coral {
+  @include btn-nostroke($coral);
+}
+
+.slyce-btn--nostroke.slyce-text-primary {
+  @include btn-nostroke($primary);
+}
+
+.slyce-btn--nostroke.slyce-text-orange {
+  @include btn-nostroke($orange);
+}
+
 .btn.btn--bigger {
   height: 36px;
   width: 165px;
@@ -229,7 +262,7 @@ button {
   background-color: transparent;
 
   .slyce-icon {
-    color: inherit;
+    margin-right: 6px;
   }
 }
 
