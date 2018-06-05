@@ -1,0 +1,60 @@
+$step: 4px;
+
+$indents: (
+  q: 1*$step,
+  h: 2*$step,
+  1: 4*$step,
+  2: 4*2*$step,
+  3: 4*3*$step,
+  4: 4*4*$step,
+);
+
+@each $indent, $value in $indents {
+  .m-#{$indent} {
+    margin: $value !important;
+  }
+  .mt-#{$indent} {
+    margin-top: $value !important;
+  }
+  .mb-#{$indent} {
+    margin-bottom: $value !important;
+  }
+  .ml-#{$indent} {
+    margin-left: $value !important;
+  }
+  .mr-#{$indent} {
+    margin-right: $value !important;
+  }
+  .mx-#{$indent} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+  .my-#{$indent} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .p-#{$indent} {
+    padding: $value !important;
+  }
+  .pt-#{$indent} {
+    padding-top: $value !important;
+  }
+  .pb-#{$indent} {
+    padding-bottom: $value !important;
+  }
+  .pl-#{$indent} {
+    padding-left: $value !important;
+  }
+  .pr-#{$indent} {
+    padding-right: $value !important;
+  }
+  .px-#{$indent} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+  .py-#{$indent} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
