@@ -108,13 +108,15 @@ $iconsPath: "../assets/icons/";
 .slyce-table--bottom-gradient-overlay {
   position: relative;
   &::after {
+    transition: all .6s;
     content: "";
+    opacity: 0;
     display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 300px;
+    height: 0;
     width: 100%;
     pointer-events: none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
@@ -127,4 +129,12 @@ $iconsPath: "../assets/icons/";
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
   }
+
+  &.slyce-table--bottom-gradient-overlay__visible{
+    &::after {
+      opacity: 1;
+      height: 300px;
+    }
+  }
 }
+
