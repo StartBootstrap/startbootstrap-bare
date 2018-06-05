@@ -25,6 +25,9 @@
   border-radius: 2px;
 }
 
+.slyce-bc-primary{
+  border: 1px solid $primary
+}
 .slyce-bc-gray_1{
   border: 1px solid $gray_1
 }
@@ -46,3 +49,48 @@
 .slyce-bc-gray_7{
   border: 1px solid $gray_7
 }
+
+.slyce-bt-none {
+  border-top: none;
+}
+.slyce-br-none {
+  border-right: none;
+}
+.slyce-bl-none {
+  border-left: none;
+}
+.slyce-bb-none {
+  border-bottom: none;
+}
+
+.slyce-bt-only {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.slyce-bl-only {
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+.slyce-br-only {
+  border-bottom: none;
+  border-left: none;
+  border-bottom: none;
+}
+.slyce-bb-only {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.slyce-b-1 {
+  border-width: 1px;
+}
+.slyce-b-2 {
+  border-width: 2px;
+}
+.slyce-b-3 {
+  border-width: 3px;
+}
+
