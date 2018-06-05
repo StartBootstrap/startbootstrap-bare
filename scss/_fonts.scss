@@ -45,6 +45,72 @@ $fontsPath: "../assets/fonts";
   font-size: 16px;
 }
 
+
+
+// the styles below should be copied from assets/iconfont-manual/styles.css each time the forn gets updated
+
+[data-icon]:before {
+  font-family: "slyce-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "slyce-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-validsuccess:before {
+  content: "\61";
+}
+.icon-ic-add:before {
+  content: "\62";
+}
+.icon-ic-arrowback:before {
+  content: "\63";
+}
+.icon-ic-arrowforward-small:before {
+  content: "\64";
+}
+.icon-ic-close:before {
+  content: "\65";
+}
+.icon-ic-copy:before {
+  content: "\66";
+}
+.icon-ic-dropcarrot-small:before {
+  content: "\67";
+}
+.icon-ic-help:before {
+  content: "\68";
+}
+.icon-ic-more:before {
+  content: "\69";
+}
+.icon-ic-photolib:before {
+  content: "\6a";
+}
+.icon-ic-search:before {
+  content: "\6b";
+}
+.icon-ic-validerror:before {
+  content: "\6c";
+}
 .slyce-fs-20 {
   font-size: 20px
 }
