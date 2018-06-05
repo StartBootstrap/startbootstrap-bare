@@ -1,140 +1,143 @@
 $iconsPath: "../assets/icons";
 @import '../_colors';
 @import '../_fonts';
+
+$border-radius: 4px;
+$min-width: 120px;
+$transition-time: .2s;
+$font: normal normal 14px/1 "slyce-icon-font", sans-serif;
+$font-size: 14px;
+$line-height: 14px;
+$padding: 8px;
+
+@mixin btn-state($color, $bg-color, $border-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
+
+@mixin btn-filled($color) {
+  color: $white;
+  background-color: $color;
+
+  .slyce-icon {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    @include btn-state($white, darken($color, 10%), transparent);
+    .slyce-icon {
+      color: $white;
+    }
+  }
+
+  &:active,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.slyce-btn--loading):active,
+  &:not(:disabled):not(.slyce-btn--loading).active,
+  &.show > .btn-primary.dropdown-toggle {
+    @include btn-state(rgba($white, 0.56), darken($color, 10%), transparent);
+    .slyce-icon {
+      color: rgba($white, 0.56);
+    }
+  }
+
+  &.slyce-btn--loading:hover,
+  &.slyce-btn--loading:active,
+  &.slyce-btn--loading:focus {
+    background-color: $color !important;
+  }
+
+  &.slyce-btn--loading:after {
+    @include btn-state(transparent, transparent, $white)
+  }
+}
+
+@mixin btn-outlined($color) {
+  color: $color;
+  border: 1px solid $color;
+  background-color: transparent;
+  line-height: $line-height - 2;
+
+  .slyce-icon {
+    color: $color;
+  }
+
+  &:hover,
+  &:focus {
+    @include btn-state(darken($color, 10%), transparent, darken($color, 10%));
+    .slyce-icon {
+      color: darken($color, 10%);
+    }
+  }
+
+  &:active,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.slyce-btn--loading):active,
+  &:not(:disabled):not(.slyce-btn--loading).active,
+  &.show > .btn-primary.dropdown-toggle {
+    @include btn-state(rgba($color, 0.56), transparent, rgba($color, 0.56));
+    .slyce-icon {
+      color: rgba($color, 0.56);
+    }
+  }
+
+  &:disabled {
+    @include btn-state($gray_3, $gray_6, transparent)
+  }
+
+  &.slyce-btn--loading:hover,
+  &.slyce-btn--loading:active,
+  &.slyce-btn--loading:focus {
+    border-color: $color !important;
+  }
+
+  &.slyce-btn--loading:after {
+    @include btn-state(transparent, transparent, $color);
+  }
+}
+
 button {
   background-color: transparent;
 }
+
 .btn {
-  padding: 8px;
-  min-width: 120px;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 14px;
-  cursor: pointer;
-  transition: all .2s !important;
-  border: none;
-  * {
-    transition: all .2s;
-  }
-  &:disabled {
-    cursor: not-allowed;
-  }
-
-  &:disabled {
-    background-color: $gray_6;
-    color: $gray_3;
-  }
-
-}
-
-.btn.btn-danger {
-  background-color: $coral;
-  color: $white;
-
-  // override bootstrap values
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    background-color: $coral;
-    color: $white;
-  }
-
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
-    background-color: darken($coral, 10%);
-  }
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
-    background-color: darken($coral, 10%);
-    color: rgba($white, 0.56);
-  }
-}
-
-.btn.slyce-btn-orange {
-  background-color: $orange;
-  color: $white;
-
-  // override bootstrap values
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    background-color: $orange;
-    color: $white;
-  }
-
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
-    background-color: darken($orange, 10%);
-  }
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
-    background-color: darken($orange, 10%);
-    color: rgba($white, 0.56);
-  }
-}
-
-.btn.btn-primary {
-  background-color: $primary;
-  color: $white;
-
-  // override bootstrap values
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    background-color: $primary;
-    color: $white;
-  }
-
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
-    background-color: $primary_alt;
-  }
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
-    background-color: $primary_alt;
-    color: rgba($white, 0.56);
-  }
-
-  &:disabled {
-    background-color: $gray_6;
-    color: $gray_3;
-  }
-}
-
-.btn.btn--bigger {
-  height: 36px;
-  width: 165px;
-}
-
-.btn-outline-primary {
-  transition: all .2s;
-  border: 1px solid $primary;
+  color: $gray_1;
+  padding: $padding;
+  margin: 0;
+  border-radius: $border-radius;
+  width: auto;
+  max-width: auto;
+  min-width: $min-width;
   background-color: transparent;
+  border: none;
+  font-size: $font-size;
+  line-height: $line-height;
+  transition: all $transition-time;
 
-  // override bootstrap values
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    background-color: transparent;
-  }
-  &:hover {
-    background-color: transparent
+  .slyce-icon {
+    color: inherit;
   }
 
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):hover {
+  &:hover,
+  &:active,
+  &:focus,
+  &:disabled {
+    color: $gray_3;
     background-color: transparent;
-    color: $primary_alt;
-    border-color: $primary_alt;
-  }
-  &:not(:disabled):not(.disabled):not(.slyce-btn--loading):active {
-    background-color: transparent;
-    color: $primary_alt;
-    border-color: $primary_alt;
-    opacity: .56;
+    .slyce-icon {
+      color: $gray_3;
+    }
   }
   &:disabled {
-    background-color: $gray_6;
-    color: $gray_3;
-    border: none;
+    @include btn-state($gray_3 !important, $gray_6 !important, transparent);
   }
 }
 
-.slyce-btn--loading,
-.slyce-btn--loading.btn-outline-primary {
+.slyce-btn--loading {
   color: transparent !important;
   align-items: center;
   display: inline-flex;
@@ -154,10 +157,9 @@ button {
     width: $size;
     height: $size;
     border-radius: 50%;
-    border: 2px solid silver;
+    border: 2px solid $gray_1;
     animation: circ-anim $speed linear infinite, scale-in .1s linear;
-    border-color: $primary;
-    border-bottom-color: transparent;
+    border-bottom-color: transparent !important;
     position: absolute;
     top: calc(50% - .6em);
     left: calc(50% - .6em);
@@ -167,23 +169,19 @@ button {
       border-bottom-color: transparent;
     }
   }
-}
 
-.btn-danger.slyce-btn--loading,
-.btn-primary.slyce-btn--loading {
-  &:after {
-    border-color: $white;
-    border-bottom-color: transparent;
+  .slyce-icon {
+    display: none !important;
   }
 }
 
-.btn.slyce-btn--icon {
+.slyce-btn--icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  svg,
-  img,
+
   .slyce-icon {
+    transition: all $transition-time;
     margin-right: 8px;
     display: flex;
     font-size: 16px;
@@ -191,65 +189,33 @@ button {
       line-height: 0;
     }
   }
+}
 
-  &.btn-outline-primary {
-    .slyce-svg-icon {
-      fill: $primary;
-    }
-    .slyce-icon {
-      color: $primary;
-    }
-    &:hover {
-      .slyce-svg-icon {
-        fill: $primary_alt;
-      }
-      .slyce-icon {
-        color: $primary_alt;
-      }
-    }
-    &:disabled {
-      .slyce-svg-icon {
-        fill: $gray_4;
-      }
-      .slyce-icon {
-        color: $gray_4;
-      }
-    }
-  }
+.btn-primary {
+  @include btn-filled($primary)
+}
 
-  &.btn-primary,
-  &.btn-danger {
-    .slyce-svg-icon {
-      fill: $white;
-    }
-    .slyce-icon {
-      color: $white;
-    }
+.btn-coral,
+.btn-danger {
+  @include btn-filled($coral)
+}
 
-    &:active:not(:disabled) {
-      .slyce-svg-icon,
-      .slyce-icon {
-        opacity: 0.56;
-      }
-    }
-    &:disabled {
-      .slyce-svg-icon {
-        fill: $gray_3;
-      }
-      .slyce-icon {
-        color: $gray_3;
-      }
-    }
-  }
+.btn-outline-primary {
+  @include btn-outlined($primary)
+}
 
-  &.slyce-btn--loading {
-    .slyce-svg-icon {
-      display: none;
-    }
-    .slyce-icon {
-      display: none;
-    }
-  }
+.slyce-btn-orange {
+  @include btn-outlined($orange)
+}
+
+.btn-outline-coral,
+.btn-outline-danger {
+  @include btn-outlined($coral)
+}
+
+.btn.btn--bigger {
+  height: 36px;
+  width: 165px;
 }
 
 .slyce-btn--round {
@@ -299,12 +265,6 @@ button {
 
   @extend .icon-ic-close;
   @extend [data-icon];
-
-  // &:after{
-  //   content: "\65";
-  //   font-family: "slyce-icon-font" !important;
-  // }
-
 
   &:active:before {
     opacity: .9;
