@@ -61,3 +61,99 @@ ul {
     padding: 1px 0px 1px 10px;
   }
 }
+
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-45 {
+  width: 45%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-55 {
+  width: 55%;
+}
+.w-60 {
+  width: 60%;
+}
+
+.mw-10 {
+  min-width: 10%;
+}
+.mw-15 {
+  min-width: 15%;
+}
+.mw-20 {
+  min-width: 20%;
+}
+.mw-25 {
+  min-width: 25%;
+}
+.mw-30 {
+  min-width: 30%;
+}
+.mw-35 {
+  min-width: 35%;
+}
+.mw-40 {
+  min-width: 40%;
+}
+.mw-45 {
+  min-width: 45%;
+}
+.mw-50 {
+  min-width: 50%;
+}
+.mw-55 {
+  min-width: 55%;
+}
+.mw-60 {
+  min-width: 60%;
+}
+
+.slyce-bb-no-radius {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.slyce-bt-no-radius {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.slyce-bt-none {
+  border-top: none !important;
+}
+
+
+.slyce-bl {
+  border-left: 1px solid #ccc;
+}
+
+.slyce-link--gray {
+  color: $gray_3;
+
+  &:active,
+  &:hover {
+    color: $gray_1;
+  }
+}
