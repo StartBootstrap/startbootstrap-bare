@@ -115,9 +115,6 @@ $icon-size: 16px;
   }
 }
 
-.slyce-form-control__message {}
-
-
 .slyce-form-control__input--underlined {
   font-size: 20px;
   line-height: 19px;
@@ -132,7 +129,6 @@ $icon-size: 16px;
     padding: 8px 0;
   }
 }
-
 
 input:disabled {
   cursor: not-allowed;
@@ -343,14 +339,14 @@ input:-webkit-autofill {
 //   letter-spacing: 0.44px;
 // }
 
-.slyce-col-form-label {
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-}
+// .slyce-col-form-label {
+//   padding-top: .3rem;
+//   padding-bottom: .3rem;
+// }
 
-.slyce-col-form-controls {
-  margin-top: .3rem;
-}
+// .slyce-col-form-controls {
+//   margin-top: .3rem;
+// }
 
 label {
   font-weight: 300;

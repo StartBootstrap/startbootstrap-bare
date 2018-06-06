@@ -162,7 +162,7 @@ button {
     .slyce-icon {
       opacity: 0 !important;
     }
-    &:after{
+    &:disabled:after{
       border-color: $gray_3 !important;
       border-bottom-color: transparent !important;
     }
