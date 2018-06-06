@@ -4,8 +4,6 @@ $border-radius: 4px;
 $icon-size: 16px;
 
 
-// Global inputs styles
-
 .slyce-form-control {
   display: inline-block;
   width: auto;
@@ -80,6 +78,21 @@ $icon-size: 16px;
       visibility: visible;
       background-image: none !important;
     }
+  }
+}
+
+.slyce-placeholder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+  background-color: transparent;
+  font-weight: 300;
+  .slyce-icon {
+    color: inherit;
   }
 }
 
@@ -575,32 +588,32 @@ textarea {
   right: 0;
 }
 
-.slyce-input-wrapper {
-  * {
-    color: $gray_3;
-    font-family: "Circular Std";
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0.44px;
-    line-height: 14px;
-  }
-  position: relative;
-  width: 100%;
-  display: flex;
-  .placeholder {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    pointer-events: none;
-    background-color: transparent;
-  }
-  input {
-    text-align: center;
-  }
-}
+// .slyce-input-wrapper {
+//   * {
+//     color: $gray_3;
+//     font-family: "Circular Std";
+//     font-size: 12px;
+//     font-weight: 300;
+//     letter-spacing: 0.44px;
+//     line-height: 14px;
+//   }
+//   position: relative;
+//   width: 100%;
+//   display: flex;
+//   .placeholder {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: absolute;
+//     pointer-events: none;
+//     background-color: transparent;
+//   }
+//   input {
+//     text-align: center;
+//   }
+// }
 
 .slyce-clickthough-input {
   &.slyce-disabled {
