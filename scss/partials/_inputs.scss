@@ -1,10 +1,125 @@
 @import '../_colors';
-
 $iconsPath: "../assets/icons/";
+$border-radius: 4px;
+$icon-size: 16px;
+
+
+// Global inputs styles
+
+.slyce-form-control {
+  display: inline-block;
+  width: auto;
+  position: relative;
+
+  &.slyce-form-control--error,
+  &.slyce-form-control--success,
+  &.slyce-form-control--loading {
+    .slyce-form-control__input {
+      padding-right: 30px;
+    }
+  }
+
+  &:before {
+    content: "";
+    line-height: 16px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    transition: all .2s;
+  }
+  &.slyce-form-control--error {
+    .slyce-form-control__input {
+      border-color: $danger;
+    }
+    @extend .icon-ic-validerror;
+    @extend [data-icon];
+    &::before {
+      opacity: 1;
+      visibility: visible;
+      color: $coral;
+      padding: 1px;
+      top: 11px;
+      right: 9px;
+      box-sizing: content-box;
+    }
+  }
+  &.slyce-form-control--success {
+    .slyce-form-control__input {
+      border-color: $success;
+    }
+    @extend .icon-ic-validsuccess;
+    @extend [data-icon];
+    &::before {
+      opacity: 1;
+      visibility: visible;
+      color: $success;
+      padding: 1px;
+      top: 11px;
+      right: 9px;
+      box-sizing: content-box;
+    }
+  }
+  &.slyce-form-control--loading {
+    &:before {
+      content: "";
+      $size: 16px;
+      $speed: .5s;
+      display: block;
+      width: $size;
+      height: $size;
+      border-radius: 50%;
+      border: 2px solid silver;
+      animation: circ-anim $speed linear infinite, scale-in .1s linear;
+      border-color: $primary;
+      border-bottom-color: transparent;
+      position: absolute;
+      right: 10px;
+      opacity: 1;
+      visibility: visible;
+      background-image: none !important;
+    }
+  }
+}
+
+.slyce-form-control__input {
+  font-size: 14px;
+  color: $gray_1;
+  padding: 8px 16px;
+  border-radius: $border-radius;
+  font-weight: 300;
+  border: 1px solid $gray_5;
+  transition: all .2s;
+  width: 100%;
+
+  &:focus {
+    border-color: $gray_1;
+    outline: none;
+  }
+}
+
+.slyce-form-control__message {}
+
+
+.slyce-form-control__input--underlined {
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: normal;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $gray_5;
+  padding: 8px 0;
+  transition: padding .2s, border-color .2s;
+  font-weight: 300;
+  &:focus {
+    padding: 8px 0;
+  }
+}
+
 
 input:disabled {
   cursor: not-allowed;
-
   &.form-control,
   &.form-control[readonly],
   & {
@@ -22,7 +137,6 @@ input:-webkit-autofill {
   &:focus {
     background-color: $gray_6;
   }
-
   &::-webkit-input-placeholder {
     color: $gray_3 !important;
     opacity: 1;
@@ -43,20 +157,18 @@ input:-webkit-autofill {
     right: 9px;
     box-sizing: content-box;
   }
-
   &::-moz-placeholder {
     color: $gray_3 !important;
   }
-
   &:-ms-input-placeholder {
     color: $gray_3 !important;
   }
-
   &:-moz-placeholder {
     color: $gray_3 !important;
   }
-
-  &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder {
     font-family: "slyce-icon-font" !important;
     content: "\61";
   }
@@ -96,115 +208,115 @@ input:-webkit-autofill {
   }
 }
 
-input.form-control.slyce-input--underlined {
-  font-size: 20px;
-  line-height: 19px;
-  letter-spacing: normal;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid $gray_5;
-  padding: 8px 0;
-  transition: padding .3s, border-color .3s;
-  font-weight: 300;
-  &:focus {
-    padding: 8px 0;
-  }
-}
+// input.form-control.slyce-input--underlined {
+//   font-size: 20px;
+//   line-height: 19px;
+//   letter-spacing: normal;
+//   border: none;
+//   border-radius: 0;
+//   border-bottom: 1px solid $gray_5;
+//   padding: 8px 0;
+//   transition: padding .3s, border-color .3s;
+//   font-weight: 300;
+//   &:focus {
+//     padding: 8px 0;
+//   }
+// }
 
-.slyce-input-container {
-  position: relative;
-}
+// .slyce-input-container {
+//   position: relative;
+// }
 
-.slyce-input__message {
-  font-size: 14px;
-  color: $gray_1;
-  font-weight: 300;
-  letter-spacing: 0.24px;
-  line-height: 24px;
-  p {
-    margin: 0;
-  }
+// .slyce-input__message {
+//   font-size: 14px;
+//   color: $gray_1;
+//   font-weight: 300;
+//   letter-spacing: 0.24px;
+//   line-height: 24px;
+//   p {
+//     margin: 0;
+//   }
+//   &.slyce-input__message--minor,
+//   &.slyce-input__message--minor * {
+//     font-size: 12px;
+//   }
+// }
 
-  &.slyce-input__message--minor, &.slyce-input__message--minor * {
-    font-size: 12px;
-  }
-}
+// .slyce-input {
+//   &:after {
+//     content: "";
+//     opacity: 0;
+//     visibility: hidden;
+//     height: 16px;
+//     width: 16px;
+//     position: absolute;
+//     top: 12px;
+//     line-height: 16px;
+//     right: 10px;
+//     transition: all .3s;
+//     background-size: contain;
+//   }
+//   &.slyce-input--error {
+//     .form-control {
+//       border-color: $danger;
+//     }
+//     &:after {
+//       opacity: 1;
+//       visibility: visible;
+//       font-family: "slyce-icon-font" !important;
+//       font-style: normal !important;
+//       font-weight: normal !important;
+//       font-variant: normal !important;
+//       text-transform: none !important;
+//       speak: none;
+//       line-height: 1;
+//       -webkit-font-smoothing: antialiased;
+//       -moz-osx-font-smoothing: grayscale;
+//       content: "\6c";
+//       color: $coral;
+//       padding: 1px;
+//       top: 11px;
+//       right: 9px;
+//       box-sizing: content-box;
+//     }
+//   }
+//   &.slyce-input--success {
+//     .form-control {
+//       border-color: $success;
+//     }
+//     &:after {
+//       opacity: 1;
+//       visibility: visible;
+//       font-family: "slyce-icon-font" !important;
+//       font-style: normal !important;
+//       font-weight: normal !important;
+//       font-variant: normal !important;
+//       text-transform: none !important;
+//       speak: none;
+//       line-height: 1;
+//       -webkit-font-smoothing: antialiased;
+//       -moz-osx-font-smoothing: grayscale;
+//       content: "\61";
+//       color: $success;
+//       padding: 1px;
+//       top: 11px;
+//       right: 9px;
+//       box-sizing: content-box;
+//     }
+//   }
+// }
 
-.slyce-input {
-  &:after {
-    content: "";
-    opacity: 0;
-    visibility: hidden;
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: 12px;
-    line-height: 16px;
-    right: 10px;
-    transition: all .3s;
-    background-size: contain;
-  }
-  &.slyce-input--error {
-    .form-control {
-      border-color: $danger;
-    }
-    &:after {
-      opacity: 1;
-      visibility: visible;
-      font-family: "slyce-icon-font" !important;
-      font-style: normal !important;
-      font-weight: normal !important;
-      font-variant: normal !important;
-      text-transform: none !important;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\6c";
-      color: $coral;
-      padding: 1px;
-      top: 11px;
-      right: 9px;
-      box-sizing: content-box;
-    }
-  }
-  &.slyce-input--success {
-    .form-control {
-      border-color: $success;
-    }
-    &:after {
-      opacity: 1;
-      visibility: visible;
-      font-family: "slyce-icon-font" !important;
-      font-style: normal !important;
-      font-weight: normal !important;
-      font-variant: normal !important;
-      text-transform: none !important;
-      speak: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\61";
-      color: $success;
-      padding: 1px;
-      top: 11px;
-      right: 9px;
-      box-sizing: content-box;
-    }
-  }
-}
-
-input.form-control {
-  font-size: 14px;
-  color: $gray_1;
-  padding: 8px 16px;
-  border-radius: 3px;
-  font-weight: 300;
-  &:focus {
-    border-color: $gray_1;
-    box-shadow: none;
-  }
-}
+// input.form-control {
+//   font-size: 14px;
+//   color: $gray_1;
+//   padding: 8px 16px;
+//   border-radius: 3px;
+//   font-weight: 300;
+//   &:focus {
+//     border-color: $gray_1;
+//     box-shadow: none;
+//   }
+// }
 
 label.slyce-label--major {
   margin: 0;
@@ -330,7 +442,6 @@ textarea {
 // .dropdown-toggle{
 //   height:38px;
 // }
-
 .dropdown-item {
   color: $gray_2;
   font-family: "Circular Std";
@@ -372,8 +483,7 @@ textarea {
     width: 8px;
     top: 16px;
     right: 10px;
-    transition: all .2s;
-    // background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
+    transition: all .2s; // background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
     content: "\67";
     font-family: "slyce-icon-font" !important;
   }
@@ -383,11 +493,11 @@ textarea {
       transform: rotate(180deg)
     }
   }
-  &.show > .btn-secondary.dropdown-toggle {
+  &.show>.btn-secondary.dropdown-toggle {
     background-color: transparent;
     color: inherit;
   }
-  & > button {
+  &>button {
     border-radius: 3px;
     background-color: transparent;
     color: $gray_1;
@@ -485,27 +595,22 @@ textarea {
     justify-content: center;
     position: absolute;
     pointer-events: none;
-    background-color:transparent;
+    background-color: transparent;
   }
-  input{
-    text-align:center;
+  input {
+    text-align: center;
   }
 }
 
-
-.slyce-clickthough-input{
-
+.slyce-clickthough-input {
   &.slyce-disabled {
     color: $gray_5;
-
-
     .clickthough-input__deactivated {
       color: inherit;
       div {
         cursor: not-allowed;
         color: inherit;
       }
-
       &:hover {
         color: inherit;
         div {
@@ -514,19 +619,16 @@ textarea {
       }
     }
   }
-
   .clickthough-input__deactivated {
     display: inline-block;
     div {
       transition: all .2s;
       cursor: pointer;
-  
       &:hover {
         color: $primary;
       }
     }
   }
-  
   .clickthough-input__activated {
     display: inline-block;
     input {
@@ -539,7 +641,6 @@ textarea {
       appearance: none;
     }
   }
-  
   .clickthough-input__deactivated div,
   .clickthough-input__activated input,
   .hidden-auto-input-width {
@@ -550,10 +651,9 @@ textarea {
     padding: 0;
     background-color: transparent;
   }
-  
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }  
+  }
 }
