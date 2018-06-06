@@ -6,6 +6,7 @@ $iconsPath: "../assets/icons/";
 .slyce-dropdown {
 
   .dropdown-toggle {
+    text-align: left;
     cursor: pointer;
     width: 100%;
 
@@ -16,6 +17,14 @@ $iconsPath: "../assets/icons/";
     &:disabled:hover{
       opacity: .5;
       background-color: $gray_6;
+    }
+
+    span {
+      color: inherit;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
     }
   }
 
