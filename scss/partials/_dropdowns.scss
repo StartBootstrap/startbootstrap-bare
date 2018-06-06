@@ -1,22 +1,26 @@
 @import '../_colors';
 @import '../../assets/iconfont-manual/styles.css';
 $iconsPath: "../assets/icons/";
-.slyce-select, .slyce-dropdown {
+
+
+.slyce-dropdown, .slyce-select {
+
   .dropdown-toggle {
     cursor: pointer;
     width: 100%;
-    &:focus {
-      -webkit-box-shadow: 0 0 0 0.2rem $gray_8;
-      box-shadow: 0 0 0 0.2rem $gray_8;
-    }
 
-    &:disabled{
+    &:after {
+      display: none;
+    }
+    &:disabled,
+    &:disabled:hover{
       opacity: .5;
       background-color: $gray_6;
-      &:hover{
-        background-color: $gray_6;
-      }
     }
+  }
+
+  .dropdown-menu {
+    min-width: 100%;
   }
 
   .dropdown-item {
@@ -28,6 +32,54 @@ $iconsPath: "../assets/icons/";
       font-weight: bold;
       color: inherit;
     }
+    .dropdown-item-box {
+      border-radius: 3px;
+      content: "";
+      background-color: $gray_4;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &.slyce-dropdown--icon {
+    .btn {
+      min-width: 0;
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+      padding: 0;
+
+      .slyce-icon {
+        color: $gray_1;
+      }
+
+      &:hover {
+        background-color: $gray_6;
+      }
+      &:active,
+      &:focus {
+        background-color: $gray_3;
+      }
+    }
+  }
+}
+
+.slyce-select--caret {
+  .dropdown-toggle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    @extend .icon-ic-dropcarrot-small;
+    @extend [data-icon];
+  }
+
+  .dropdown-toggle:before {
+    display: block;
+    height: 100%;
+    border: none;
+    padding-left :10px;
+    font-size: 9px;
   }
 }
 
@@ -35,7 +87,7 @@ $iconsPath: "../assets/icons/";
   margin: 0 !important;
   .dropdown-toggle {
     font-size: 14px;
-    color: #546175;
+    color: $gray_1;
     padding: 8px 16px;
     border-radius: 3px;
     font-weight: 300;
@@ -76,23 +128,6 @@ $iconsPath: "../assets/icons/";
   }
 }
 
-.slyce-select--caret {
-  .dropdown-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .dropdown-toggle:after {
-    display: block;
-    font-family: "slyce-icon-font" !important;
-    content: "\67";
-    height: 100%;
-    border: none;
-    padding-right:10px;
-    font-size: 9px;
-  }
-}
-
 .slyce-select--nostroke {
   width: auto;
   &.slyce-select--caret {
@@ -115,33 +150,6 @@ $iconsPath: "../assets/icons/";
 
   .dropdown-menu{
     width: auto;
-  }
-}
-
-.slyce-dropdown {
-  .btn{
-    &:hover{
-      background-color: $gray_6;
-    }
-    &:active,
-    &:focus {
-      background-color: $gray_3;
-    }
-  }
-}
-
-.slyce-dropdown--icon {
-  $iconSize: 24px;
-  .btn {
-    height: $iconSize;
-    width: $iconSize;
-    border-radius: 4px;
-    padding: 0;
-  }
-  svg{
-    height: $iconSize;
-    width: $iconSize;
-    padding: 5px;
   }
 }
 
