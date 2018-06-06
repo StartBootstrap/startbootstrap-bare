@@ -3,7 +3,7 @@
 $iconsPath: "../assets/icons/";
 
 
-.slyce-dropdown, .slyce-select {
+.slyce-dropdown {
 
   .dropdown-toggle {
     cursor: pointer;
@@ -41,30 +41,28 @@ $iconsPath: "../assets/icons/";
     }
   }
 
-  &.slyce-dropdown--icon {
-    .btn {
-      min-width: 0;
-      height: 24px;
-      width: 24px;
-      border-radius: 4px;
-      padding: 0;
+  .btn {
+    min-width: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    padding: 0;
 
-      .slyce-icon {
-        color: $gray_1;
-      }
+    .slyce-icon {
+      color: $gray_1;
+    }
 
-      &:hover {
-        background-color: $gray_6;
-      }
-      &:active,
-      &:focus {
-        background-color: $gray_3;
-      }
+    &:hover {
+      background-color: $gray_6;
+    }
+    &:active,
+    &:focus {
+      background-color: $gray_3;
     }
   }
 }
 
-.slyce-select--caret {
+.slyce-dropdown--caret {
   .dropdown-toggle {
     display: flex;
     flex-direction: row-reverse;
@@ -72,18 +70,17 @@ $iconsPath: "../assets/icons/";
     justify-content: space-between;
     @extend .icon-ic-dropcarrot-small;
     @extend [data-icon];
-  }
 
-  .dropdown-toggle:before {
-    display: block;
-    height: 100%;
-    border: none;
-    padding-left :10px;
-    font-size: 9px;
-  }
+    &:before {
+      display: block;
+      height: 100%;
+      border: none;
+      padding-left :10px;
+      font-size: 9px;
+    }
 }
 
-.slyce-select--input {
+.slyce-dropdown--input {
   margin: 0 !important;
   .dropdown-toggle {
     font-size: 14px;
@@ -106,7 +103,7 @@ $iconsPath: "../assets/icons/";
   }
 }
 
-.slyce-select--outlined {
+.slyce-dropdown--outlined {
   .dropdown-toggle{
     color: $primary;
     border-color: $primary;
@@ -128,9 +125,9 @@ $iconsPath: "../assets/icons/";
   }
 }
 
-.slyce-select--nostroke {
+.slyce-dropdown--nostroke {
   width: auto;
-  &.slyce-select--caret {
+  &.slyce-dropdown--caret {
     .dropdown-toggle:after {
       margin-left: 5px;
     }
@@ -153,7 +150,7 @@ $iconsPath: "../assets/icons/";
   }
 }
 
-.slyce-select--smaller {
+.slyce-dropdown--smaller {
   display: inline-block;
   .dropdown-toggle {
     padding-top: 0;
