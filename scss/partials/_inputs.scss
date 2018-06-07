@@ -299,123 +299,6 @@ textarea {
   }
 }
 
-.dropdown-toggle {
-  min-width: 0;
-  min-height: 0;
-  background-color: transparent;
-}
-
-.dropdown-toggle:hover {
-  background-color: $gray_8;
-}
-
-.dropdown-toggle:focus {
-  outline: 0;
-  box-shadow: none;
-  background-color: $gray_3;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
-
-.carrot.dropdown-toggle::after {
-  display: inline-block;
-}
-
-.dropdown-toggle--minWidth100 {
-  min-width: 100px;
-}
-
-// .dropdown-toggle{
-//   height:38px;
-// }
-
-.dropdown-item {
-  color: $gray_2;
-  font-family: "Circular Std";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: -0.15px;
-  line-height: 20px;
-}
-
-.dropdown-item:hover {
-  background-color: $gray_8;
-}
-
-.dropdown-menu {
-  min-width: 240px;
-  .dropdown-item-box {
-    border-radius: 3px;
-    content: "";
-    background-color: $gray_4;
-    width: 14px;
-    height: 14px;
-  }
-  .dropdown-item:hover {
-    background-color: $gray_8;
-  }
-}
-
-.dropdown-menu.show {
-  width: 100%;
-}
-
-.slyce-select-dropdown {
-  width: 100%;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 5px;
-    width: 8px;
-    top: 16px;
-    right: 10px;
-    transition: all .2s;
-    // background-image: url('#{$iconsPath}/ic_dropCarrot_small.svg');
-    content: "\67";
-    font-family: "slyce-icon-font" !important;
-  }
-  &.show {
-    background-color: $gray_8;
-    &::after {
-      transform: rotate(180deg)
-    }
-  }
-  &.show > .btn-secondary.dropdown-toggle {
-    background-color: transparent;
-    color: inherit;
-  }
-  & > button {
-    border-radius: 3px;
-    background-color: transparent;
-    color: $gray_1;
-    border-color: $gray_6;
-    text-align: left;
-    padding: 6px 16px;
-    &:hover,
-    &active,
-    &:focus {
-      background-color: transparent !important;
-      color: inherit !important;
-    }
-  }
-  a,
-  button,
-  .dropdown-menu {
-    width: 100%;
-  }
-  .dropdown-item {
-    font-weight: 300;
-  }
-  .dropdown-item:hover {
-    background-color: #F5F5F5;
-    color: #333333;
-    font-weight: bold;
-  }
-}
-
 .slyce-input--loading {
   &:after {
     content: "";
@@ -520,13 +403,13 @@ textarea {
     div {
       transition: all .2s;
       cursor: pointer;
-  
+
       &:hover {
         color: $primary;
       }
     }
   }
-  
+
   .clickthough-input__activated {
     display: inline-block;
     input {
@@ -539,7 +422,7 @@ textarea {
       appearance: none;
     }
   }
-  
+
   .clickthough-input__deactivated div,
   .clickthough-input__activated input,
   .hidden-auto-input-width {
@@ -550,10 +433,10 @@ textarea {
     padding: 0;
     background-color: transparent;
   }
-  
+
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }  
+  }
 }

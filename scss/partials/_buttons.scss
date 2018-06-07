@@ -24,8 +24,8 @@ $padding: 8px;
     color: $white;
   }
 
-  &:hover,
-  &:focus {
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled):focus {
     @include btn-state($white, darken($color, 10%), transparent);
     .slyce-icon {
       color: $white;
@@ -65,8 +65,8 @@ $padding: 8px;
     color: $color;
   }
 
-  &:hover,
-  &:focus {
+  &:not(:disabled):not(.disabled):hover,
+  &:not(:disabled):not(.disabled):focus {
     @include btn-state(darken($color, 10%), transparent, darken($color, 10%));
     .slyce-icon {
       color: darken($color, 10%);
