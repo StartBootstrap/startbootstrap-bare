@@ -66,6 +66,11 @@ $indents: (
   white-space: nowrap;
 }
 
+.slyce-overflow-elipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .slyce-icon{
   display: inline-flex;
   font-size: 16px;
@@ -85,4 +90,9 @@ $indents: (
 
 .slyce-fs-bigger {
   font-size: 16px;
+}
+
+.image-64x48 {
+  max-height: 48px;
+  max-width: 64px;
 }
