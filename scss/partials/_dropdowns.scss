@@ -30,16 +30,24 @@ $iconsPath: "../assets/icons/";
 
   .dropdown-menu {
     min-width: 100%;
+    font-size: inherit;
   }
 
   .dropdown-item {
     font-weight: 300;
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.active {
       background-color: $gray_8;
       font-weight: bold;
       color: inherit;
+
+      ngb-highlight {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+      }
     }
     .dropdown-item-box {
       border-radius: 3px;
