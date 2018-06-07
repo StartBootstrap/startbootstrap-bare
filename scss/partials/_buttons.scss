@@ -256,6 +256,10 @@ button {
   @include btn-nostroke($orange);
 }
 
+.slyce-btn--nostroke.slyce-text-gray_4 {
+  @include btn-nostroke($gray_4);
+}
+
 .btn.btn--bigger {
   height: 36px;
   width: 165px;

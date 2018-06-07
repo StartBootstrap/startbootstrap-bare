@@ -61,3 +61,28 @@ $indents: (
     padding-bottom: $value !important;
   }
 }
+
+.slyce-nowrap {
+  white-space: nowrap;
+}
+
+.slyce-icon{
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.slyce-lh-20{
+  line-height: 20px;
+}
+
+.slyce-fs-normal {
+  font-size: 14px;
+}
+
+.slyce-fs-smaller {
+  font-size: 12px;
+}
+
+.slyce-fs-bigger {
+  font-size: 16px;
+}
