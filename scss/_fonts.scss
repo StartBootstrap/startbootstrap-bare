@@ -24,28 +24,6 @@ $fontsPath: "../assets/fonts";
 @include fontface('Circular Std', 'CircularStd-BlackItalic', 'otf', 900, italic);
 @include fontface('Oxigen Mono', 'OxygenMono-Regular', 'ttf', normal, normal);
 
-.slyce-icon{
-  display: inline-flex;
-  font-size: 16px;
-}
-
-.slyce-lh-20{
-  line-height: 20px;
-}
-
-.slyce-fs-normal {
-  font-size: 14px;
-}
-
-.slyce-fs-smaller {
-  font-size: 12px;
-}
-
-.slyce-fs-bigger {
-  font-size: 16px;
-}
-
-
 
 // the styles below should be copied from assets/iconfont-manual/styles.css each time the forn gets updated
 

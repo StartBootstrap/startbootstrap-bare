@@ -44,9 +44,9 @@ $padding: 8px;
     }
   }
 
-  &.slyce-btn--loading:hover,
-  &.slyce-btn--loading:active,
-  &.slyce-btn--loading:focus {
+  &.slyce-btn--loading:hover:not(:disabled),
+  &.slyce-btn--loading:active:not(:disabled),
+  &.slyce-btn--loading:focus:not(:disabled) {
     background-color: $color !important;
   }
 
@@ -89,9 +89,9 @@ $padding: 8px;
     @include btn-state($gray_3, $gray_6, transparent)
   }
 
-  &.slyce-btn--loading:hover,
-  &.slyce-btn--loading:active,
-  &.slyce-btn--loading:focus {
+  &.slyce-btn--loading:hover:not(:disabled),
+  &.slyce-btn--loading:active:not(:disabled),
+  &.slyce-btn--loading:focus:not(:disabled) {
     border-color: $color !important;
   }
 
@@ -155,7 +155,17 @@ button {
     }
   }
   &:disabled {
-    @include btn-state($gray_3 !important, $gray_6 !important, transparent);
+    @include btn-state($gray_3 !important, $gray_6 !important, transparent !important);
+  }
+  &.slyce-btn--loading {
+    color: transparent !important;
+    .slyce-icon {
+      opacity: 0 !important;
+    }
+    &:disabled:after{
+      border-color: $gray_3 !important;
+      border-bottom-color: transparent !important;
+    }
   }
 }
 
@@ -244,6 +254,10 @@ button {
 
 .slyce-btn--nostroke.slyce-text-orange {
   @include btn-nostroke($orange);
+}
+
+.slyce-btn--nostroke.slyce-text-gray_4 {
+  @include btn-nostroke($gray_4);
 }
 
 .btn.btn--bigger {
