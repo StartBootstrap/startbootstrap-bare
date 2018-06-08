@@ -4,8 +4,11 @@ $indents: (
   q: 1*$step,
   h: 2*$step,
   1: 4*$step,
+  1h: 4*1.5*$step,
   2: 4*2*$step,
+  2h: 4*2.5*$step,
   3: 4*3*$step,
+  3h: 4*3.5*$step,
   4: 4*4*$step,
 );
 
@@ -57,4 +60,39 @@ $indents: (
     padding-top: $value !important;
     padding-bottom: $value !important;
   }
+}
+
+.slyce-nowrap {
+  white-space: nowrap;
+}
+
+.slyce-overflow-elipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slyce-icon{
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.slyce-lh-20{
+  line-height: 20px;
+}
+
+.slyce-fs-normal {
+  font-size: 14px;
+}
+
+.slyce-fs-smaller {
+  font-size: 12px;
+}
+
+.slyce-fs-bigger {
+  font-size: 16px;
+}
+
+.image-64x48 {
+  max-height: 48px;
+  max-width: 64px;
 }
