@@ -96,3 +96,12 @@ $indents: (
   max-height: 48px;
   max-width: 64px;
 }
+
+
+.slyce-icon {
+  transform-origin: center center;
+}
+
+.slyce-icon--rotate {
+  transform: rotate(180deg);
+}
