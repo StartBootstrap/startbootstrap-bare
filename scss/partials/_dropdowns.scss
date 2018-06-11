@@ -174,7 +174,7 @@ $iconsPath: "../assets/icons/";
     padding-top: 0;
     padding-bottom: 0;
     width: auto;
-    min-width: auto;
+    min-width: 0;
 
     &::after{
       margin-left: 1.255em;

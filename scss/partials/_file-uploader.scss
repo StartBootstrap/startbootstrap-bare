@@ -1,95 +1,13 @@
 @import '../_colors';
 $iconsPath: "../assets/icons/";
-
 .slyce-uploaded-file__container {
   border-radius: 3px;
   padding: 16px;
   overflow: hidden;
 
-  .slyce-icon.icon-ic-validsuccess {
-    color: $success;
-    font-size: 16px;
-  }
-
-  .slyce-uploaded-file__success-row{
-    margin-bottom: 12px;
-  }
-
-  .slyce-uploaded-file__row {
-    border-radius: 2px;
-    overflow: hidden;
-  }
   .slyce-uploaded-file__image {
     padding: 10px;
     height: 64px;
     max-width: 100px;
-    border-right: 1px solid $gray_6;
-  }
-  .slyce-uploaded-file__name {
-    height: 64px;
-    width: 100%;
-    padding: 10px 14px;
-    background-color: $gray_8;
-    &,
-    * {
-      color: $gray_3;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 14px;
-    }
-  }
-  .slyce-uploaded-file__success-message,
-  .btn {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 15px;
-  }
-
-  .btn {
-    color: $gray_4;
-  }
-}
-.slyce-icon--success {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  background-image: url('#{$iconsPath}/ic_validSuccess.svg');
-}
-
-.slyce-animate--expand{
-  transform-origin: top;
-  animation: expand .2s forwards ease-in-out;
-}
-
-.slyce-animate--collapse{
-  transform-origin: top;
-  animation: collapse .2s forwards ease-in-out;
-}
-
-.slyce-uploaded-file--mini{
-  padding: 0;
-  border: none;
-
-  .slyce-uploaded-file__success-message{
-    animation: fadeOutLeft .5s forwards ease-in;
-    animation-delay: 3s;
-  }
-}
-
-@keyframes expand {
-  0% {
-    transform:scaleY(0);
-  }
-  100% {
-    transform:scaleY(1);
-  }
-}
-
-@keyframes collapse {
-  0% {
-    transform:scaleY(1);
-  }
-  100% {
-    transform:scaleY(0);
   }
 }
