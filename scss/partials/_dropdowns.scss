@@ -25,6 +25,7 @@ $iconsPath: "../assets/icons/";
       text-overflow: ellipsis;
       white-space: nowrap;
       display: inline-block;
+      font-weight: inherit;
     }
   }
 
@@ -102,7 +103,7 @@ $iconsPath: "../assets/icons/";
   margin: 0 !important;
   .dropdown-toggle {
     font-size: 14px;
-    color: $gray_1;
+    color: inherit;
     padding: 8px 16px;
     border-radius: 3px;
     font-weight: 300;
