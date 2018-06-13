@@ -7,7 +7,7 @@ $iconsPath: "../assets/icons/";
 
   .slyce-uploaded-file__image {
     padding: 10px;
-    height: 64px;
+    max-height: 64px;
     max-width: 100px;
   }
 }
