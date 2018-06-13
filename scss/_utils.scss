@@ -1,5 +1,22 @@
 $step: 4px;
-$indents: ( q: 1*$step, h: 2*$step, 1: 4*$step, 1h: 4*1.5*$step, 2: 4*2*$step, 2h: 4*2.5*$step, 3: 4*3*$step, 3h: 4*3.5*$step, 4: 4*4*$step, );
+$indents: (
+  q: 1*$step,
+  h: 2*$step,
+  hq: 3*$step,
+  1: 4*$step,
+  1q: 4*1.25*$step,
+  1h: 4*1.5*$step,
+  1hq: 4*1.75*$step,
+  2: 4*2*$step,
+  2q: 4*2.25*$step,
+  2h: 4*2.5*$step,
+  2hq: 4*2.75*$step,
+  3: 4*3*$step,
+  3q: 4*3.25*$step,
+  3h: 4*3.5*$step,
+  3hq: 4*3.75*$step,
+  4: 4*4*$step,
+);
 @each $indent,
 $value in $indents {
   .m-#{$indent} {
@@ -370,4 +387,8 @@ $value in $indents {
 
 .slyce-bl {
   border-left: 1px solid #ccc;
+}
+
+.slyce-lh-20 {
+  line-height: 20px;
 }
