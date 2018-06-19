@@ -50,6 +50,13 @@ section {
   cursor: auto;
 }
 
+.slyce-indicator {
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
 ul {
   margin-left: -5px;
   li {
