@@ -140,6 +140,7 @@ $iconsPath: "../assets/icons/";
 }
 
 .slyce-dropdown--nostroke {
+  font-size: 12px;
   width: auto;
   &.slyce-dropdown--caret {
     .dropdown-toggle:after {
@@ -153,7 +154,7 @@ $iconsPath: "../assets/icons/";
     width: auto;
     border: none;
     background-color: transparent;
-    font-size: 12px;
+    font-size: inherit;
     line-height: 12px;
     font-weight: 300;
   }
