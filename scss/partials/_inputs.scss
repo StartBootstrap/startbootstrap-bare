@@ -94,17 +94,18 @@ $icon-size: 16px;
   pointer-events: none;
   background-color: transparent;
   font-weight: 300;
+
   .slyce-icon {
     color: inherit;
   }
+
+  &.slyce-placeholder--justify-left {
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: left;
+  }
 }
 
-.slyce-placeholder--justify-left {
-  @extend .slyce-placeholder;
-  padding-left: 16px;
-  padding-right: 16px;
-  justify-content: left;
-}
 
 .slyce-form-control__input {
   font-size: 14px;
