@@ -99,6 +99,13 @@ $icon-size: 16px;
   }
 }
 
+.slyce-placeholder--justify-left {
+  @extend .slyce-placeholder;
+  padding-left: 16px;
+  padding-right: 16px;
+  justify-content: left;
+}
+
 .slyce-form-control__input {
   font-size: 14px;
   color: inherit;
