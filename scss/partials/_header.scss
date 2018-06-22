@@ -2,8 +2,7 @@
 
 .navbar {
   .navbar-brand {
-    * {
-      color: #FFFFFF;
+    .nav-link {
       font-family: "Circular Std";
       font-size: 16px;
       font-weight: 300;
@@ -65,4 +64,9 @@
       border-bottom: 3px solid $slyceBlue;
     }
   }
+}
+
+
+.slyce-nav-back__name{
+  margin-top: 2px;
 }
