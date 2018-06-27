@@ -233,6 +233,10 @@ button {
   @include btn-outlined($primary)
 }
 
+.btn-outline-gray_2 {
+  @include btn-outlined($gray_2)
+}
+
 .slyce-btn-orange {
   @include btn-filled($orange)
 }
