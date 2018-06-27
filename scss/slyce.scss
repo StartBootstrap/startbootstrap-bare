@@ -70,6 +70,17 @@ ul {
   }
 }
 
+.slyce-badge {
+  @extend .p-q;
+  @extend .slyce-bg-gray_6;
+  @extend .slyce-bc-gray_5;
+  @extend .mr-q;
+  @extend .slyce-text-gray_2;
+  @extend .font-weight-light;
+  @extend .slyce-fs-smaller;
+  @extend .slyce-br-2;
+}
+
 .slyce-link--gray {
   color: $gray_3;
 
