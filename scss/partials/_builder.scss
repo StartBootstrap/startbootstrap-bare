@@ -29,3 +29,11 @@
 .slyce-operation--activated {
   border: 2px solid $primary;
 }
+
+.slyce-operations-group {
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid $gray_3;
+  padding: 16px;
+}
