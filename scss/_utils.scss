@@ -171,6 +171,14 @@ $value in $indents {
   color: $primary_alt;
 }
 
+.slyce-bg-light_green {
+  background-color: $light_green;
+}
+
+.slyce-bg-light_blue {
+  background-color: $light_blue;
+}
+
 .slyce-bg-primary_alt {
   background-color: $primary_alt;
 }
@@ -209,6 +217,14 @@ $value in $indents {
 
 .slyce-br-2 {
   border-radius: 2px;
+}
+
+.slyce-bc-light_green {
+  border: 1px solid $light_green
+}
+
+.slyce-bc-light_blue {
+  border: 1px solid $light_blue
 }
 
 .slyce-bc-primary {
@@ -293,6 +309,10 @@ $value in $indents {
 
 .slyce-b-3 {
   border-width: 3px !important;
+}
+
+.slyce-b-4 {
+  border-width: 4px !important;
 }
 
 .w-10 {
@@ -403,4 +423,8 @@ $value in $indents {
 
 .slyce-lh-20 {
   line-height: 20px;
+}
+
+.text-underline {
+  text-decoration: underline;
 }

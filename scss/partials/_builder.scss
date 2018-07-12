@@ -1,0 +1,31 @@
+@import '../_colors';
+
+.slyce-operation {
+  display: inline-flex;
+  border-width: 4px;
+  background-color: $gray_4;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.slyce-operation__info {
+  border-radius: 2px;
+  padding: 4px 4px;
+  background-color: rgba($white, 0.5);
+  line-height: 1;
+  color: $gray_1;
+  font-weight: 300;
+  font-size: 12px;
+  align-items: center;
+  min-height: 16px;
+  justify-content: center;
+  display: flex;
+
+  &:not(:first-child) {
+    margin-left: 4px;
+  }
+}
+
+.slyce-operation--activated {
+  border: 2px solid $primary;
+}
