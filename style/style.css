@@ -1,0 +1,28 @@
+.img-banner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 90vh;
+  background-image: url('../resources/candles.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sub-banner {
+  margin-bottom: 128px;
+}
+
+p,
+h1 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+}
