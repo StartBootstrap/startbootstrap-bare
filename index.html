@@ -11,13 +11,12 @@
 
     <title>Savvy Events</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Navigation -->
+    <!-- Navigation 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#">Savvy Events</a>
@@ -41,10 +40,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#values">Values</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -52,19 +48,53 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Page Content -->
-    <div class="banner">
-      <div class="img-banner">
-        <div class="sub-banner">
-          <div class="text-white text-center">
-            <h1>Savvy Events</h1>
-            <p>Local, Bocal, Mocal</p>
+    <div class="section" id="banner">
+      <div class="sub-banner">
+        <div class="text-white text-center">
+          <h1>Savvy Events</h1>
+          <div id="banner-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
           </div>
         </div>
       </div>
+      <a href="#values">
+        <button id="btn-banner" class="btn-primary">Savvy Values</button>
+      </a>
     </div>
+
+    <!-- Page Content -->
+    <div class="section" id="values">
+      <div class="half-section text-center">
+        <h2>Savvy Values</h2>
+        <p id="desc-values">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+      </div>
+      <div class="half-section hidden-xs" id="container-img-values">
+        <div id="img-values"></div>
+      </div>
+    </div>
+
+    <div id="contact"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
