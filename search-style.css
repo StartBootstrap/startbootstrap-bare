@@ -7,12 +7,12 @@ body {
 .search-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 12%;
     transform: translate(-50%, -50%);
     background: #2f3640;
     height: 40px;
     border-radius: 40px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .search-box:hover > .search-txt {
@@ -27,8 +27,8 @@ body {
 
 .search-btn {
     float: right;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #2f3640;
     display: flex;
@@ -52,7 +52,7 @@ body {
     color: white;
     font-size: 14px;
     transition: 0.4s;
-    line-height: 35px;
+    line-height: 30px;
     width: 0px;
     font-weight: bold;
 }
