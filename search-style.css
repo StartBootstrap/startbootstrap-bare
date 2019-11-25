@@ -56,3 +56,8 @@ body {
     width: 0px;
     font-weight: bold;
 }
+
+.navbar-brand {
+    position: absolute;
+    left: 45%;
+}
