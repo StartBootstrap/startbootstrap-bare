@@ -1,0 +1,51 @@
+body{
+
+}
+
+
+.my-photo{
+    width: 350px; 
+    height: 350px;
+    background-image: url("../../../img/me.jpg");
+    background-size: 350px, auto;
+    background-position: top center; 
+    border-radius: 100%;     
+    display: block; 
+    margin: auto; 
+}
+
+.education{
+    width: 100%; 
+    height: auto;  
+    border: 3px #333 solid;  
+    padding: 10px; 
+    background: #000; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+}
+
+.education ul{
+    margin-top: 15px;  
+}
+
+.education li{
+    list-style: none; 
+}
+
+.ucsc, .mpc{
+    width: 48%; 
+    background: #666; 
+    margin: 10px auto;
+    padding: 15px;
+}
+
+@media (max-width: 576px) {
+    .education {
+      flex-direction: column;
+    }
+
+    .ucsc, .mpc{
+        width: 100%; 
+    }
+  }
