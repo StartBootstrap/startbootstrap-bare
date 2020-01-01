@@ -1,7 +1,17 @@
 body{
+    font-family: 'Roboto', sans-serif;
 
 }
 
+.container{
+    background;
+    padding: 0px; 
+}
+
+.about-me{
+    font-size: 17pt; 
+    color: #333;
+}
 
 .my-photo{
     width: 350px; 
@@ -15,12 +25,12 @@ body{
 }
 
 .education{
+    font-size: 16pt; 
     width: 100%; 
-    height: auto;  
-    border: 3px #333 solid;  
-    padding: 10px; 
-    background: #000; 
-    color: white; 
+    height: auto;    
+    padding: 0px; 
+    background:; 
+    color: black; 
     display: flex; 
     justify-content: center;
 }
@@ -35,17 +45,21 @@ body{
 
 .ucsc, .mpc{
     width: 48%; 
-    background: #666; 
+    background: ; 
     margin: 10px auto;
     padding: 15px;
 }
 
-@media (max-width: 576px) {
-    .education {
-      flex-direction: column;
-    }
 
-    .ucsc, .mpc{
-        width: 100%; 
-    }
-  }
+@media (max-width: 768px) { 
+
+    .education {
+        flex-direction: column;
+      }
+  
+      .ucsc, .mpc{
+          width: 100%; 
+      }
+
+
+}
