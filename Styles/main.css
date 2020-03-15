@@ -6,7 +6,7 @@ body {
     font-family: sans-serif;
     border: 3px solid black;
     width: 90%;
-    height: 780px;
+    height: 785px;
     }
 a:visited {color: darkgreen;}
 a:link {color:darkgreen;}
@@ -14,10 +14,10 @@ header {
     text-align:center;
     border-bottom: 3px solid black;}
 main {
-    width: 45%;
+    width: 40%;
     float: right;}
 aside {
-    width: 45%;
+    width: 60%;
     }
 table {
     border: 1px solid black;
