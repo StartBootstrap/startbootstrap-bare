@@ -13,15 +13,16 @@ header {
     border-bottom: 3px solid black;}
 h2 {text-align: center;
     border-bottom: 3px solid black;}
-section {margin-left: 1em;
-    }
+section {margin-left: 1em;}
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    }
+    margin-left: 1em;}
 th, td {
     border: 1px solid black;
     padding: .2em 1em}
 footer {
-    padding-top: 1em
-}
+    padding: 0;
+    border-top: 3px solid black;
+    margin-top: 1em;
+    text-align: center;}
