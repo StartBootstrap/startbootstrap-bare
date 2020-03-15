@@ -5,24 +5,31 @@ body {
     background-color: lightgray;
     font-family: sans-serif;
     border: 3px solid black;
+    width: 90%;
+    height: 780px;
     }
 a:visited {color: darkgreen;}
 a:link {color:darkgreen;}
 header {
     text-align:center;
     border-bottom: 3px solid black;}
-h2 {text-align: center;
-    border-bottom: 3px solid black;}
-section {margin-left: 1em;}
+main {
+    width: 45%;
+    float: right;}
+aside {
+    width: 45%;
+    }
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    margin-left: 1em;}
+    margin-left: 1em;
+    margin-top: 1em;}
 th, td {
     border: 1px solid black;
     padding: .2em 1em}
 footer {
-    padding: 0;
     border-top: 3px solid black;
-    margin-top: 1em;
-    text-align: center;}
+    text-align: center;
+    clear: both;
+    padding-top: .2em;
+    }
