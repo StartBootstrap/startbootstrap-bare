@@ -1,13 +1,27 @@
 /* the styles for the elements */
 *
+
 body {
     background-color: lightgray;
     font-family: sans-serif;
-    border: 3px solid black;}
+    border: 3px solid black;
+    }
 a:visited {color: darkgreen;}
 a:link {color:darkgreen;}
 header {
     text-align:center;
     border-bottom: 3px solid black;}
-h2 {text-align: center;}
-section {margin-left: 1em;}
+h2 {text-align: center;
+    border-bottom: 3px solid black;}
+section {margin-left: 1em;
+    }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+th, td {
+    border: 1px solid black;
+    padding: .2em 1em}
+footer {
+    padding-top: 1em
+}
