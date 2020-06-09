@@ -12,7 +12,10 @@ a:visited {color: darkgreen;}
 a:link {color:darkgreen;}
 header {
     text-align:center;
-    border-bottom: 3px solid black;}
+    border-bottom: 3px solid black;
+    padding: .25em;
+    background-color: cadetblue;
+}
 main {
     width: 35%;
     float: left;
@@ -35,14 +38,18 @@ table {
     position: fixed;
 }
 th, td {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: .2em 1em}
 footer {
     border-top: 3px solid black;
     text-align: center;
     clear: both;
     padding-top: .2em;
+    background-color: cadetblue;
     }
+th {
+    background-color: cadetblue;
+}
 
 /* tablet portrait to standard 960 */
 @media only screen and (max-width: 959px) {
