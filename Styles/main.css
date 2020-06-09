@@ -5,8 +5,8 @@ body {
     background-color: lightgray;
     font-family: sans-serif;
     border: 3px solid black;
-    width: 90%;
-    height: 785px;
+    width: inherit;
+    height: inherit;
     }
 a:visited {color: darkgreen;}
 a:link {color:darkgreen;}
@@ -14,16 +14,26 @@ header {
     text-align:center;
     border-bottom: 3px solid black;}
 main {
-    width: 38%;
-    float: right;}
+    width: 35%;
+    float: left;
+    margin-left: 2em;
+    }
+main h3 {
+    text-align: center;
+    text-decoration: underline;
+    
+}
 aside {
-    width: 62%;
+    float: right;
+    width: 60%
     }
 table {
     border: 1px solid black;
     border-collapse: collapse;
     margin-left: 1em;
-    margin-top: 1em;}
+    margin-top: 1em;
+    position: fixed;
+}
 th, td {
     border: 1px solid black;
     padding: .2em 1em}
@@ -36,7 +46,9 @@ footer {
 
 /* tablet portrait to standard 960 */
 @media only screen and (max-width: 959px) {
-    h3 {font-size: }
+    table {
+        position: static;
+    }
 }
 
 /* mobile landscape to tablet portrait */
@@ -48,4 +60,9 @@ footer {
         }
     body {
         border: none;}
+    table {
+        position: static;
+    }
+    aside {
+        float: none;}
 }
