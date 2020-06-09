@@ -38,3 +38,14 @@ footer {
 @media only screen and (max-width: 959px) {
     h3 {font-size: }
 }
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    main {
+        float: none;
+        width: auto;
+        margin: 3em;
+        }
+    body {
+        border: none;}
+}
