@@ -14,10 +14,10 @@ header {
     text-align:center;
     border-bottom: 3px solid black;}
 main {
-    width: 40%;
+    width: 38%;
     float: right;}
 aside {
-    width: 60%;
+    width: 62%;
     }
 table {
     border: 1px solid black;
@@ -33,3 +33,8 @@ footer {
     clear: both;
     padding-top: .2em;
     }
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    h3 {font-size: }
+}
