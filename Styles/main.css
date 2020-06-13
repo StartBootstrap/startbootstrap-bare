@@ -69,6 +69,7 @@ th {
         border: none;}
     table {
         position: static;
+        margin-bottom: .5em;
     }
     aside {
         float: none;}
