@@ -16,7 +16,7 @@
     ],
     "homepage": "https://startbootstrap.com/template-overviews/bare",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-bare/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-bare/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -26,7 +26,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-bare.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-bare.git"
     },
     "dependencies": {
         "bootstrap": "4.3.1",
