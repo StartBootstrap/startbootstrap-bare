@@ -1,6 +1,6 @@
 # [Start Bootstrap - Bare](https://startbootstrap.com/template/bare/)
 
-[Bare](https://startbootstrap.com/template/bare/) is a bare HTML starter template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This template features a basic project structure perfect for creating modern, responsive websites and applications.
+[Bare](https://startbootstrap.com/template/bare/) is a bare HTML starter template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This template serves as a basic project boilerplate perfect for creating modern, responsive websites and applications.
 
 ## Preview
 
@@ -28,7 +28,7 @@ To begin using this template, choose one of the following options to get started
 
 ### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, open the `index.html` file in your web browser.
 
 ### Advanced Usage
 
