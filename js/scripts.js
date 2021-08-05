@@ -1,5 +1,5 @@
 /*!
-* Start Bootstrap - Bare v5.0.2 (https://startbootstrap.com/template/bare)
+* Start Bootstrap - Bare v5.0.3 (https://startbootstrap.com/template/bare)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
