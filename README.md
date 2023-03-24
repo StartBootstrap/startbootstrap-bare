@@ -12,8 +12,6 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-bare/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-bare.svg)](https://www.npmjs.com/package/startbootstrap-bare)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-bare/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-bare)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-bare/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-bare?type=dev)
 
 ## Download and Installation
 
@@ -21,6 +19,8 @@ To begin using this template, choose one of the following options to get started
 
 * [Download the latest release on Start Bootstrap](https://startbootstrap.com/template/bare/)
 * Install via npm: `npm i startbootstrap-bare`
+* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-bare.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-bare)
 
 ## Usage
 
