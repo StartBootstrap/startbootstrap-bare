@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YZY8183GLY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YZY8183GLY');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>San Diego Neighborhood Explorer | Lana Swanson, REALTOR®</title>
+        <!-- Primary SEO -->
+        <meta name="description"
+            content="Explore 16 San Diego neighborhoods from Oceanside to Little Italy. Compare home prices, walk scores, school ratings, history, and commute times. Brought to you by Lana Swanson, San Diego REALTOR®.">
+        <meta name="keywords"
+            content="San Diego neighborhoods, La Jolla, Del Mar, Encinitas, Carlsbad, Oceanside, Little Italy, Hillcrest, North Park, Ocean Beach, Pacific Beach, Point Loma, Solana Beach, Torrey Pines, Mission Beach, Downtown San Diego, San Diego real estate, Lana Swanson REALTOR, San Diego community guide, North County San Diego, coastal San Diego">
+        <meta name="author" content="Lana Swanson, REALTOR®">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical"
+            href="https://yoursite.com/san-diego-neighborhoods">
+
+        <!-- Open Graph (Facebook, LinkedIn) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title"
+            content="San Diego Neighborhood Explorer — Lana Swanson, REALTOR®">
+        <meta property="og:description"
+            content="Interactive guide to 16 San Diego neighborhoods. Compare home prices, walk scores, school ratings, history, and commute times from Oceanside to Little Italy.">
+        <meta property="og:url"
+            content="https://yoursite.com/san-diego-neighborhoods">
+        <meta property="og:site_name" content="Lana Swanson, REALTOR®">
+        <meta property="og:image"
+            content="https://yoursite.com/images/sd-neighborhood-explorer-og.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:locale" content="en_US">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title"
+            content="San Diego Neighborhood Explorer — Lana Swanson, REALTOR®">
+        <meta name="twitter:description"
+            content="Interactive guide to 16 San Diego neighborhoods. Compare home prices, walk scores, school ratings, and history from Oceanside to Little Italy.">
+        <meta name="twitter:image"
+            content="https://yoursite.com/images/sd-neighborhood-explorer-og.jpg">
+
+        <!-- Geo & Local SEO -->
+        <meta name="geo.region" content="US-CA">
+        <meta name="geo.placename" content="San Diego, California">
+        <meta name="geo.position" content="32.7157;-117.1611">
+        <meta name="ICBM" content="32.7157, -117.1611">
+
+        <!-- Structured Data — WebPage -->
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "San Diego Neighborhood Explorer",
+  "description": "Interactive guide to 16 San Diego neighborhoods with home prices, walk scores, school ratings, history, and commute data.",
+  "url": "https://yoursite.com/san-diego-neighborhoods",
+  "inLanguage": "en-US",
+  "about": {
+    "@type": "Place",
+    "name": "San Diego",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "keywords": "San Diego neighborhoods, La Jolla, Del Mar, Encinitas, Carlsbad, Oceanside, Little Italy, Hillcrest, North Park, coastal San Diego real estate"
+}
+</script>
+
+        <!-- Structured Data — ItemList of Neighborhoods -->
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "San Diego Neighborhoods",
+  "description": "16 San Diego coastal and urban neighborhoods with demographic and real estate data",
+  "numberOfItems": 16,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Oceanside","description":"San Diego's largest coastal city — beach, harbor and downtown revival"},
+    {"@type":"ListItem","position":2,"name":"Carlsbad","description":"Flower fields, Legoland and resort living"},
+    {"@type":"ListItem","position":3,"name":"Encinitas","description":"Yoga capital of the US — surf culture and bohemian spirit"},
+    {"@type":"ListItem","position":4,"name":"Solana Beach","description":"Small walkable town with the legendary Belly Up Tavern"},
+    {"@type":"ListItem","position":5,"name":"Del Mar","description":"The races, the bluffs and one of California's priciest zip codes"},
+    {"@type":"ListItem","position":6,"name":"Torrey Pines","description":"State reserve, biotech research corridor and dramatic coastal bluffs"},
+    {"@type":"ListItem","position":7,"name":"La Jolla","description":"The Jewel — cliffs, coves, world-class research and village life"},
+    {"@type":"ListItem","position":8,"name":"Bird Rock","description":"Quiet coastal enclave with blufftop ocean views"},
+    {"@type":"ListItem","position":9,"name":"Pacific Beach","description":"Classic SoCal beach town — boardwalk, surf and Mission Bay"},
+    {"@type":"ListItem","position":10,"name":"Mission Beach","description":"Narrow peninsula — Belmont Park, boardwalk and sand"},
+    {"@type":"ListItem","position":11,"name":"Ocean Beach","description":"Countercultural beach village — funky, independent and beloved"},
+    {"@type":"ListItem","position":12,"name":"Point Loma","description":"Peninsula of history — lighthouse, veterans and bay views"},
+    {"@type":"ListItem","position":13,"name":"Downtown San Diego","description":"Urban core — Gaslamp Quarter, waterfront and rapid transformation"},
+    {"@type":"ListItem","position":14,"name":"Hillcrest","description":"Vibrant LGBTQ+ neighborhood — dining, culture and Balboa Park"},
+    {"@type":"ListItem","position":15,"name":"North Park","description":"Creative hub — breweries, street art and bungalow neighborhoods"},
+    {"@type":"ListItem","position":16,"name":"Little Italy","description":"San Diego's most walkable neighborhood — food, piazzas and waterfront"}
+  ]
+}
+</script>
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+            rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <style>
+:root{
+  --sand:#F6F1E9;--sand-dark:#EDE5D4;--sand-mid:#E0D8C8;
+  --ocean:#1A4A6B;--ocean-mid:#2E6E9E;--ocean-light:#C8DFF0;--ocean-pale:#EAF3FA;
+  --kelp:#2D5A3D;--kelp-light:#E2EFEA;
+  --coral:#B84B30;--coral-light:#FAE8E3;
+  --plum:#5A3472;--plum-light:#EDE4F5;
+  --gold:#9A7A10;--gold-light:#FAF3D0;
+  --text:#1C1C18;--text-mid:#484840;--text-muted:#78786E;
+  --border:rgba(26,74,107,.10);--border-mid:rgba(26,74,107,.20);
+  --radius:14px;--radius-sm:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--text);min-height:100vh;font-size:15px;line-height:1.6}
+
+/* header provided by site template */
+/* SKIP LINK */
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--ocean);color:#fff;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-size:14px;font-weight:500;text-decoration:none;z-index:9999;transition:top .15s}
+.skip-link:focus{top:0}
+
+/* PAGE HERO */
+.page-hero{background:var(--ocean);color:#fff;padding:2.5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:48px;background:var(--sand);clip-path:ellipse(58% 100% at 50% 100%)}
+.hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:10px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(26px,4.5vw,46px);line-height:1.08;margin-bottom:10px}
+h1 em{font-style:italic;color:#9ECFEE}
+.header-sub{font-size:14px;color:rgba(255,255,255,.6);max-width:500px}
+.hstats{display:flex;gap:2.5rem;margin-top:1.75rem;flex-wrap:wrap}
+.hstat-num{font-family:'DM Serif Display',serif;font-size:26px;color:#9ECFEE}
+.hstat-label{font-size:11px;color:rgba(255,255,255,.45);margin-top:1px}
+.hero-inner h1{color:white}
+
+
+/* LAYOUT */
+.main{max-width:1120px;margin:0 auto;padding:2rem 1.5rem 5rem}
+
+/* TABS */
+.tab-nav{display:flex;gap:3px;background:var(--sand-dark);border-radius:30px;padding:4px;width:fit-content;margin-bottom:2rem;flex-wrap:wrap}
+.tab-btn{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:7px 18px;border:none;border-radius:26px;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .18s;white-space:nowrap}
+.tab-btn.active{background:var(--ocean);color:#fff}
+.tab-btn:hover:not(.active){background:rgba(26,74,107,.08);color:var(--ocean)}
+
+.section{display:none}
+.section.active{display:block;animation:fadeIn .22s ease;padding:0;background:transparent}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* FILTERS */
+.filter-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center}
+.flabel{font-size:11px;color:var(--text-muted);margin-right:2px}
+.fb{font-size:12px;padding:5px 13px;border:1px solid var(--border-mid);border-radius:20px;background:transparent;color:var(--text-muted);cursor:pointer;font-family:inherit;transition:all .15s}
+.fb.on{background:var(--ocean);color:#fff;border-color:var(--ocean)}
+.fb:hover:not(.on){background:var(--ocean-pale);color:var(--ocean);border-color:var(--ocean-mid)}
+
+/* CARDS GRID */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:13px}
+.ncard{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.25rem;cursor:pointer;transition:border-color .18s,transform .15s,box-shadow .15s;position:relative}
+.ncard:hover{border-color:var(--ocean-mid);transform:translateY(-2px);box-shadow:0 4px 20px rgba(26,74,107,.08)}
+.ncard.selected{border:2px solid var(--ocean)}
+.ncard.compare-a{border:2px solid var(--ocean);background:var(--ocean-pale)}
+.ncard.compare-b{border:2px solid var(--coral);background:var(--coral-light)}
+.compare-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:500;padding:2px 8px;border-radius:20px}
+.compare-badge.a{background:var(--ocean);color:#fff}
+.compare-badge.b{background:var(--coral);color:#fff}
+
+.zone-badge{display:inline-block;font-size:10px;font-weight:500;padding:2px 9px;border-radius:20px;margin-bottom:8px;letter-spacing:.04em}
+.z-north{background:var(--kelp-light);color:var(--kelp)}
+.z-central{background:var(--ocean-pale);color:var(--ocean)}
+.z-south{background:var(--coral-light);color:var(--coral)}
+.z-urban{background:var(--plum-light);color:var(--plum)}
+
+.ncard-name{font-family:'DM Serif Display',serif;font-size:19px;margin-bottom:2px;line-height:1.2}
+.ncard-tag{font-size:12px;color:var(--text-muted);margin-bottom:11px;line-height:1.4}
+.ncard-metrics{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.nm{background:var(--sand);border-radius:var(--radius-sm);padding:7px 9px}
+.nm-label{font-size:10px;color:var(--text-muted);margin-bottom:1px}
+.nm-val{font-size:13px;font-weight:500;color:var(--ocean)}
+
+/* DETAIL PANEL */
+.detail-panel{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;margin-bottom:1.75rem;display:none}
+.detail-panel.open{display:block;animation:fadeIn .2s ease}
+.dp-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+.dp-title{font-family:'DM Serif Display',serif;font-size:30px;margin-bottom:3px;line-height:1.1}
+.dp-sub{font-size:13px;color:var(--text-muted)}
+.close-btn{font-size:12px;padding:5px 14px;border:1px solid var(--border-mid);border-radius:20px;background:transparent;color:var(--text-muted);cursor:pointer;font-family:inherit;white-space:nowrap}
+.close-btn:hover{background:var(--sand)}
+
+.dp-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:9px;margin-bottom:1.5rem}
+.ds{background:var(--sand);border-radius:var(--radius-sm);padding:11px 13px}
+.ds-label{font-size:10px;color:var(--text-muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.05em}
+.ds-val{font-size:18px;font-weight:500;color:var(--ocean)}
+
+.dp-body{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.25rem}
+@media(max-width:640px){.dp-body{grid-template-columns:1fr}}
+.dp-section-title{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.09em;color:var(--text-muted);margin-bottom:6px}
+.dp-section-text{font-size:13px;color:var(--text-mid);line-height:1.65}
+
+.score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+.score-box{background:var(--sand);border-radius:var(--radius-sm);padding:10px 12px;text-align:center}
+.score-num{font-family:'DM Serif Display',serif;font-size:28px;margin-bottom:2px}
+.score-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em}
+.score-high{color:var(--kelp)}
+.score-mid{color:var(--gold)}
+.score-low{color:var(--coral)}
+
+.tags-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.tag{font-size:11px;padding:3px 10px;background:var(--sand);border:1px solid var(--border-mid);border-radius:20px;color:var(--text-muted)}
+
+.commute-bar-wrap{margin-top:8px}
+.commute-item{display:flex;align-items:center;gap:9px;margin-bottom:7px;font-size:12px}
+.commute-label{width:90px;color:var(--text-muted);flex-shrink:0}
+.commute-bar-bg{flex:1;height:6px;background:var(--sand-mid);border-radius:3px;overflow:hidden}
+.commute-bar-fill{height:100%;border-radius:3px;background:var(--ocean-mid);transition:width .4s ease}
+.commute-val{width:40px;text-align:right;font-weight:500;color:var(--text-mid)}
+
+/* COMPARE SECTION */
+.compare-intro{font-size:13px;color:var(--text-muted);margin-bottom:1.25rem;line-height:1.6;max-width:600px}
+.compare-selectors{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.75rem}
+.compare-slot{background:#fff;border:1px dashed var(--border-mid);border-radius:var(--radius);padding:1rem;min-height:80px;display:flex;align-items:center;justify-content:center}
+.compare-slot.filled{border-style:solid;border-color:var(--border);display:block;padding:1rem 1.25rem}
+.compare-slot-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:4px}
+.compare-slot-name{font-family:'DM Serif Display',serif;font-size:20px}
+.compare-slot-sub{font-size:12px;color:var(--text-muted)}
+.compare-empty-hint{font-size:13px;color:var(--text-muted);text-align:center}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.compare-table th{background:var(--sand-dark);font-weight:500;padding:10px 14px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted)}
+.compare-table th.a-col{background:var(--ocean-pale);color:var(--ocean)}
+.compare-table th.b-col{background:var(--coral-light);color:var(--coral)}
+.compare-table td{padding:9px 14px;border-top:1px solid var(--border);vertical-align:top}
+.compare-table tr:hover td{background:var(--sand)}
+.compare-table td.a-col{color:var(--ocean);font-weight:500}
+.compare-table td.b-col{color:var(--coral);font-weight:500}
+.compare-win{font-size:10px;padding:1px 6px;border-radius:10px;background:var(--kelp-light);color:var(--kelp);margin-left:4px;font-weight:500}
+.compare-actions{display:flex;gap:8px;margin-bottom:1.25rem}
+.btn-primary{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:8px 18px;border:none;border-radius:20px;background:var(--ocean);color:#fff;cursor:pointer;transition:opacity .15s}
+.btn-primary:hover{opacity:.85}
+.btn-ghost{font-family:'DM Sans',sans-serif;font-size:13px;padding:8px 18px;border:1px solid var(--border-mid);border-radius:20px;background:transparent;color:var(--text-muted);cursor:pointer;transition:all .15s}
+.btn-ghost:hover{background:var(--sand);color:var(--text)}
+
+/* CHART SECTION */
+.chart-intro{font-size:13px;color:var(--text-muted);margin-bottom:1.5rem;max-width:600px}
+.chart-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem}
+.chart-title{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:4px}
+.chart-sub{font-size:12px;color:var(--text-muted);margin-bottom:1.25rem}
+.chart-wrap{position:relative;width:100%}
+
+/* MAP SECTION */
+.map-outer{position:relative;width:100%;background:#D4E8F5;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:1.5rem}
+.map-pin{position:absolute;font-size:11px;font-weight:500;color:var(--ocean);background:#fff;padding:3px 9px;border-radius:20px;cursor:pointer;border:1px solid var(--ocean-light);white-space:nowrap;transform:translateX(-50%);transition:all .15s;box-shadow:0 1px 4px rgba(26,74,107,.1)}
+.map-pin:hover,.map-pin.active{background:var(--ocean);color:#fff;border-color:var(--ocean)}
+.map-legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1rem;font-size:12px}
+.map-legend-item{display:flex;align-items:center;gap:5px;color:var(--text-muted)}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .hstats{gap:1.5rem}
+  .tab-btn{font-size:12px;padding:6px 13px}
+  .score-grid{grid-template-columns:1fr 1fr}
+  .compare-selectors{grid-template-columns:1fr}
+}
+</style>
+    </head>
+    <body>
+
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header class="site-header sticky-top">
+            <nav class="navbar navbar-expand-lg"
+                aria-label="Primary navigation">
+                <div class="container-fluid">
+                    <a href="/" class="site-logo"
+                        aria-label="Lana Swanson home page">
+                        <img
+                            src="assets/images/desktop-logo.png"
+                            alt="Lana Swanson REALTOR® logo"
+                            class="logo logo--desktop" />
+                        <img
+                            src="assets/images/mobile-logo.png"
+                            alt="Lana Swanson REALTOR® logo"
+                            class="logo logo--mobile" />
+                    </a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"
+                            aria-hidden="true"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="/buyers">Buyers</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="/sellers">Sellers</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="/listings">Listings</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link active"
+                                    href="/neighborhood-explorer"
+                                    aria-current="page">Neighborhoods</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">Resources</a>
+                                <ul class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item"
+                                            href="/resources">All
+                                            Resources</a></li>
+                                    <li><hr class="dropdown-divider"
+                                            aria-hidden="true" /></li>
+                                    <li><a class="dropdown-item"
+                                            href="/resources#buyer-resources">Buyer
+                                            Resources</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/resources#seller-resources">Seller
+                                            Resources</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/budget-calculator">Monthly
+                                            Home Budget
+                                            Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="page-hero" role="region" aria-label="Page introduction">
+            <div class="hero-inner">
+                <div class="eyebrow">San Diego Region</div>
+                <h1>Neighborhood<br><em>Explorer</em></h1>
+                <p class="header-sub">16 communities from Oceanside to Little
+                    Italy — history, demographics, scores & more</p>
+                <div class="hstats">
+                    <div><div class="hstat-num">16</div><div
+                            class="hstat-label">Neighborhoods</div></div>
+                    <div><div class="hstat-num">70mi</div><div
+                            class="hstat-label">Coastal corridor</div></div>
+                    <div><div class="hstat-num">850K+</div><div
+                            class="hstat-label">Total residents</div></div>
+                    <div><div class="hstat-num">$695K–$3.1M</div><div
+                            class="hstat-label">Median home range</div></div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main" id="main-content" role="main">
+
+            <nav class="tab-nav" aria-label="Content sections">
+                <button class="tab-btn active" onclick="showTab('explore')"
+                    role="tab" aria-selected="true" aria-controls="tab-explore"
+                    id="tab-btn-explore">Explore</button>
+                <button class="tab-btn" onclick="showTab('map')" role="tab"
+                    aria-selected="false" aria-controls="tab-map"
+                    id="tab-btn-map">Map</button>
+                <button class="tab-btn" onclick="showTab('compare')" role="tab"
+                    aria-selected="false" aria-controls="tab-compare"
+                    id="tab-btn-compare">Compare</button>
+                <button class="tab-btn" onclick="showTab('charts')" role="tab"
+                    aria-selected="false" aria-controls="tab-charts"
+                    id="tab-btn-charts">Charts</button>
+            </nav>
+
+            <!-- EXPLORE TAB -->
+            <div class="section active" id="tab-explore" role="tabpanel"
+                aria-labelledby="tab-btn-explore">
+                <div class="filter-row" role="group"
+                    aria-label="Filter neighborhoods by zone">
+                    <span class="flabel">Filter:</span>
+                    <button class="fb on" onclick="setFilter('all',this)"
+                        aria-pressed="true">All (16)</button>
+                    <button class="fb" onclick="setFilter('north',this)"
+                        aria-pressed="false">North County</button>
+                    <button class="fb" onclick="setFilter('central',this)"
+                        aria-pressed="false">Central Coast</button>
+                    <button class="fb" onclick="setFilter('south',this)"
+                        aria-pressed="false">South / Peninsula</button>
+                    <button class="fb" onclick="setFilter('urban',this)"
+                        aria-pressed="false">Urban Core</button>
+                </div>
+                <div class="detail-panel" id="detail-panel" role="region"
+                    aria-label="Neighborhood detail" aria-live="polite"></div>
+                <div class="cards-grid" id="cards-grid" role="list"
+                    aria-label="Neighborhood cards"></div>
+            </div>
+
+            <!-- MAP TAB -->
+            <div class="section" id="tab-map" role="tabpanel"
+                aria-labelledby="tab-btn-map" aria-hidden="true">
+                <div class="map-legend" role="list"
+                    aria-label="Map color legend">
+                    <div class="map-legend-item" role="listitem"><div
+                            class="legend-dot"
+                            style="background:#2D5A3D"></div>North County</div>
+                    <div class="map-legend-item" role="listitem"><div
+                            class="legend-dot"
+                            style="background:#2E6E9E"></div>Central Coast</div>
+                    <div class="map-legend-item" role="listitem"><div
+                            class="legend-dot"
+                            style="background:#B84B30"></div>South /
+                        Peninsula</div>
+                    <div class="map-legend-item" role="listitem"><div
+                            class="legend-dot"
+                            style="background:#5A3472"></div>Urban Core</div>
+                </div>
+                <div class="map-outer" id="map-outer" style="height:600px">
+                    <svg width="100%" height="100%" viewBox="0 0 700 600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="position:absolute;top:0;left:0" role="img"
+                        aria-label="Map of San Diego coastal communities from Oceanside in the north to Little Italy in the south"><title>San
+                            Diego coastal neighborhoods map</title>
+                        <rect width="700" height="600" fill="#C0D8EC" />
+                        <path
+                            d="M168,0 L168,40 L165,80 L162,120 L159,160 L156,200 L153,240 L150,280 L147,320 L144,360 L141,400 L138,440 L135,480 L132,520 L129,560 L126,600 L700,600 L700,0 Z"
+                            fill="#E6EDE0" />
+                        <path
+                            d="M168,0 L168,40 L165,80 L162,120 L159,160 L156,200 L153,240 L150,280 L147,320 L144,360 L141,400 L138,440 L135,480 L132,520 L129,560 L126,600"
+                            stroke="#9ECFEE" stroke-width="1.5" fill="none"
+                            stroke-dasharray="6,4" />
+                        <text x="80" y="300" font-size="11" fill="#378ADD"
+                            opacity=".35" text-anchor="middle"
+                            transform="rotate(-90,80,300)">Pacific Ocean</text>
+                        <text x="420" y="580" font-size="10" fill="#888"
+                            opacity=".4" text-anchor="middle">San Diego
+                            Region</text>
+                        <!-- grid lines -->
+                        <line x1="0" y1="80" x2="700" y2="80" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="0" y1="160" x2="700" y2="160" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="0" y1="240" x2="700" y2="240" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="0" y1="320" x2="700" y2="320" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="0" y1="400" x2="700" y2="400" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="0" y1="480" x2="700" y2="480" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="250" y1="0" x2="250" y2="600" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="400" y1="0" x2="400" y2="600" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <line x1="550" y1="0" x2="550" y2="600" stroke="#9ECFEE"
+                            stroke-width="0.4" opacity=".3" />
+                        <!-- dots for each neighborhood -->
+                        <circle cx="162" cy="38" r="5" fill="#2D5A3D" />
+                        <circle cx="161" cy="92" r="5" fill="#2D5A3D" />
+                        <circle cx="160" cy="148" r="5" fill="#2D5A3D" />
+                        <circle cx="158" cy="198" r="5" fill="#2E6E9E" />
+                        <circle cx="156" cy="240" r="5" fill="#2E6E9E" />
+                        <circle cx="154" cy="278" r="5" fill="#2E6E9E" />
+                        <circle cx="152" cy="314" r="5" fill="#2E6E9E" />
+                        <circle cx="150" cy="348" r="5" fill="#2E6E9E" />
+                        <circle cx="148" cy="384" r="5" fill="#2E6E9E" />
+                        <circle cx="146" cy="420" r="5" fill="#B84B30" />
+                        <circle cx="144" cy="454" r="5" fill="#B84B30" />
+                        <circle cx="178" cy="490" r="5" fill="#B84B30" />
+                        <circle cx="350" cy="500" r="5" fill="#5A3472" />
+                        <circle cx="380" cy="480" r="5" fill="#5A3472" />
+                        <circle cx="360" cy="460" r="5" fill="#5A3472" />
+                    </svg>
+                    <div id="map-pins"></div>
+                    <div
+                        style="position:absolute;bottom:12px;right:14px;font-size:11px;color:#1A4A6B;background:rgba(255,255,255,.85);padding:3px 10px;border-radius:20px;border:1px solid rgba(26,74,107,.2)">Click
+                        a pin to explore ↑ N · S ↓</div>
+                </div>
+                <div class="detail-panel" id="map-detail-panel" role="region"
+                    aria-label="Neighborhood detail" aria-live="polite"></div>
+            </div>
+
+            <!-- COMPARE TAB -->
+            <div class="section" id="tab-compare" role="tabpanel"
+                aria-labelledby="tab-btn-compare" aria-hidden="true">
+                <p class="compare-intro">Select two neighborhoods to compare
+                    side-by-side. Click cards in the <strong>Explore</strong>
+                    tab to pick them, or use the dropdowns below.</p>
+                <div class="compare-selectors">
+                    <div>
+                        <div
+                            style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:6px">Neighborhood
+                            A</div>
+                        <select id="sel-a" onchange="updateCompare()"
+                            aria-label="Select first neighborhood to compare"
+                            style="width:100%;padding:9px 12px;border:1px solid var(--border-mid);border-radius:var(--radius-sm);background:#fff;font-family:inherit;font-size:14px;color:var(--text)">
+                            <option value>Choose...</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div
+                            style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:6px">Neighborhood
+                            B</div>
+                        <select id="sel-b" onchange="updateCompare()"
+                            aria-label="Select second neighborhood to compare"
+                            style="width:100%;padding:9px 12px;border:1px solid var(--border-mid);border-radius:var(--radius-sm);background:#fff;font-family:inherit;font-size:14px;color:var(--text)">
+                            <option value>Choose...</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="compare-output" aria-live="polite"
+                    aria-label="Comparison results"></div>
+            </div>
+
+            <!-- CHARTS TAB -->
+            <div class="section" id="tab-charts" role="tabpanel"
+                aria-labelledby="tab-btn-charts" aria-hidden="true">
+                <p class="chart-intro">Visual data across all 16 communities —
+                    home prices, population, walkability, schools, and commute
+                    times.</p>
+                <div class="chart-card">
+                    <div class="chart-title">Median home price</div>
+                    <div class="chart-sub">By neighborhood, north to south (2024
+                        estimates)</div>
+                    <div class="chart-wrap" style="height:360px"><canvas
+                            id="chart-price"></canvas></div>
+                </div>
+                <div
+                    style="display:grid;grid-template-columns:1fr 1fr;gap:14px;flex-wrap:wrap"
+                    class="two-col-charts">
+                    <div class="chart-card">
+                        <div class="chart-title">Walk score</div>
+                        <div class="chart-sub">Out of 100</div>
+                        <div class="chart-wrap" style="height:280px"><canvas
+                                id="chart-walk"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-title">School rating</div>
+                        <div class="chart-sub">Average rating out of 10</div>
+                        <div class="chart-wrap" style="height:280px"><canvas
+                                id="chart-schools"></canvas></div>
+                    </div>
+                </div>
+                <div class="chart-card" style="margin-top:14px">
+                    <div class="chart-title">Population</div>
+                    <div class="chart-sub">Estimated residents per
+                        neighborhood</div>
+                    <div class="chart-wrap" style="height:320px"><canvas
+                            id="chart-pop"></canvas></div>
+                </div>
+            </div>
+
+        </main>
+
+        <script>
+const neighborhoods = [
+  {id:'oceanside',name:'Oceanside',zone:'north',tag:'Largest coastal city — beach, harbor & downtown revival',
+   pop:177000,home:695000,founded:'1888',sqmi:'41',walk:62,bike:52,transit:42,school:6.2,commute:34,
+   hist:'Oceanside was incorporated in 1888 and transformed by Camp Pendleton (est. 1942), the largest Marine Corps base on the West Coast. The harbor built in the 1960s reshaped the waterfront. Recent years brought a major downtown revival with acclaimed restaurants, breweries, and a thriving arts scene.',
+   char:'Oceanside has shed its purely military-town image to become one of the most exciting food and surf scenes in North County. The 1888 pier (rebuilt multiple times) is iconic. Breakwater Cove and the harbor offer boating, fishing, and whale watching seasonally.',
+   tags:['Camp Pendleton','Oceanside Pier','harbor','craft beer','surf','farmers market','whale watching','downtown revival']},
+  {id:'carlsbad',name:'Carlsbad',zone:'north',tag:'Flower fields, Legoland & resort living',
+   pop:115000,home:1100000,founded:'1952',sqmi:'39',walk:44,bike:55,transit:28,school:8.1,commute:32,
+   hist:'Named after Karlsbad, Bohemia — similar mineral springs were found here in 1883. Incorporated in 1952, Carlsbad evolved from an agricultural community known for flowers into a master-planned suburb. Legoland opened in 1999, cementing its family-tourism identity.',
+   char:'Carlsbad blends resort living, upscale retail (The Forum), and the iconic Flower Fields — ranunculus blooms each spring. La Costa and Aviara neighborhoods anchor the luxury housing market. Seven relatively uncrowded miles of coastline.',
+   tags:['Flower Fields','Legoland','La Costa','Aviara','State Beach','The Forum','golf resorts','surf']},
+  {id:'encinitas',name:'Encinitas',zone:'north',tag:'Yoga capital of the US — surf culture & bohemian spirit',
+   pop:62000,home:1400000,founded:'1986',sqmi:'20',walk:55,bike:66,transit:32,school:8.4,commute:30,
+   hist:'Five communities merged to form Encinitas in 1986: Encinitas, Cardiff-by-the-Sea, Leucadia, Olivenhain, and New Encinitas. The Self-Realization Fellowship (est. 1937 by Paramahansa Yogananda) set a spiritual tone that persists today. Swami\'s surf break has been a pilgrimage site since the 1950s.',
+   char:'Encinitas has the highest concentration of yoga studios per capita in the US. Leucadia keeps a laid-back, slightly funky vibe while Cardiff draws families. Moonlight Beach and Cardiff State Beach are beloved. A thriving food and wellness scene lines Coast Hwy 101.',
+   tags:['Swami\'s surf break','Self-Realization Fellowship','yoga capital','Cardiff reef','Moonlight Beach','Leucadia','Coast Hwy 101','farmers market']},
+  {id:'solana',name:'Solana Beach',zone:'north',tag:'Small walkable town with a legendary music venue',
+   pop:13500,home:1650000,founded:'1986',sqmi:'3.6',walk:60,bike:58,transit:45,school:8.6,commute:28,
+   hist:'Solana Beach incorporated in 1986 after years as an unincorporated community. The Belly Up Tavern (opened 1974) became a nationally recognized live music venue and remains the cultural anchor. The Cedros Avenue Design District evolved from antique dealers into a destination for interior design and boutiques.',
+   char:'One of the smallest cities in San Diego County, Solana Beach punches far above its weight with the Belly Up, Cedros Design District, and easy Coaster/Amtrak rail access. Fletcher Cove Beach Park is a beloved community gathering spot.',
+   tags:['Belly Up Tavern','Cedros Design District','Fletcher Cove','Coaster rail','live music','boutiques','small-town feel']},
+  {id:'delmar',name:'Del Mar',zone:'central',tag:'The races, the bluffs & one of California\'s priciest zip codes',
+   pop:4200,home:3100000,founded:'1959',sqmi:'2.2',walk:66,bike:60,transit:42,school:9.1,commute:26,
+   hist:'Del Mar\'s identity was sealed in 1937 when Bing Crosby and Pat O\'Brien co-founded the Del Mar Thoroughbred Club. The town incorporated in 1959 specifically to block a proposed freeway through it. Actor Mel Ferrer redesigned the downtown village in Spanish Colonial style in the 1970s.',
+   char:'Tiny, fiercely residential Del Mar has some of the most expensive real estate in California. Racetrack season (July–September) brings festive crowds. 15th Street beach is a local favorite. Restaurants and wine bars cluster around the Village plaza. Almost no chain stores.',
+   tags:['Del Mar Racetrack','15th St beach','Village plaza','Torrey Pines','no chain stores','wine bars','fairgrounds','Solana Beach rail']},
+  {id:'torrey',name:'Torrey Pines',zone:'central',tag:'Reserve, research corridor & dramatic coastal bluffs',
+   pop:9500,home:2400000,founded:'1960s',sqmi:'5',walk:38,bike:44,transit:25,school:9.3,commute:24,
+   hist:'Torrey Pines is defined by its State Natural Reserve — home to the rarest pine tree in North America. The mesa above became San Diego\'s biotech and genomics hub starting in the 1970s, with Salk, Scripps Research, and TSRI clustering there. The city-owned golf course has hosted multiple US Opens.',
+   char:'The reserve offers miles of trails above dramatic ocean bluffs. Black\'s Beach (accessible by steep trail) is a famous clothing-optional stretch. Housing is largely luxury estates and gated communities. The research corridor is one of the densest biotech clusters in the world.',
+   tags:['Torrey Pines Reserve','rarest pine tree','Salk Institute','Scripps Research','US Open golf course','Black\'s Beach','biotech corridor']},
+  {id:'lajolla',name:'La Jolla',zone:'central',tag:'The Jewel — cliffs, coves, world-class research & village life',
+   pop:47000,home:2100000,founded:'1887',sqmi:'17',walk:71,bike:54,transit:38,school:9.0,commute:25,
+   hist:'La Jolla developed as a resort community in the 1880s when Frank Kimball sold lots. Ellen Browning Scripps became its greatest benefactor, funding Scripps Institution of Oceanography, the public library, and numerous civic spaces. UC San Diego opened on the mesa in 1960.',
+   char:'La Jolla blends academic prestige (UCSD, Salk, Scripps) with upscale village life. The cove draws snorkelers and sea lions year-round. Sea caves, kayaking, and the Children\'s Pool are coastal highlights. La Jolla Playhouse is a Tony Award-winning theater.',
+   tags:['La Jolla Cove','UCSD','Salk Institute','Scripps Pier','sea lions','La Jolla Playhouse','boutiques','coastal bluffs']},
+  {id:'bird',name:'Bird Rock',zone:'central',tag:'Quiet coastal enclave with blufftop ocean views',
+   pop:5200,home:1800000,founded:'1915',sqmi:'0.9',walk:74,bike:58,transit:34,school:8.5,commute:27,
+   hist:'Named for a large offshore rock once crowded with nesting birds, Bird Rock grew as a modest beach community in the early 1900s. A walkable commercial strip on La Jolla Blvd gained a loyal following in the 2000s as residents pushed back on overdevelopment.',
+   char:'A calm residential pocket distinct from La Jolla proper. Independent cafes, restaurants, and a wine bar line La Jolla Blvd. Streets terminate at coastal bluffs with panoramic ocean views. Strong neighborhood association keeps development low-key.',
+   tags:['La Jolla Blvd','coastal bluffs','ocean views','walkable','independent shops','residential','wine bar']},
+  {id:'pb',name:'Pacific Beach',zone:'central',tag:'Classic SoCal beach town — boardwalk, surf & Mission Bay',
+   pop:43000,home:1050000,founded:'1887',sqmi:'3.6',walk:80,bike:84,transit:46,school:6.8,commute:28,
+   hist:'Pacific Beach was platted in 1887 with plans for a college and resort hotel — both failed quickly. It became a working-class beach town and boomed post-WWII. Crystal Pier (built 1927) is one of the few piers in the US with overnight cottage rentals.',
+   char:'PB mixes surf culture, nightlife, and young families in a dense grid running to the water. The boardwalk (Ocean Front Walk) is the social spine for skating, cycling, and people-watching. Mission Bay Park — the largest aquatic park in the US — borders it to the south.',
+   tags:['Crystal Pier','boardwalk','Mission Bay','surf','nightlife','farmers market','beach volleyball','Ocean Front Walk']},
+  {id:'mb',name:'Mission Beach',zone:'central',tag:'Narrow peninsula — amusement park, boardwalk & sand',
+   pop:3800,home:1400000,founded:'1914',sqmi:'0.4',walk:82,bike:90,transit:40,school:6.2,commute:30,
+   hist:'Mission Beach occupies a narrow sand spit between the Pacific and Mission Bay. Belmont Park opened in 1925 with The Giant Dipper roller coaster — now a National Historic Landmark carefully preserved.',
+   char:'One of California\'s densest beach communities — homes are packed wall-to-wall on a sliver of land. Vacation rentals dominate. The boardwalk connects seamlessly to Pacific Beach and is one of the top cycling and skating routes in the region.',
+   tags:['Belmont Park','Giant Dipper','boardwalk','Mission Bay','vacation rentals','cycling','dense beachfront']},
+  {id:'ob',name:'Ocean Beach',zone:'south',tag:'Countercultural beach village — funky, independent & beloved',
+   pop:12000,home:1050000,founded:'1887',sqmi:'1.5',walk:83,bike:76,transit:52,school:6.5,commute:26,
+   hist:'Ocean Beach ("OB") was one of San Diego\'s original beach resorts. It became a countercultural center in the 1960s and has actively resisted chain stores through organized community effort — a rare achievement in coastal Southern California.',
+   char:'OB features murals, Dog Beach (one of the first in the US), a thriving Newport Ave antiques district, and a fiercely independent spirit. The OB Pier is free to fish from. The Wednesday farmers market is one of San Diego\'s most popular year-round.',
+   tags:['Dog Beach','Newport Ave antiques','no chain stores','OB Pier','farmers market','murals','countercultural','1960s history']},
+  {id:'pointloma',name:'Point Loma',zone:'south',tag:'Peninsula of history — lighthouse, veterans & bay views',
+   pop:45000,home:1200000,founded:'1542',sqmi:'8',walk:66,bike:54,transit:44,school:7.8,commute:24,
+   hist:'Point Loma is where Juan Rodríguez Cabrillo first landed in Alta California in 1542 — the first European explorer to reach the West Coast. The Old Point Loma Lighthouse (1855) is one of the oldest on the Pacific coast. The area has long been tied to the US Navy.',
+   char:'Point Loma combines military history, stunning bay and ocean views, tide pools, and tight-knit residential neighborhoods. Liberty Station — a converted Naval Training Center — is now a thriving arts, dining, and market destination.',
+   tags:['Cabrillo National Monument','Old Point Loma Lighthouse','tide pools','Liberty Station','Navy history','bay views','La Playa','Sunset Cliffs']},
+  {id:'downtown',name:'Downtown',zone:'urban',tag:'Urban core — Gaslamp, waterfront & rapid transformation',
+   pop:38000,home:720000,founded:'1867',sqmi:'3.8',walk:97,bike:82,transit:90,school:5.8,commute:18,
+   hist:'San Diego\'s downtown was platted by Alonzo Horton in 1867, replacing Old Town as the city center. The Gaslamp Quarter (a historic 16-block Victorian district) was long neglected before a major revival in the 1980s–90s. Petco Park (2004) and the Convention Center (1989) anchored further development.',
+   char:'Downtown is one of America\'s most walkable urban cores. The Embarcadero waterfront, USS Midway Museum, Little Italy, and the East Village tech/arts cluster make it dynamic. Condos and luxury apartments fill former warehouses. The trolley network radiates from here.',
+   tags:['Gaslamp Quarter','Little Italy','Petco Park','USS Midway','Embarcadero','trolley hub','East Village','Convention Center']},
+  {id:'hillcrest',name:'Hillcrest',zone:'urban',tag:'Vibrant LGBTQ+ neighborhood — dining, culture & Balboa Park',
+   pop:28000,home:775000,founded:'1907',sqmi:'1.8',walk:92,bike:78,transit:72,school:7.2,commute:20,
+   hist:'Hillcrest was developed as an upper-middle-class suburb in 1907, named after the hilltop estates. It became San Diego\'s LGBTQ+ cultural center in the 1970s–80s and has remained so. The iconic Hillcrest sign has been a community landmark since 1940.',
+   char:'Hillcrest sits at the northwest corner of Balboa Park — giving residents immediate access to museums, the zoo, and trails. University Ave is lined with independent restaurants (some of the city\'s best), bars, and specialty shops. A progressive, diverse, and walkable neighborhood.',
+   tags:['Balboa Park','LGBTQ+ culture','University Ave','Hillcrest sign','independent dining','farmers market','walkable','Bankers Hill']},
+  {id:'northpark',name:'North Park',zone:'urban',tag:'Creative hub — breweries, street art & bungalow neighborhoods',
+   pop:42000,home:750000,founded:'1910',sqmi:'3.2',walk:89,bike:74,transit:68,school:6.8,commute:22,
+   hist:'North Park was developed as a streetcar suburb in the 1910s–20s, with craftsman bungalows that still define its residential streets. The commercial corridors fell into decline mid-century but were revived starting in the 2000s by artists, chefs, and brewers.',
+   char:'North Park is San Diego\'s most creatively energetic neighborhood. 30th Street is the spine of its beer scene (recognized as one of the best in the US). Ray Street hosts galleries and art walks. The mix of historic bungalows and modern infill gives it a layered, lived-in character.',
+   tags:['30th St breweries','Ray St arts corridor','craftsman bungalows','street art','North Park Theatre','farmers market','walkable','food scene']},
+  {id:'littleitaly',name:'Little Italy',zone:'urban',tag:'San Diego\'s most walkable neighborhood — food, piazzas & waterfront',
+   pop:7500,home:850000,founded:'1920s',sqmi:'0.5',walk:98,bike:85,transit:88,school:7.0,commute:12,
+   hist:'Little Italy was settled by Italian fishermen — primarily from Genoa — in the 1920s who supplied tuna to the booming San Diego cannery industry. The construction of Interstate 5 in the 1960s destroyed much of the neighborhood, displacing hundreds of families. A determined revitalization effort starting in the 1996 led by the Little Italy Association transformed it into one of the most celebrated urban neighborhoods in California.',
+   char:'Little Italy is consistently rated the most walkable neighborhood in San Diego. Piazza della Famiglia and Amici Park anchor a dense grid of acclaimed restaurants, cafes, wine bars, and design studios. The Saturday Mercato farmers market is one of the largest in Southern California. High-rise condos have dramatically increased density while the ground-floor street life keeps it human-scale.',
+   tags:['Piazza della Famiglia','Mercato farmers market','Amici Park','waterfront views','Italian heritage','acclaimed dining','walkable','design district']},
+];
+
+const zoneLabels = {north:'North County',central:'Central Coast',south:'South / Peninsula',urban:'Urban Core'};
+const zoneClass = {north:'z-north',central:'z-central',south:'z-south',urban:'z-urban'};
+const mapPins = [
+  {id:'oceanside',x:'26%',y:'4%'},{id:'carlsbad',x:'25%',y:'12%'},{id:'encinitas',x:'24%',y:'21%'},
+  {id:'solana',x:'23%',y:'29%'},{id:'delmar',x:'23%',y:'36%'},{id:'torrey',x:'22%',y:'43%'},
+  {id:'lajolla',x:'22%',y:'50%'},{id:'bird',x:'21%',y:'56%'},{id:'pb',x:'21%',y:'62%'},
+  {id:'mb',x:'21%',y:'68%'},{id:'ob',x:'21%',y:'74%'},{id:'pointloma',x:'26%',y:'81%'},
+  {id:'downtown',x:'54%',y:'84%'},{id:'hillcrest',x:'58%',y:'80%'},{id:'northpark',x:'56%',y:'77%'},{id:'littleitaly',x:'50%',y:'87%'},
+];
+
+let activeFilter = 'all';
+let detailId = null;
+let compareA = null;
+let compareB = null;
+let chartsDrawn = false;
+
+function scoreClass(v){return v>=80?'score-high':v>=60?'score-mid':'score-low';}
+
+function renderDetail(id, panelId){
+  const d = neighborhoods.find(x=>x.id===id);
+  const panel = document.getElementById(panelId);
+  if(!d||!panel) return;
+  const commuteMax = 40;
+  panel.innerHTML = `
+    <div class="dp-header">
+      <div>
+        <div class="dp-title">${d.name}</div>
+        <div class="dp-sub">${d.tag}</div>
+      </div>
+      <button class="close-btn" onclick="closeDetail('${panelId}')">Close ✕</button>
+    </div>
+    <div class="dp-stats">
+      <div class="ds"><div class="ds-label">Population</div><div class="ds-val">${d.pop.toLocaleString()}</div></div>
+      <div class="ds"><div class="ds-label">Median home</div><div class="ds-val">$${(d.home/1000000).toFixed(d.home<1000000?2:1)}M</div></div>
+      <div class="ds"><div class="ds-label">Founded</div><div class="ds-val">${d.founded}</div></div>
+      <div class="ds"><div class="ds-label">Sq miles</div><div class="ds-val">${d.sqmi}</div></div>
+    </div>
+    <div class="score-grid">
+      <div class="score-box"><div class="score-num ${scoreClass(d.walk)}">${d.walk}</div><div class="score-label">Walk score</div></div>
+      <div class="score-box"><div class="score-num ${scoreClass(d.bike)}">${d.bike}</div><div class="score-label">Bike score</div></div>
+      <div class="score-box"><div class="score-num ${scoreClass(d.school*10)}">${d.school}/10</div><div class="score-label">School rating</div></div>
+    </div>
+    <div class="dp-body">
+      <div>
+        <div class="dp-section-title">History</div>
+        <div class="dp-section-text">${d.hist}</div>
+      </div>
+      <div>
+        <div class="dp-section-title">Character & highlights</div>
+        <div class="dp-section-text">${d.char}</div>
+        <div style="margin-top:1rem">
+          <div class="dp-section-title">Commute times</div>
+          <div class="commute-bar-wrap">
+            <div class="commute-item"><div class="commute-label">To Downtown</div><div class="commute-bar-bg"><div class="commute-bar-fill" style="width:${Math.min(100,d.commute/commuteMax*100)}%"></div></div><div class="commute-val">${d.commute} min</div></div>
+            <div class="commute-item"><div class="commute-label">Transit</div><div class="commute-bar-bg"><div class="commute-bar-fill" style="width:${d.transit}%;background:#5A3472"></div></div><div class="commute-val">${d.transit}/100</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dp-section-title">Known for</div>
+    <div class="tags-row">${d.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+  `;
+  panel.classList.add('open');
+  panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function closeDetail(panelId){
+  document.getElementById(panelId).classList.remove('open');
+  detailId = null;
+  renderCards();
+}
+
+function cardClick(id){
+  if(detailId===id){closeDetail('detail-panel');return;}
+  detailId = id;
+  renderCards();
+  renderDetail(id,'detail-panel');
+}
+
+function renderCards(){
+  const grid = document.getElementById('cards-grid');
+  const list = activeFilter==='all' ? neighborhoods : neighborhoods.filter(d=>d.zone===activeFilter);
+  grid.innerHTML = list.map(d=>`
+    <div class="ncard${detailId===d.id?' selected':''}" onclick="cardClick('${d.id}')">
+      <span class="zone-badge ${zoneClass[d.zone]}">${zoneLabels[d.zone]}</span>
+      <div class="ncard-name">${d.name}</div>
+      <div class="ncard-tag">${d.tag}</div>
+      <div class="ncard-metrics">
+        <div class="nm"><div class="nm-label">Population</div><div class="nm-val">${d.pop.toLocaleString()}</div></div>
+        <div class="nm"><div class="nm-label">Median home</div><div class="nm-val">$${d.home>=1000000?(d.home/1000000).toFixed(1)+'M':(d.home/1000).toFixed(0)+'K'}</div></div>
+        <div class="nm"><div class="nm-label">Walk score</div><div class="nm-val">${d.walk}/100</div></div>
+        <div class="nm"><div class="nm-label">School rating</div><div class="nm-val">${d.school}/10</div></div>
+      </div>
+    </div>`).join('');
+}
+
+function setFilter(f, btn){
+  activeFilter=f;
+  document.querySelectorAll('.fb').forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false');});
+  btn.classList.add('on');
+  btn.setAttribute('aria-pressed','true');
+  renderCards();
+}
+
+function renderMapPins(){
+  const container = document.getElementById('map-pins');
+  container.innerHTML = mapPins.map(p=>{
+    const d = neighborhoods.find(x=>x.id===p.id);
+    return `<div class="map-pin" id="mpin-${p.id}" style="left:${p.x};top:${p.y}" onclick="mapPinClick('${p.id}')">${d.name}</div>`;
+  }).join('');
+}
+
+function mapPinClick(id){
+  document.querySelectorAll('.map-pin').forEach(p=>p.classList.remove('active'));
+  document.getElementById('mpin-'+id).classList.add('active');
+  renderDetail(id,'map-detail-panel');
+}
+
+function populateSelects(){
+  const optHtml = neighborhoods.map(d=>`<option value="${d.id}">${d.name}</option>`).join('');
+  document.getElementById('sel-a').innerHTML='<option value="">Choose...</option>'+optHtml;
+  document.getElementById('sel-b').innerHTML='<option value="">Choose...</option>'+optHtml;
+}
+
+function updateCompare(){
+  const aId = document.getElementById('sel-a').value;
+  const bId = document.getElementById('sel-b').value;
+  const out = document.getElementById('compare-output');
+  if(!aId||!bId){out.innerHTML='';return;}
+  const a = neighborhoods.find(x=>x.id===aId);
+  const b = neighborhoods.find(x=>x.id===bId);
+  const rows = [
+    {label:'Zone',va:zoneLabels[a.zone],vb:zoneLabels[b.zone],num:false},
+    {label:'Population',va:a.pop.toLocaleString(),vb:b.pop.toLocaleString(),num:true,na:a.pop,nb:b.pop,higher:'b'},
+    {label:'Median home price',va:'$'+(a.home>=1000000?(a.home/1000000).toFixed(1)+'M':(a.home/1000).toFixed(0)+'K'),vb:'$'+(b.home>=1000000?(b.home/1000000).toFixed(1)+'M':(b.home/1000).toFixed(0)+'K'),num:true,na:a.home,nb:b.home,higher:'lower'},
+    {label:'Walk score',va:a.walk+'/100',vb:b.walk+'/100',num:true,na:a.walk,nb:b.walk,higher:'higher'},
+    {label:'Bike score',va:a.bike+'/100',vb:b.bike+'/100',num:true,na:a.bike,nb:b.bike,higher:'higher'},
+    {label:'Transit score',va:a.transit+'/100',vb:b.transit+'/100',num:true,na:a.transit,nb:b.transit,higher:'higher'},
+    {label:'School rating',va:a.school+'/10',vb:b.school+'/10',num:true,na:a.school,nb:b.school,higher:'higher'},
+    {label:'Commute (drive)',va:a.commute+' min',vb:b.commute+' min',num:true,na:a.commute,nb:b.commute,higher:'lower'},
+    {label:'Founded',va:a.founded,vb:b.founded,num:false},
+    {label:'Sq miles',va:a.sqmi,vb:b.sqmi,num:false},
+  ];
+  const winBadge = '<span class="compare-win">✓ better</span>';
+  function win(row,which){
+    if(!row.num) return '';
+    const better = row.higher==='higher'?(which==='a'?row.na>row.nb:row.nb>row.na):(which==='a'?row.na<row.nb:row.nb<row.na);
+    return better?winBadge:'';
+  }
+  out.innerHTML = `
+    <table class="compare-table">
+      <thead><tr><th>Metric</th><th class="a-col">${a.name}</th><th class="b-col">${b.name}</th></tr></thead>
+      <tbody>${rows.map(r=>`<tr><td>${r.label}</td><td class="a-col">${r.va}${win(r,'a')}</td><td class="b-col">${r.vb}${win(r,'b')}</td></tr>`).join('')}</tbody>
+    </table>
+    <div style="margin-top:1.25rem">
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:8px">History</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+          <div style="font-family:'DM Serif Display',serif;font-size:16px;margin-bottom:6px;color:var(--ocean)">${a.name}</div>
+          <div style="font-size:13px;color:var(--text-mid);line-height:1.6">${a.hist}</div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+          <div style="font-family:'DM Serif Display',serif;font-size:16px;margin-bottom:6px;color:var(--coral)">${b.name}</div>
+          <div style="font-size:13px;color:var(--text-mid);line-height:1.6">${b.hist}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function drawCharts(){
+  if(chartsDrawn) return;
+  chartsDrawn = true;
+  const names = neighborhoods.map(d=>d.name);
+  const prices = neighborhoods.map(d=>+(d.home/1000).toFixed(0));
+  const walks = neighborhoods.map(d=>d.walk);
+  const schools = neighborhoods.map(d=>d.school);
+  const pops = neighborhoods.map(d=>d.pop);
+  const colors = neighborhoods.map(d=>d.zone==='north'?'#2D5A3D':d.zone==='central'?'#2E6E9E':d.zone==='south'?'#B84B30':'#5A3472');
+
+  new Chart(document.getElementById('chart-price'),{
+    type:'bar',
+    data:{labels:names,datasets:[{label:'Median price ($K)',data:prices,backgroundColor:colors,borderRadius:5,borderSkipped:false}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'$'+(ctx.raw>=1000?(ctx.raw/1000).toFixed(1)+'M':ctx.raw+'K')}}},scales:{y:{ticks:{callback:v=>v>=1000?'$'+(v/1000)+'M':'$'+v+'K'},grid:{color:'rgba(0,0,0,.05)'}},x:{ticks:{maxRotation:45,font:{size:11}},grid:{display:false}}}}
+  });
+  new Chart(document.getElementById('chart-walk'),{
+    type:'bar',
+    data:{labels:names,datasets:[{label:'Walk',data:walks,backgroundColor:colors,borderRadius:4,borderSkipped:false}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{min:0,max:100,grid:{color:'rgba(0,0,0,.05)'}},y:{ticks:{font:{size:11}},grid:{display:false}}}}
+  });
+  new Chart(document.getElementById('chart-schools'),{
+    type:'bar',
+    data:{labels:names,datasets:[{label:'Rating',data:schools,backgroundColor:colors,borderRadius:4,borderSkipped:false}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{min:0,max:10,grid:{color:'rgba(0,0,0,.05)'}},y:{ticks:{font:{size:11}},grid:{display:false}}}}
+  });
+  new Chart(document.getElementById('chart-pop'),{
+    type:'bar',
+    data:{labels:names,datasets:[{label:'Population',data:pops,backgroundColor:colors,borderRadius:5,borderSkipped:false}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.raw.toLocaleString()+' residents'}}},scales:{y:{ticks:{callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v},grid:{color:'rgba(0,0,0,.05)'}},x:{ticks:{maxRotation:45,font:{size:11}},grid:{display:false}}}}
+  });
+
+  const style = document.createElement('style');
+  style.textContent='@media(max-width:640px){.two-col-charts{grid-template-columns:1fr!important}}';
+  document.head.appendChild(style);
+}
+
+function showTab(t){
+  document.querySelectorAll('.section').forEach(s=>{s.classList.remove('active');s.setAttribute('aria-hidden','true');});
+  document.querySelectorAll('.tab-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false');});
+  const panel = document.getElementById('tab-'+t);
+  panel.classList.add('active');
+  panel.setAttribute('aria-hidden','false');
+  const btn = document.getElementById('tab-btn-'+t);
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected','true');
+  if(t==='charts') setTimeout(drawCharts,50);
+}
+
+renderCards();
+renderMapPins();
+populateSelects();
+</script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

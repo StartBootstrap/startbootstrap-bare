@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YZY8183GLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YZY8183GLY');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Monthly Home Budget Calculator | La Jolla & San Diego | Lana Swanson
+      REALTOR®</title>
+
+    <meta name="description"
+      content="Free monthly home budget calculator for La Jolla and San Diego buyers. Estimate your true monthly housing cost — mortgage, taxes, insurance, HOA, and more. From Lana Swanson, REALTOR® with Coldwell Banker Realty La Jolla." />
+    <meta name="keywords"
+      content="home buying budget calculator La Jolla, monthly mortgage calculator San Diego, how much house can I afford La Jolla, La Jolla home affordability calculator, San Diego real estate budget worksheet, first time home buyer budget La Jolla, Lana Swanson Realtor, Coldwell Banker Realty La Jolla" />
+    <meta name="author" content="Lana Swanson" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="canonical" href="https://lanaswanson.com/budget-calculator" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+      content="Monthly Home Budget Calculator | La Jolla & San Diego | Lana Swanson REALTOR®" />
+    <meta property="og:description"
+      content="Free monthly home budget calculator for La Jolla and San Diego buyers. Estimate your true monthly housing costs from Lana Swanson, Coldwell Banker Realty La Jolla." />
+    <meta property="og:url"
+      content="https://lanaswanson.com/budget-calculator" />
+    <meta property="og:image"
+      content="https://lanaswanson.com/assets/images/banners/resources.png" />
+    <meta property="og:site_name" content="Lana Swanson Real Estate" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="Monthly Home Budget Calculator | La Jolla & San Diego | Lana Swanson REALTOR®" />
+    <meta name="twitter:description"
+      content="Estimate your full monthly housing cost before making an offer in La Jolla or San Diego. Free tool from Lana Swanson, Coldwell Banker Realty." />
+    <meta name="twitter:image"
+      content="https://lanaswanson.com/assets/images/banners/resources.png" />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Monthly Home Budget Calculator",
+      "url": "https://lanaswanson.com/budget-calculator",
+      "description": "Free monthly home budget calculator for La Jolla and San Diego buyers. Estimate mortgage, taxes, insurance, HOA, and household expenses.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "RealEstateAgent",
+        "name": "Lana Swanson",
+        "url": "https://lanaswanson.com/",
+        "telephone": "+1-858-241-9903",
+        "email": "lanaswanson@cbrealty.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "888 Prospect St, Suite 140",
+          "addressLocality": "La Jolla",
+          "addressRegion": "CA",
+          "postalCode": "92037",
+          "addressCountry": "US"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Coldwell Banker Realty"
+        }
+      }
+    }
+    </script>
+
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --navy: #1b2a4a;
+        --navy-light: #2c3e6b;
+        --gold: #b89a6a;
+        --bg: #f4f3f0;
+        --card: #ffffff;
+        --border: #e0ddd8;
+        --text: #2a2a2a;
+        --muted: #888580;
+        --green: #4a7c59;
+        --red: #b05252;
+        --input-bg: #fafaf8;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        padding: 0 0 80px;
+      }
+
+      .hero {
+        background: var(--navy);
+        padding: 56px 40px 64px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::after {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        aria-hidden: true;
+      }
+      .hero__eyebrow {
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+      .hero__title {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: white;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+      .hero__desc {
+        color: rgba(255,255,255,0.65);
+        font-size: 0.95rem;
+        font-weight: 300;
+        max-width: 520px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .calculator {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 24px 0;
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .card__header {
+        background: var(--navy);
+        padding: 14px 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .card__header-title {
+        font-size: 0.68rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.9);
+        font-weight: 500;
+      }
+      .card__header-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(255,255,255,0.15);
+      }
+      .card__body {
+        padding: 28px 28px 24px;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: 1fr 180px;
+        align-items: center;
+        gap: 16px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .field-row:last-child { border-bottom: none; }
+      .field-label {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--text);
+      }
+      .field-hint {
+        font-size: 0.72rem;
+        color: var(--muted);
+        margin-top: 2px;
+        font-weight: 300;
+      }
+
+      .input-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .input-prefix {
+        position: absolute;
+        left: 12px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        pointer-events: none;
+        font-weight: 400;
+      }
+      .input-suffix {
+        position: absolute;
+        right: 12px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        pointer-events: none;
+      }
+      input[type="number"], input[type="text"], select {
+        width: 100%;
+        background: var(--input-bg);
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        padding: 9px 12px;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--text);
+        outline: none;
+        transition: border-color 0.2s;
+        -moz-appearance: textfield;
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+      input:focus, select:focus {
+        border-color: var(--navy);
+        box-shadow: 0 0 0 3px rgba(27,42,74,0.15);
+      }
+      .has-prefix input { padding-left: 26px; }
+      .has-suffix input { padding-right: 28px; }
+
+      select {
+        appearance: none;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 32px;
+      }
+
+      .computed-value {
+        text-align: right;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--navy);
+        padding: 9px 12px;
+        background: #f0ede8;
+        border-radius: 3px;
+        border: 1px solid var(--border);
+        min-width: 100%;
+      }
+
+      .totals-card {
+        background: var(--navy);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .totals-card__inner {
+        padding: 32px 36px;
+      }
+      .totals-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 28px;
+      }
+      .total-item__label {
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.5);
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      .total-item__value {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: white;
+        font-weight: 400;
+      }
+      .total-item__value.goal { color: var(--gold); }
+
+      .difference-bar {
+        background: rgba(255,255,255,0.08);
+        border-radius: 3px;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      .diff-label {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.5);
+      }
+      .diff-value {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .diff-value.positive { color: #fff; }
+      .diff-value.negative { color: #e07b7b; }
+      .diff-value.neutral { color: rgba(255,255,255,0.7); }
+
+      .price-range-row {
+        background: rgba(255,255,255,0.05);
+        border-radius: 3px;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .price-range-label {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.5);
+      }
+      .price-range-value {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4rem;
+        color: var(--gold);
+      }
+      .price-range-note {
+        font-size: 0.68rem;
+        color: rgba(255,255,255,0.3);
+        margin-top: 3px;
+        text-align: right;
+      }
+
+      .cta-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 36px 36px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: center;
+      }
+      .cta-card__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        color: var(--navy);
+        margin-bottom: 8px;
+      }
+      .cta-card__text {
+        font-size: 0.875rem;
+        color: var(--muted);
+        line-height: 1.6;
+        font-weight: 300;
+      }
+      .cta-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 180px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+      }
+      .btn--primary {
+        background: var(--navy);
+        color: white;
+      }
+      .btn--primary:hover { background: var(--navy-light); }
+      .btn--outline {
+        background: transparent;
+        color: var(--navy);
+        border: 1px solid var(--navy);
+      }
+      .btn--outline:hover { background: var(--navy); color: white; }
+
+      /* Visible focus ring for keyboard users */
+      a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 600px) {
+        .hero { padding: 40px 20px 48px; }
+        .calculator { padding: 32px 16px 0; }
+        .card__body { padding: 20px 20px 16px; }
+        .field-row { grid-template-columns: 1fr 140px; }
+        .totals-grid { grid-template-columns: 1fr; gap: 16px; }
+        .cta-card { grid-template-columns: 1fr; }
+        .cta-actions { flex-direction: row; flex-wrap: wrap; }
+        .totals-card__inner { padding: 24px 20px; }
+      }
+    </style>
+  </head>
+
+  <body class="page page--calculator">
+
+    <a class="visually-hidden-focusable" href="#main-content">Skip to main
+      content</a>
+
+    <header class="site-header sticky-top" role="banner">
+      <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+        <div class="container-fluid">
+          <a href="/" class="site-logo"
+            aria-label="Lana Swanson home page">
+            <img src="assets/images/desktop-logo.png"
+              alt="Lana Swanson REALTOR® Coldwell Banker Realty La Jolla"
+              class="logo logo--desktop" />
+            <img src="assets/images/mobile-logo.png"
+              alt="Lana Swanson REALTOR® Coldwell Banker Realty La Jolla"
+              class="logo logo--mobile" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/buyers">Buyers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sellers">Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/listings">Listings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="/neighborhood-explorer">Neighborhoods</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                  id="navbarDropdown" href="#" role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false">Resources</a>
+                <ul class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/resources">All
+                      Resources</a></li>
+                  <li><hr class="dropdown-divider" aria-hidden="true" /></li>
+                  <li><a class="dropdown-item"
+                      href="/resources#buyer-resources">Buyer
+                      Resources</a></li>
+                  <li><a class="dropdown-item"
+                      href="/resources#seller-resources">Seller
+                      Resources</a></li>
+                  <li><a class="dropdown-item active" aria-current="page"
+                      href="/budget-calculator">Monthly Home Budget
+                      Calculator</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO — not role="banner" (that belongs on <header> only) -->
+    <section class="hero" aria-labelledby="calc-hero-title"
+      aria-describedby="calc-hero-desc">
+      <p class="hero__eyebrow" aria-hidden="true">Free Tool for La Jolla &amp;
+        San Diego Buyers</p>
+      <h1 class="hero__title" id="calc-hero-title">Monthly Home
+        Budget<br>Calculator</h1>
+      <p class="hero__desc" id="calc-hero-desc">
+        Mortgage payments are only part of the picture when buying a home in
+        La Jolla or San Diego. Use this free calculator to estimate your full
+        monthly housing cost — before making an offer.
+      </p>
+    </section>
+
+    <main id="main-content" role="main"
+      aria-label="Monthly home budget calculator for La Jolla and San Diego buyers">
+      <div class="calculator">
+
+        <!-- POTENTIAL HOME DETAILS -->
+        <section class="card" aria-labelledby="section-home-details">
+          <div class="card__header">
+            <h2 class="card__header-title" id="section-home-details">Potential
+              Home Details</h2>
+            <div class="card__header-line" aria-hidden="true"></div>
+          </div>
+          <div class="card__body">
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="homePrice">Target Home
+                  Price</label>
+                <div class="field-hint" id="homePrice-hint">La Jolla median
+                  ~$2.5M; San Diego County varies widely</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="homePrice" min="0" step="1000"
+                  placeholder="0"
+                  aria-describedby="homePrice-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="downPayment">Down
+                  Payment</label>
+                <div class="field-hint" id="downPayment-hint">Enter as dollar
+                  amount</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="downPayment" min="0" step="1000"
+                  placeholder="0"
+                  aria-describedby="downPayment-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <div class="field-label">Loan Amount</div>
+                <div class="field-hint">Calculated automatically</div>
+              </div>
+              <div class="computed-value" id="loanAmount"
+                role="status" aria-live="polite"
+                aria-label="Calculated loan amount">—</div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="interestRate">Estimated Interest
+                  Rate</label>
+              </div>
+              <div class="input-wrap has-suffix">
+                <input type="number" id="interestRate" min="0" max="30"
+                  placeholder="6.5" step="0.1" value="6.5"
+                  aria-describedby="interestRate-hint" />
+                <span class="input-suffix" aria-hidden="true">%</span>
+                <span id="interestRate-hint" class="visually-hidden">Enter
+                  interest rate as a percentage, for example 6.5</span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="loanTerm">Loan Term</label>
+              </div>
+              <div class="input-wrap">
+                <select id="loanTerm" aria-label="Loan term in years">
+                  <option value="30">30 years</option>
+                  <option value="15">15 years</option>
+                  <option value="20">20 years</option>
+                  <option value="10">10 years</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ESTIMATED MONTHLY MORTGAGE -->
+        <section class="card" aria-labelledby="section-mortgage">
+          <div class="card__header">
+            <h2 class="card__header-title" id="section-mortgage">Estimated
+              Monthly Mortgage</h2>
+            <div class="card__header-line" aria-hidden="true"></div>
+          </div>
+          <div class="card__body">
+
+            <div class="field-row">
+              <div>
+                <div class="field-label">Principal + Interest</div>
+                <div class="field-hint">Calculated from your inputs above</div>
+              </div>
+              <div class="computed-value" id="principalInterest"
+                role="status" aria-live="polite"
+                aria-label="Calculated principal and interest payment">—</div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="propertyTax">Property
+                  Taxes</label>
+                <div class="field-hint" id="propertyTax-hint">Approx. 1.1% of
+                  home price / yr in CA</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="propertyTax" min="0" placeholder="0"
+                  aria-describedby="propertyTax-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="insurance">Homeowners
+                  Insurance</label>
+                <div class="field-hint" id="insurance-hint">Approx. $100–200/mo
+                  for most San Diego homes</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="insurance" min="0" placeholder="0"
+                  aria-describedby="insurance-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="pmi">Mortgage Insurance
+                  (PMI)</label>
+                <div class="field-hint" id="pmi-hint">If down payment is less
+                  than 20%</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="pmi" min="0" placeholder="0"
+                  aria-describedby="pmi-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="hoa">HOA Fees</label>
+                <div class="field-hint" id="hoa-hint">Common in La Jolla condos
+                  and planned communities</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="hoa" min="0" placeholder="0"
+                  aria-describedby="hoa-hint" />
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ONGOING HOUSEHOLD EXPENSES -->
+        <section class="card" aria-labelledby="section-household">
+          <div class="card__header">
+            <h2 class="card__header-title" id="section-household">Ongoing
+              Household Expenses</h2>
+            <div class="card__header-line" aria-hidden="true"></div>
+          </div>
+          <div class="card__body">
+
+            <div class="field-row">
+              <div><label class="field-label"
+                  for="utilities">Utilities</label></div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="utilities" min="0" placeholder="0" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div><label class="field-label" for="internet">Internet /
+                  Cable</label></div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="internet" min="0" placeholder="0" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div>
+                <label class="field-label" for="maintenance">Home Maintenance
+                  Reserve</label>
+                <div class="field-hint" id="maintenance-hint">Typically 1% of
+                  home value / yr</div>
+              </div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="maintenance" min="0" placeholder="0"
+                  aria-describedby="maintenance-hint" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div><label class="field-label" for="landscaping">Landscaping /
+                  Exterior</label></div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="landscaping" min="0" placeholder="0" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div><label class="field-label" for="parking">Parking /
+                  Storage</label></div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="parking" min="0" placeholder="0" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div><label class="field-label" for="repairs">Repairs / Unexpected
+                  Expenses</label></div>
+              <div class="input-wrap has-prefix">
+                <span class="input-prefix" aria-hidden="true">$</span>
+                <input type="number" id="repairs" min="0" placeholder="0" />
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- TOTALS -->
+        <section class="totals-card" aria-labelledby="section-totals">
+          <div class="totals-card__inner">
+            <h2 id="section-totals" class="visually-hidden">Budget summary</h2>
+            <div class="totals-grid">
+              <div class="total-item">
+                <div class="total-item__label" id="totalCost-label">Total
+                  Estimated Monthly Cost</div>
+                <div class="total-item__value" id="totalCost"
+                  role="status" aria-live="polite"
+                  aria-labelledby="totalCost-label">$0</div>
+              </div>
+              <div class="total-item">
+                <label class="total-item__label" for="goalCost">Your Goal
+                  Comfortable Monthly Cost</label>
+                <div class="input-wrap has-prefix" style="margin-top:4px;">
+                  <span class="input-prefix" aria-hidden="true"
+                    style="color:rgba(255,255,255,0.4)">$</span>
+                  <input type="number" id="goalCost" min="0" placeholder="0"
+                    aria-describedby="goalCost-hint"
+                    style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:white;font-family:'Playfair Display',serif;font-size:1.6rem;padding:6px 12px 6px 26px;" />
+                  <span id="goalCost-hint" class="visually-hidden">Enter your
+                    target comfortable monthly housing budget in dollars</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="difference-bar">
+              <div>
+                <div class="diff-label" id="diff-label">Difference</div>
+              </div>
+              <div>
+                <div class="diff-value neutral" id="diffValue"
+                  role="status" aria-live="polite"
+                  aria-labelledby="diff-label">—</div>
+              </div>
+            </div>
+
+            <div class="price-range-row">
+              <div>
+                <div class="price-range-label" id="priceRange-label">Estimated
+                  Affordable Home Price Range</div>
+                <div class="price-range-note" aria-hidden="true">Based on your
+                  goal monthly cost × 200</div>
+              </div>
+              <div style="text-align:right">
+                <div class="price-range-value" id="priceRange"
+                  role="status" aria-live="polite"
+                  aria-labelledby="priceRange-label"
+                  aria-describedby="priceRange-note">—</div>
+                <div id="priceRange-note" class="visually-hidden">Estimate based
+                  on your goal monthly cost multiplied by 200</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-card" aria-labelledby="cta-title">
+          <div>
+            <h2 class="cta-card__title" id="cta-title">Ready to talk about
+              buying in La Jolla or San Diego?</h2>
+            <p class="cta-card__text">
+              Numbers are a starting point — not the whole picture. As a La
+              Jolla REALTOR® with Coldwell Banker Realty, I can help you
+              understand what your budget means in the La Jolla, Bird Rock,
+              La Jolla Shores, and greater San Diego market. No pressure, no
+              commitment.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a
+              href="mailto:lanaswanson@cbrealty.com?subject=Monthly Home Budget Worksheet"
+              class="btn btn--primary"
+              aria-label="Email Lana Swanson your budget numbers">Email My
+              Numbers</a>
+            <a href="/contact" class="btn btn--outline"
+              aria-label="Schedule a call with Lana Swanson">Schedule a Call</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <div
+      style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"
+      aria-hidden="true">
+      Free monthly home budget calculator for La Jolla and San Diego home
+      buyers.
+      Estimate mortgage payments, property taxes, HOA fees, and total monthly
+      housing costs in La Jolla, Bird Rock, La Jolla Shores, and greater San
+      Diego County. Tool provided by Lana Swanson, REALTOR® with Coldwell
+      Banker Realty La Jolla. DRE #02382714.
+    </div>
+
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__fineprint">
+          © <span id="year"></span> Lana Swanson | REALTOR® •
+          <a href="tel:+18582419903"
+            aria-label="Call Lana Swanson at 858-241-9903">858-241-9903</a> •
+          <a href="mailto:lanaswanson@cbrealty.com"
+            aria-label="Email Lana Swanson">lanaswanson@cbrealty.com</a>
+          • DRE #02382714 • Coldwell Banker Realty La Jolla
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      function fmt(n) {
+        if (isNaN(n) || n === 0) return '—';
+        return '$' + Math.round(n).toLocaleString();
+      }
+
+      function fmtSigned(n) {
+        if (isNaN(n) || n === 0) return '—';
+        const sign = n > 0 ? '+' : '';
+        return sign + '$' + Math.round(Math.abs(n)).toLocaleString();
+      }
+
+      function val(id) {
+        return parseFloat(document.getElementById(id).value) || 0;
+      }
+
+      function calcPI(principal, annualRate, years) {
+        if (!principal || !annualRate || !years) return 0;
+        const r = annualRate / 100 / 12;
+        const n = years * 12;
+        return principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      }
+
+      function calculate() {
+        const homePrice = val('homePrice');
+        const downPayment = val('downPayment');
+        const loanAmount = Math.max(0, homePrice - downPayment);
+        const rate = val('interestRate');
+        const term = parseInt(document.getElementById('loanTerm').value);
+
+        document.getElementById('loanAmount').textContent = loanAmount > 0 ? '$' + Math.round(loanAmount).toLocaleString() : '—';
+
+        const pi = calcPI(loanAmount, rate, term);
+        document.getElementById('principalInterest').textContent = pi > 0 ? '$' + Math.round(pi).toLocaleString() : '—';
+
+        const total =
+          pi +
+          val('propertyTax') +
+          val('insurance') +
+          val('pmi') +
+          val('hoa') +
+          val('utilities') +
+          val('internet') +
+          val('maintenance') +
+          val('landscaping') +
+          val('parking') +
+          val('repairs');
+
+        document.getElementById('totalCost').textContent = total > 0 ? '$' + Math.round(total).toLocaleString() : '$0';
+
+        const goal = val('goalCost');
+        const diff = goal - total;
+        const diffEl = document.getElementById('diffValue');
+        if (goal > 0 && total > 0) {
+          diffEl.textContent = fmtSigned(diff);
+          diffEl.className = 'diff-value ' + (diff >= 0 ? 'positive' : 'negative');
+          diffEl.setAttribute('aria-label', 'Difference: ' + (diff >= 0 ? 'under budget by ' : 'over budget by ') + '$' + Math.round(Math.abs(diff)).toLocaleString());
+        } else {
+          diffEl.textContent = '—';
+          diffEl.className = 'diff-value neutral';
+          diffEl.setAttribute('aria-label', 'Difference: not yet calculated');
+        }
+
+        const priceRange = goal > 0 ? goal * 200 : 0;
+        const priceRangeEl = document.getElementById('priceRange');
+        priceRangeEl.textContent = priceRange > 0 ? '$' + Math.round(priceRange).toLocaleString() : '—';
+        if (priceRange > 0) {
+          priceRangeEl.setAttribute('aria-label', 'Estimated affordable home price range: $' + Math.round(priceRange).toLocaleString());
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const inputs = [
+          'homePrice', 'downPayment', 'interestRate', 'loanTerm',
+          'propertyTax', 'insurance', 'pmi', 'hoa',
+          'utilities', 'internet', 'maintenance', 'landscaping',
+          'parking', 'repairs', 'goalCost'
+        ];
+
+        inputs.forEach(function(id) {
+          const el = document.getElementById(id);
+          if (el) {
+            el.addEventListener('input', calculate);
+            el.addEventListener('change', calculate);
+          }
+        });
+
+        calculate();
+      });
+    </script>
+
+  </body>
+</html>
